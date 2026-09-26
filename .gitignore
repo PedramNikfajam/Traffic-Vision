@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated artifacts (never track outputs)
+# These MUST be anchored with a leading slash. An unanchored `reports/` matches
+# results/traffic_ai/reports/ as well, which silently excluded the entire
+# evidence base from the repository.
+/data/
+/reports/
+/experiments/
+/weights/
+/plots/
+/logs/
+/predictions/
+/videos/
+/runs/
+
+# results/ IS tracked on purpose: it holds the committed evidence (metrics,
+# plots, annotated frames) that makes the repository reviewable without a GPU.
+# Only guard against a pathological file:
+results/**/phase6_fp_audit.json
+results/**/manifest_*.json
+
+# Environment
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

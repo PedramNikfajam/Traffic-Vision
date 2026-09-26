@@ -1,0 +1,1298 @@
+{
+  "_meta": {
+    "stage": "07_counting",
+    "description": "Virtual-line counting on 5 video(s)",
+    "generated_at": "2026-09-25T23:45:16.457457",
+    "version": "0.2.0",
+    "all_checks_passed": true
+  },
+  "environment": {
+    "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "platform": "linux",
+    "timestamp": "2026-09-25T23:45:16.457465",
+    "pytorch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "gpu_devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "memory_gb": 14.6
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "memory_gb": 14.6
+      }
+    ],
+    "ultralytics_version": "8.4.163",
+    "opencv_version": "4.13.0",
+    "numpy_version": "2.0.2"
+  },
+  "config": {
+    "line_y_fraction": 0.5,
+    "min_frames": 3,
+    "fps": 30.0,
+    "mot_dir": "/kaggle/working/traffic_ai/predictions/tracking",
+    "track_report": "/kaggle/working/traffic_ai/reports/phase6_tracking.json",
+    "direction_semantics": "screen-relative (frames are not calibrated; no geographic direction is claimed)"
+  },
+  "line_position_totals": {
+    "0.35": 1,
+    "0.4": 10,
+    "0.45": 21,
+    "0.5": 54,
+    "0.55": 45,
+    "0.6": 39,
+    "0.65": 20,
+    "0.7": 8
+  },
+  "line_position_chosen": "0.5",
+  "line_plateau_fraction": 0.25,
+  "line_position_spread_ratio": 54.0,
+  "line_position_has_zeros": false,
+  "videos": [
+    {
+      "video": "0000f77c-6257be58",
+      "n_frames": 1217,
+      "frame_height": 720.0,
+      "frame_height_source": "bdd100k-constant",
+      "line_y_fraction": 0.5,
+      "line_y_px": 360.0,
+      "mot_rows": 6499,
+      "total_counted": 10,
+      "n_tracks_seen": 100,
+      "n_tracks_counted": 10,
+      "count_rate": 0.1,
+      "by_class": {
+        "car": 10
+      },
+      "by_direction": {
+        "farbound": 4,
+        "nearbound": 6
+      },
+      "class_composition": {
+        "car": 1.0
+      },
+      "directions": [
+        "farbound",
+        "nearbound"
+      ],
+      "rates": {
+        "observation_minutes": 0.676,
+        "vehicles_per_minute": 14.79,
+        "vehicles_per_5min": 73.95,
+        "vehicles_per_15min": 221.86
+      },
+      "events": [
+        {
+          "track_id": 2,
+          "cls": "car",
+          "direction": "farbound",
+          "frame": 47,
+          "x": 1133.1,
+          "y": 358.8,
+          "line_y": 360.0,
+          "n_frames": 167,
+          "net_disp": 45.5
+        },
+        {
+          "track_id": 28,
+          "cls": "car",
+          "direction": "farbound",
+          "frame": 211,
+          "x": 1100.2,
+          "y": 358.1,
+          "line_y": 360.0,
+          "n_frames": 228,
+          "net_disp": 78.0
+        },
+        {
+          "track_id": 209,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 510,
+          "x": 762.1,
+          "y": 361.6,
+          "line_y": 360.0,
+          "n_frames": 219,
+          "net_disp": 36.9
+        },
+        {
+          "track_id": 201,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 581,
+          "x": 305.2,
+          "y": 364.1,
+          "line_y": 360.0,
+          "n_frames": 168,
+          "net_disp": 51.5
+        },
+        {
+          "track_id": 265,
+          "cls": "car",
+          "direction": "farbound",
+          "frame": 602,
+          "x": 654.4,
+          "y": 358.1,
+          "line_y": 360.0,
+          "n_frames": 19,
+          "net_disp": 42.8
+        },
+        {
+          "track_id": 361,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 907,
+          "x": 635.0,
+          "y": 362.7,
+          "line_y": 360.0,
+          "n_frames": 225,
+          "net_disp": 159.7
+        },
+        {
+          "track_id": 357,
+          "cls": "car",
+          "direction": "farbound",
+          "frame": 966,
+          "x": 1143.1,
+          "y": 359.6,
+          "line_y": 360.0,
+          "n_frames": 161,
+          "net_disp": 74.2
+        },
+        {
+          "track_id": 385,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1091,
+          "x": 1052.3,
+          "y": 363.6,
+          "line_y": 360.0,
+          "n_frames": 95,
+          "net_disp": 169.8
+        },
+        {
+          "track_id": 387,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1151,
+          "x": 1097.8,
+          "y": 360.9,
+          "line_y": 360.0,
+          "n_frames": 65,
+          "net_disp": 132.5
+        },
+        {
+          "track_id": 386,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1156,
+          "x": 1009.1,
+          "y": 360.0,
+          "line_y": 360.0,
+          "n_frames": 104,
+          "net_disp": 57.9
+        }
+      ],
+      "line_sweep": {
+        "0.35": {
+          "total_counted": 1,
+          "by_direction": {
+            "nearbound": 1
+          },
+          "by_class": {
+            "car": 1
+          }
+        },
+        "0.4": {
+          "total_counted": 2,
+          "by_direction": {
+            "farbound": 1,
+            "nearbound": 1
+          },
+          "by_class": {
+            "car": 2
+          }
+        },
+        "0.45": {
+          "total_counted": 5,
+          "by_direction": {
+            "farbound": 1,
+            "nearbound": 4
+          },
+          "by_class": {
+            "car": 5
+          }
+        },
+        "0.5": {
+          "total_counted": 10,
+          "by_direction": {
+            "farbound": 4,
+            "nearbound": 6
+          },
+          "by_class": {
+            "car": 10
+          }
+        },
+        "0.55": {
+          "total_counted": 8,
+          "by_direction": {
+            "farbound": 5,
+            "nearbound": 3
+          },
+          "by_class": {
+            "car": 8
+          }
+        },
+        "0.6": {
+          "total_counted": 5,
+          "by_direction": {
+            "farbound": 2,
+            "nearbound": 3
+          },
+          "by_class": {
+            "car": 5
+          }
+        },
+        "0.65": {
+          "total_counted": 2,
+          "by_direction": {
+            "nearbound": 2
+          },
+          "by_class": {
+            "car": 2
+          }
+        },
+        "0.7": {
+          "total_counted": 2,
+          "by_direction": {
+            "nearbound": 2
+          },
+          "by_class": {
+            "car": 2
+          }
+        }
+      },
+      "viz_frames": "/kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg",
+      "viz_timelines": "/kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_timelines.png"
+    },
+    {
+      "video": "0000f77c-62c2a288",
+      "n_frames": 1211,
+      "frame_height": 720.0,
+      "frame_height_source": "bdd100k-constant",
+      "line_y_fraction": 0.5,
+      "line_y_px": 360.0,
+      "mot_rows": 9313,
+      "total_counted": 4,
+      "n_tracks_seen": 197,
+      "n_tracks_counted": 4,
+      "count_rate": 0.0203,
+      "by_class": {
+        "car": 4
+      },
+      "by_direction": {
+        "nearbound": 4
+      },
+      "class_composition": {
+        "car": 1.0
+      },
+      "directions": [
+        "nearbound"
+      ],
+      "rates": {
+        "observation_minutes": 0.673,
+        "vehicles_per_minute": 5.95,
+        "vehicles_per_5min": 29.73,
+        "vehicles_per_15min": 89.18
+      },
+      "events": [
+        {
+          "track_id": 402,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 121,
+          "x": 215.2,
+          "y": 361.2,
+          "line_y": 360.0,
+          "n_frames": 132,
+          "net_disp": 37.7
+        },
+        {
+          "track_id": 441,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 249,
+          "x": 101.3,
+          "y": 361.0,
+          "line_y": 360.0,
+          "n_frames": 144,
+          "net_disp": 43.9
+        },
+        {
+          "track_id": 591,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 656,
+          "x": 61.7,
+          "y": 362.7,
+          "line_y": 360.0,
+          "n_frames": 111,
+          "net_disp": 49.7
+        },
+        {
+          "track_id": 1161,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 990,
+          "x": 267.9,
+          "y": 360.6,
+          "line_y": 360.0,
+          "n_frames": 199,
+          "net_disp": 57.3
+        }
+      ],
+      "line_sweep": {
+        "0.35": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.4": {
+          "total_counted": 5,
+          "by_direction": {
+            "farbound": 5
+          },
+          "by_class": {
+            "car": 5
+          }
+        },
+        "0.45": {
+          "total_counted": 5,
+          "by_direction": {
+            "farbound": 3,
+            "nearbound": 2
+          },
+          "by_class": {
+            "car": 5
+          }
+        },
+        "0.5": {
+          "total_counted": 4,
+          "by_direction": {
+            "nearbound": 4
+          },
+          "by_class": {
+            "car": 4
+          }
+        },
+        "0.55": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.6": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.65": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.7": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        }
+      },
+      "viz_frames": "/kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg",
+      "viz_timelines": "/kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_timelines.png"
+    },
+    {
+      "video": "0000f77c-cb820c98",
+      "n_frames": 1215,
+      "frame_height": 720.0,
+      "frame_height_source": "bdd100k-constant",
+      "line_y_fraction": 0.5,
+      "line_y_px": 360.0,
+      "mot_rows": 9654,
+      "total_counted": 37,
+      "n_tracks_seen": 116,
+      "n_tracks_counted": 37,
+      "count_rate": 0.319,
+      "by_class": {
+        "car": 37
+      },
+      "by_direction": {
+        "nearbound": 37
+      },
+      "class_composition": {
+        "car": 1.0
+      },
+      "directions": [
+        "nearbound"
+      ],
+      "rates": {
+        "observation_minutes": 0.675,
+        "vehicles_per_minute": 54.81,
+        "vehicles_per_5min": 274.07,
+        "vehicles_per_15min": 822.22
+      },
+      "events": [
+        {
+          "track_id": 2131,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 81,
+          "x": 508.9,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 194,
+          "net_disp": 48.6
+        },
+        {
+          "track_id": 2176,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 163,
+          "x": 965.7,
+          "y": 360.4,
+          "line_y": 360.0,
+          "n_frames": 78,
+          "net_disp": 111.1
+        },
+        {
+          "track_id": 2096,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 166,
+          "x": 1156.4,
+          "y": 364.8,
+          "line_y": 360.0,
+          "n_frames": 172,
+          "net_disp": 113.8
+        },
+        {
+          "track_id": 2100,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 171,
+          "x": 911.2,
+          "y": 360.1,
+          "line_y": 360.0,
+          "n_frames": 204,
+          "net_disp": 152.8
+        },
+        {
+          "track_id": 2217,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 188,
+          "x": 937.2,
+          "y": 362.4,
+          "line_y": 360.0,
+          "n_frames": 56,
+          "net_disp": 117.2
+        },
+        {
+          "track_id": 2102,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 212,
+          "x": 1021.0,
+          "y": 362.1,
+          "line_y": 360.0,
+          "n_frames": 231,
+          "net_disp": 130.4
+        },
+        {
+          "track_id": 2163,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 223,
+          "x": 970.1,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 141,
+          "net_disp": 94.0
+        },
+        {
+          "track_id": 2210,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 237,
+          "x": 993.8,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 102,
+          "net_disp": 116.5
+        },
+        {
+          "track_id": 2254,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 242,
+          "x": 918.7,
+          "y": 361.5,
+          "line_y": 360.0,
+          "n_frames": 63,
+          "net_disp": 111.5
+        },
+        {
+          "track_id": 2182,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 248,
+          "x": 879.8,
+          "y": 360.1,
+          "line_y": 360.0,
+          "n_frames": 163,
+          "net_disp": 127.0
+        },
+        {
+          "track_id": 2144,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 285,
+          "x": 1097.5,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 223,
+          "net_disp": 135.5
+        },
+        {
+          "track_id": 2196,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 301,
+          "x": 1115.5,
+          "y": 362.0,
+          "line_y": 360.0,
+          "n_frames": 177,
+          "net_disp": 96.7
+        },
+        {
+          "track_id": 2300,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 310,
+          "x": 985.5,
+          "y": 362.8,
+          "line_y": 360.0,
+          "n_frames": 83,
+          "net_disp": 112.3
+        },
+        {
+          "track_id": 2211,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 320,
+          "x": 943.7,
+          "y": 360.1,
+          "line_y": 360.0,
+          "n_frames": 164,
+          "net_disp": 157.4
+        },
+        {
+          "track_id": 2335,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 340,
+          "x": 1069.8,
+          "y": 361.6,
+          "line_y": 360.0,
+          "n_frames": 64,
+          "net_disp": 128.6
+        },
+        {
+          "track_id": 2106,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 343,
+          "x": 446.2,
+          "y": 360.1,
+          "line_y": 360.0,
+          "n_frames": 338,
+          "net_disp": 72.6
+        },
+        {
+          "track_id": 2188,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 387,
+          "x": 1050.0,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 280,
+          "net_disp": 105.5
+        },
+        {
+          "track_id": 2391,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 399,
+          "x": 1079.7,
+          "y": 364.6,
+          "line_y": 360.0,
+          "n_frames": 26,
+          "net_disp": 124.7
+        },
+        {
+          "track_id": 2341,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 415,
+          "x": 1087.1,
+          "y": 360.4,
+          "line_y": 360.0,
+          "n_frames": 136,
+          "net_disp": 132.8
+        },
+        {
+          "track_id": 2369,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 435,
+          "x": 1077.8,
+          "y": 360.9,
+          "line_y": 360.0,
+          "n_frames": 112,
+          "net_disp": 135.5
+        },
+        {
+          "track_id": 2424,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 471,
+          "x": 922.0,
+          "y": 360.7,
+          "line_y": 360.0,
+          "n_frames": 72,
+          "net_disp": 151.0
+        },
+        {
+          "track_id": 2344,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 479,
+          "x": 1215.7,
+          "y": 397.4,
+          "line_y": 360.0,
+          "n_frames": 184,
+          "net_disp": 97.1
+        },
+        {
+          "track_id": 2399,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 489,
+          "x": 1012.1,
+          "y": 365.9,
+          "line_y": 360.0,
+          "n_frames": 113,
+          "net_disp": 153.3
+        },
+        {
+          "track_id": 2446,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 502,
+          "x": 1013.4,
+          "y": 362.3,
+          "line_y": 360.0,
+          "n_frames": 82,
+          "net_disp": 155.7
+        },
+        {
+          "track_id": 2414,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 512,
+          "x": 947.4,
+          "y": 360.1,
+          "line_y": 360.0,
+          "n_frames": 127,
+          "net_disp": 133.4
+        },
+        {
+          "track_id": 2433,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 530,
+          "x": 968.3,
+          "y": 360.9,
+          "line_y": 360.0,
+          "n_frames": 126,
+          "net_disp": 172.2
+        },
+        {
+          "track_id": 2461,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 541,
+          "x": 907.9,
+          "y": 361.3,
+          "line_y": 360.0,
+          "n_frames": 103,
+          "net_disp": 140.1
+        },
+        {
+          "track_id": 2358,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 560,
+          "x": 903.6,
+          "y": 360.7,
+          "line_y": 360.0,
+          "n_frames": 285,
+          "net_disp": 221.4
+        },
+        {
+          "track_id": 2472,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 584,
+          "x": 926.4,
+          "y": 360.3,
+          "line_y": 360.0,
+          "n_frames": 554,
+          "net_disp": 186.8
+        },
+        {
+          "track_id": 2509,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 661,
+          "x": 208.6,
+          "y": 360.1,
+          "line_y": 360.0,
+          "n_frames": 507,
+          "net_disp": 55.8
+        },
+        {
+          "track_id": 2506,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 724,
+          "x": 1090.3,
+          "y": 360.2,
+          "line_y": 360.0,
+          "n_frames": 512,
+          "net_disp": 175.9
+        },
+        {
+          "track_id": 2507,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1029,
+          "x": 378.0,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 539,
+          "net_disp": 56.3
+        },
+        {
+          "track_id": 2522,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1147,
+          "x": 263.4,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 88,
+          "net_disp": 61.7
+        },
+        {
+          "track_id": 2524,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1167,
+          "x": 291.8,
+          "y": 362.0,
+          "line_y": 360.0,
+          "n_frames": 99,
+          "net_disp": 70.1
+        },
+        {
+          "track_id": 2528,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1184,
+          "x": 93.9,
+          "y": 362.1,
+          "line_y": 360.0,
+          "n_frames": 73,
+          "net_disp": 86.4
+        },
+        {
+          "track_id": 2538,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1188,
+          "x": 218.9,
+          "y": 364.0,
+          "line_y": 360.0,
+          "n_frames": 64,
+          "net_disp": 110.2
+        },
+        {
+          "track_id": 2533,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 1192,
+          "x": 19.5,
+          "y": 369.8,
+          "line_y": 360.0,
+          "n_frames": 58,
+          "net_disp": 83.2
+        }
+      ],
+      "line_sweep": {
+        "0.35": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.4": {
+          "total_counted": 3,
+          "by_direction": {
+            "nearbound": 3
+          },
+          "by_class": {
+            "car": 3
+          }
+        },
+        "0.45": {
+          "total_counted": 10,
+          "by_direction": {
+            "nearbound": 10
+          },
+          "by_class": {
+            "car": 10
+          }
+        },
+        "0.5": {
+          "total_counted": 37,
+          "by_direction": {
+            "nearbound": 37
+          },
+          "by_class": {
+            "car": 37
+          }
+        },
+        "0.55": {
+          "total_counted": 31,
+          "by_direction": {
+            "nearbound": 31
+          },
+          "by_class": {
+            "car": 31
+          }
+        },
+        "0.6": {
+          "total_counted": 28,
+          "by_direction": {
+            "nearbound": 28
+          },
+          "by_class": {
+            "car": 28
+          }
+        },
+        "0.65": {
+          "total_counted": 13,
+          "by_direction": {
+            "nearbound": 13
+          },
+          "by_class": {
+            "car": 13
+          }
+        },
+        "0.7": {
+          "total_counted": 3,
+          "by_direction": {
+            "nearbound": 3
+          },
+          "by_class": {
+            "car": 3
+          }
+        }
+      },
+      "viz_frames": "/kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg",
+      "viz_timelines": "/kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_timelines.png"
+    },
+    {
+      "video": "0001542f-5ce3cf52",
+      "n_frames": 1213,
+      "frame_height": 720.0,
+      "frame_height_source": "bdd100k-constant",
+      "line_y_fraction": 0.5,
+      "line_y_px": 360.0,
+      "mot_rows": 12550,
+      "total_counted": 1,
+      "n_tracks_seen": 95,
+      "n_tracks_counted": 1,
+      "count_rate": 0.0105,
+      "by_class": {
+        "car": 1
+      },
+      "by_direction": {
+        "nearbound": 1
+      },
+      "class_composition": {
+        "car": 1.0
+      },
+      "directions": [
+        "nearbound"
+      ],
+      "rates": {
+        "observation_minutes": 0.674,
+        "vehicles_per_minute": 1.48,
+        "vehicles_per_5min": 7.42,
+        "vehicles_per_15min": 22.26
+      },
+      "events": [
+        {
+          "track_id": 2756,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 6,
+          "x": 482.0,
+          "y": 360.5,
+          "line_y": 360.0,
+          "n_frames": 56,
+          "net_disp": 43.4
+        }
+      ],
+      "line_sweep": {
+        "0.35": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.4": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.45": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.5": {
+          "total_counted": 1,
+          "by_direction": {
+            "nearbound": 1
+          },
+          "by_class": {
+            "car": 1
+          }
+        },
+        "0.55": {
+          "total_counted": 1,
+          "by_direction": {
+            "nearbound": 1
+          },
+          "by_class": {
+            "car": 1
+          }
+        },
+        "0.6": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.65": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.7": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        }
+      },
+      "viz_frames": "/kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg",
+      "viz_timelines": "/kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_timelines.png"
+    },
+    {
+      "video": "0001542f-7c670be8",
+      "n_frames": 1215,
+      "frame_height": 720.0,
+      "frame_height_source": "bdd100k-constant",
+      "line_y_fraction": 0.5,
+      "line_y_px": 360.0,
+      "mot_rows": 3710,
+      "total_counted": 2,
+      "n_tracks_seen": 67,
+      "n_tracks_counted": 2,
+      "count_rate": 0.0299,
+      "by_class": {
+        "car": 2
+      },
+      "by_direction": {
+        "nearbound": 2
+      },
+      "class_composition": {
+        "car": 1.0
+      },
+      "directions": [
+        "nearbound"
+      ],
+      "rates": {
+        "observation_minutes": 0.675,
+        "vehicles_per_minute": 2.96,
+        "vehicles_per_5min": 14.81,
+        "vehicles_per_15min": 44.44
+      },
+      "events": [
+        {
+          "track_id": 4092,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 867,
+          "x": 356.7,
+          "y": 361.5,
+          "line_y": 360.0,
+          "n_frames": 130,
+          "net_disp": 190.2
+        },
+        {
+          "track_id": 4105,
+          "cls": "car",
+          "direction": "nearbound",
+          "frame": 900,
+          "x": 497.9,
+          "y": 368.4,
+          "line_y": 360.0,
+          "n_frames": 145,
+          "net_disp": 146.5
+        }
+      ],
+      "line_sweep": {
+        "0.35": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.4": {
+          "total_counted": 0,
+          "by_direction": {},
+          "by_class": {}
+        },
+        "0.45": {
+          "total_counted": 1,
+          "by_direction": {
+            "nearbound": 1
+          },
+          "by_class": {
+            "car": 1
+          }
+        },
+        "0.5": {
+          "total_counted": 2,
+          "by_direction": {
+            "nearbound": 2
+          },
+          "by_class": {
+            "car": 2
+          }
+        },
+        "0.55": {
+          "total_counted": 5,
+          "by_direction": {
+            "nearbound": 5
+          },
+          "by_class": {
+            "car": 5
+          }
+        },
+        "0.6": {
+          "total_counted": 6,
+          "by_direction": {
+            "nearbound": 6
+          },
+          "by_class": {
+            "bike": 1,
+            "car": 5
+          }
+        },
+        "0.65": {
+          "total_counted": 5,
+          "by_direction": {
+            "nearbound": 5
+          },
+          "by_class": {
+            "car": 5
+          }
+        },
+        "0.7": {
+          "total_counted": 3,
+          "by_direction": {
+            "nearbound": 3
+          },
+          "by_class": {
+            "car": 3
+          }
+        }
+      },
+      "viz_frames": "/kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg",
+      "viz_timelines": "/kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_timelines.png"
+    }
+  ],
+  "summary": {
+    "total_counted": 54,
+    "n_tracks_seen": 575,
+    "n_tracks_counted": 54,
+    "by_class": {
+      "car": 54
+    },
+    "by_direction": {
+      "farbound": 4,
+      "nearbound": 50
+    },
+    "class_composition": {
+      "car": 1.0
+    },
+    "rates": {
+      "observation_minutes": 3.373,
+      "vehicles_per_minute": 16.01,
+      "vehicles_per_5min": 80.05,
+      "vehicles_per_15min": 240.14
+    }
+  },
+  "line_sweep": {
+    "0.35": {
+      "total_counted": 1,
+      "by_direction": {
+        "nearbound": 1
+      },
+      "n_videos_zero": 4
+    },
+    "0.4": {
+      "total_counted": 10,
+      "by_direction": {
+        "farbound": 6,
+        "nearbound": 4
+      },
+      "n_videos_zero": 2
+    },
+    "0.45": {
+      "total_counted": 21,
+      "by_direction": {
+        "farbound": 4,
+        "nearbound": 17
+      },
+      "n_videos_zero": 1
+    },
+    "0.5": {
+      "total_counted": 54,
+      "by_direction": {
+        "farbound": 4,
+        "nearbound": 50
+      },
+      "n_videos_zero": 0
+    },
+    "0.55": {
+      "total_counted": 45,
+      "by_direction": {
+        "farbound": 5,
+        "nearbound": 40
+      },
+      "n_videos_zero": 1
+    },
+    "0.6": {
+      "total_counted": 39,
+      "by_direction": {
+        "farbound": 2,
+        "nearbound": 37
+      },
+      "n_videos_zero": 2
+    },
+    "0.65": {
+      "total_counted": 20,
+      "by_direction": {
+        "nearbound": 20
+      },
+      "n_videos_zero": 2
+    },
+    "0.7": {
+      "total_counted": 8,
+      "by_direction": {
+        "nearbound": 8
+      },
+      "n_videos_zero": 2
+    }
+  },
+  "plots": [
+    "/kaggle/working/traffic_ai/plots/counting/count_by_class.png",
+    "/kaggle/working/traffic_ai/plots/counting/count_by_direction.png",
+    "/kaggle/working/traffic_ai/plots/counting/count_per_video.png",
+    "/kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg",
+    "/kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_timelines.png",
+    "/kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg",
+    "/kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_timelines.png",
+    "/kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg",
+    "/kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_timelines.png",
+    "/kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg",
+    "/kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_timelines.png",
+    "/kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg",
+    "/kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_timelines.png",
+    "/kaggle/working/traffic_ai/plots/counting/line_sweep.png"
+  ],
+  "integrity_checks": [
+    {
+      "name": "frame_height_resolved",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "frame heights from bdd100k-constant"
+    },
+    {
+      "name": "all_videos_counted",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "every video produced crossings"
+    },
+    {
+      "name": "count_not_line_sensitive",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "plateau = 25% of swept positions within 20% of best; spread(max/min over non-zero) = 54.0; positions counting zero = 0"
+    },
+    {
+      "name": "mot_inputs_found",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking"
+    },
+    {
+      "name": "counts_computed",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "54 crossing events over 54 tracks"
+    },
+    {
+      "name": "no_duplicate_counts",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "each track contributes at most one crossing event"
+    },
+    {
+      "name": "class_names_resolved",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "per-track classes loaded from the Phase 6 report"
+    },
+    {
+      "name": "both_directions_present",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "directions observed: ['farbound', 'nearbound']"
+    }
+  ]
+}

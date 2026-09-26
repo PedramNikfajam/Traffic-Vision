@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "stage": "05_evaluation",
+    "description": "Evaluation of best.pt",
+    "generated_at": "2026-09-06T16:18:14.837941",
+    "version": "0.2.0",
+    "all_checks_passed": true
+  },
+  "environment": {
+    "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "platform": "linux",
+    "timestamp": "2026-09-06T16:18:14.837963",
+    "pytorch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "gpu_devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "memory_gb": 14.6
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "memory_gb": 14.6
+      }
+    ],
+    "ultralytics_version": "8.4.142",
+    "opencv_version": "4.13.0",
+    "numpy_version": "2.0.2"
+  },
+  "model_path": "/kaggle/input/datasets/pedramnikfarjam/resumetrain/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt",
+  "dataset_yaml": "/kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml",
+  "eval_config": {
+    "conf": 0.001,
+    "iou": 0.6,
+    "imgsz": 960
+  },
+  "overall_metrics": {
+    "mAP50": 0.6454747170428357,
+    "mAP50_95": 0.4126211861620652,
+    "precision": 0.7216586625644579,
+    "recall": 0.5758211970585947
+  },
+  "per_class_ap": {
+    "car": {
+      "AP50": 0.8378
+    },
+    "truck": {
+      "AP50": 0.6821
+    },
+    "bus": {
+      "AP50": 0.6727
+    },
+    "bike": {
+      "AP50": 0.5405
+    },
+    "motor": {
+      "AP50": 0.4942
+    }
+  },
+  "metadata_groups": {
+    "daytime": 5258,
+    "overcast": 1239,
+    "night": 3929,
+    "clear": 5346,
+    "weather_undefined": 1157,
+    "rainy": 738,
+    "dawn_dusk": 778,
+    "snowy": 769,
+    "partly_cloudy": 738,
+    "timeofday_undefined": 35,
+    "foggy": 13
+  },
+  "all_results": {
+    "metrics/precision(B)": 0.7216586625644579,
+    "metrics/recall(B)": 0.5758211970585947,
+    "metrics/mAP50(B)": 0.6454747170428357,
+    "metrics/mAP50-95(B)": 0.4126211861620652,
+    "fitness": 0.4126211861620652
+  },
+  "integrity_checks": [
+    {
+      "name": "evaluation_completed",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "Evaluation finished"
+    },
+    {
+      "name": "map50_reasonable",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "mAP@50 = 0.6454747170428357"
+    }
+  ]
+}

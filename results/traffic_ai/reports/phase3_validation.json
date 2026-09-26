@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "stage": "03_dataset_validation",
+    "description": "Validate YOLO dataset integrity before training",
+    "generated_at": "2026-09-06T16:14:29.870718",
+    "version": "0.2.0",
+    "all_checks_passed": true
+  },
+  "train_statistics": {
+    "image_count": 69863,
+    "label_count": 69863,
+    "total_labels": 765066,
+    "empty_label_files": 564,
+    "malformed_lines": 0,
+    "invalid_class_ids": 0,
+    "invalid_coords": 0,
+    "duplicate_label_lines": 1,
+    "images_without_labels": 0,
+    "labels_without_images": 0,
+    "class_distribution": {
+      "car": 713210,
+      "bus": 11672,
+      "truck": 29971,
+      "bike": 7210,
+      "motor": 3002
+    }
+  },
+  "val_statistics": {
+    "image_count": 10000,
+    "label_count": 10000,
+    "total_labels": 109807,
+    "empty_label_files": 92,
+    "malformed_lines": 0,
+    "invalid_class_ids": 0,
+    "invalid_coords": 0,
+    "duplicate_label_lines": 0,
+    "images_without_labels": 0,
+    "labels_without_images": 0,
+    "class_distribution": {
+      "car": 102506,
+      "motor": 452,
+      "bus": 1597,
+      "truck": 4245,
+      "bike": 1007
+    }
+  },
+  "integrity_checks": [
+    {
+      "name": "dataset_yaml",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "dataset.yaml valid"
+    },
+    {
+      "name": "train_split",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "69863 images, 765066 labels"
+    },
+    {
+      "name": "val_split",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "10000 images, 109807 labels"
+    },
+    {
+      "name": "split_leakage",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "0 overlapping filenames"
+    },
+    {
+      "name": "class_coverage",
+      "status": "PASS",
+      "severity": "warning",
+      "detail": "All 5 classes present"
+    }
+  ]
+}

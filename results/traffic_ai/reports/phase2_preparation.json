@@ -1,0 +1,260 @@
+{
+  "_meta": {
+    "stage": "02_dataset_preparation",
+    "description": "Convert BDD100K annotations to YOLO format for vehicle detection",
+    "generated_at": "2026-09-06T16:01:44.216173",
+    "version": "0.2.0",
+    "all_checks_passed": true
+  },
+  "environment": {
+    "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "platform": "linux",
+    "timestamp": "2026-09-06T16:01:44.216182",
+    "pytorch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "gpu_devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "memory_gb": 14.6
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "memory_gb": 14.6
+      }
+    ],
+    "ultralytics_version": "8.4.142",
+    "opencv_version": "4.13.0",
+    "numpy_version": "2.0.2"
+  },
+  "config": {
+    "target_classes": [
+      "car",
+      "truck",
+      "bus",
+      "bike",
+      "motor"
+    ],
+    "class_to_id": {
+      "car": 0,
+      "truck": 1,
+      "bus": 2,
+      "bike": 3,
+      "motor": 4
+    },
+    "excluded_categories": [
+      "person",
+      "rider",
+      "traffic sign",
+      "traffic light",
+      "train"
+    ],
+    "non_bbox_categories": [
+      "lane",
+      "drivable area"
+    ],
+    "seed": 42
+  },
+  "fingerprints": {
+    "train_annotations": "79814bbb9574b1fe",
+    "val_annotations": "8a4db5e81baf9866",
+    "class_config": "2fa7e54b3abe2a10"
+  },
+  "source_paths": {
+    "train_annotations": "/kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_train.json",
+    "val_annotations": "/kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_val.json",
+    "train_images": "/kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/train",
+    "val_images": "/kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/val"
+  },
+  "output_paths": {
+    "data_root": "/kaggle/working/traffic_ai/data/vehicle_detection",
+    "dataset_yaml": "/kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml"
+  },
+  "train_statistics": {
+    "source_frames": 69863,
+    "unique_frames": 69863,
+    "converted_frames": 69863,
+    "frames_with_objects": 69299,
+    "empty_frames": 564,
+    "missing_images": 0,
+    "duplicate_frames": 0,
+    "unreadable_images": 0,
+    "source_images_found": 70000,
+    "object_counts_by_class": {
+      "car": 713211,
+      "bus": 11672,
+      "truck": 29971,
+      "bike": 7210,
+      "motor": 3002
+    },
+    "image_counts_by_class": {
+      "car": 69072,
+      "bus": 8993,
+      "truck": 18890,
+      "bike": 4343,
+      "motor": 2284
+    }
+  },
+  "val_statistics": {
+    "source_frames": 10000,
+    "unique_frames": 10000,
+    "converted_frames": 10000,
+    "frames_with_objects": 9908,
+    "empty_frames": 92,
+    "missing_images": 0,
+    "duplicate_frames": 0,
+    "unreadable_images": 0,
+    "source_images_found": 10000,
+    "object_counts_by_class": {
+      "car": 102506,
+      "motor": 452,
+      "bus": 1597,
+      "truck": 4245,
+      "bike": 1007
+    },
+    "image_counts_by_class": {
+      "motor": 334,
+      "car": 9879,
+      "bus": 1242,
+      "truck": 2689,
+      "bike": 578
+    }
+  },
+  "train_accounting": {
+    "source_total": 1941237,
+    "target_bbox": 765066,
+    "excluded_class": 521805,
+    "non_bbox_class": 654366,
+    "target_no_bbox": 0,
+    "invalid_bbox": 0,
+    "unknown_class": 0,
+    "accounted_total": 1941237,
+    "reconciles": true,
+    "target_by_class": {
+      "car": 713211,
+      "bus": 11672,
+      "truck": 29971,
+      "bike": 7210,
+      "motor": 3002
+    },
+    "excluded_by_class": {
+      "traffic light": 186117,
+      "traffic sign": 239686,
+      "person": 91349,
+      "rider": 4517,
+      "train": 136
+    },
+    "invalid_reasons": {}
+  },
+  "val_accounting": {
+    "source_total": 279237,
+    "target_bbox": 109807,
+    "excluded_class": 75719,
+    "non_bbox_class": 93711,
+    "target_no_bbox": 0,
+    "invalid_bbox": 0,
+    "unknown_class": 0,
+    "accounted_total": 279237,
+    "reconciles": true,
+    "target_by_class": {
+      "car": 102506,
+      "motor": 452,
+      "bus": 1597,
+      "truck": 4245,
+      "bike": 1007
+    },
+    "excluded_by_class": {
+      "traffic sign": 34908,
+      "traffic light": 26885,
+      "rider": 649,
+      "person": 13262,
+      "train": 15
+    },
+    "invalid_reasons": {}
+  },
+  "combined_statistics": {
+    "total_train_frames": 69863,
+    "total_val_frames": 10000,
+    "total_objects": 874873,
+    "objects_by_class": {
+      "car": 815717,
+      "bus": 13269,
+      "truck": 34216,
+      "bike": 8217,
+      "motor": 3454
+    },
+    "class_percentages": {
+      "car": 93.24,
+      "bus": 1.52,
+      "truck": 3.91,
+      "bike": 0.94,
+      "motor": 0.39
+    }
+  },
+  "metadata_distribution": {
+    "timeofday": {
+      "daytime": 41986,
+      "dawn/dusk": 5805,
+      "night": 31900,
+      "undefined": 172
+    },
+    "weather": {
+      "clear": 42690,
+      "rainy": 5808,
+      "undefined": 9276,
+      "snowy": 6318,
+      "overcast": 10009,
+      "partly cloudy": 5619,
+      "foggy": 143
+    },
+    "scene": {
+      "city street": 49628,
+      "highway": 19878,
+      "residential": 9327,
+      "parking lot": 426,
+      "undefined": 414,
+      "tunnel": 156,
+      "gas stations": 34
+    }
+  },
+  "integrity_checks": [
+    {
+      "name": "split_leakage",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "0 overlapping filenames"
+    },
+    {
+      "name": "train_accounting",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "Accounting verified: 1941237 annotations, 765066 selected targets"
+    },
+    {
+      "name": "val_accounting",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "Accounting verified: 279237 annotations, 109807 selected targets"
+    },
+    {
+      "name": "train_has_objects",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "69299 train frames with objects"
+    },
+    {
+      "name": "val_has_objects",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "9908 val frames with objects"
+    },
+    {
+      "name": "all_classes_present",
+      "status": "PASS",
+      "severity": "error",
+      "detail": "Found 5/5 classes"
+    }
+  ]
+}

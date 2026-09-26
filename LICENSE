@@ -1,0 +1,50 @@
+MIT License - Civil Engineering Research
+
+Copyright (c) 2026 Pedram Nikfarjam
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+DATA AND MODEL PROVENANCE
+
+This project is research/educational code written against public datasets:
+
+  * BDD100K images and labels - Berkeley DeepDrive (DDU), licensed CC BY-NC-SA 4.0
+    https://bdd-data.berkeley.edu/
+    Downloaded via the Kaggle mirror `solesensei/solesensei_bdd100k`.
+    The trained checkpoint is NOT redistributed here; train it yourself with
+    `scripts/04_train.py`.
+
+  * BDD100K box-track MOT ground truth (parquet), via the Kaggle mirror
+    `robikscube/driving-video-with-object-tracking`. Videos and labels are
+    likewise not redistributed here.
+
+  * Detection weights: YOLOv8s pre-trained on COCO (Ultralytics, AGPL-3.0),
+    fine-tuned on BDD100K. Ultralytics is a separate dependency with its own
+    licence; this repository's own code is MIT.
+
+  * No BDD100K images, videos or label files are committed to this repository.
+    `results/` contains only derived metrics, plots and the authors' own
+    annotations-on-plots figures.
+
+NOTE ON THE MIT LICENCE AND THE `src/` MODULES: the MIT licence above covers
+this repository's own code only. Ultralytics, which this project calls as a
+library, is AGPL-3.0. If you redistribute a combined work or a service that
+embeds Ultralytics, review those terms.

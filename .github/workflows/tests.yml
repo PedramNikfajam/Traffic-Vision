@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pytest:
+    name: pytest (python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest numpy pandas opencv-python-headless matplotlib pyarrow
+
+      - name: Run the suite
+        # No dataset, no GPU, no torch required: the 243 tests are pure logic
+        # over synthetic rows plus a golden check of the real BDD100K labels
+        # (skipped when the manifest is not present).
+        run: python -m pytest tests/ -q
+
+      - name: Import check
+        run: python -c "import src.config, src.count, src.log, src.strata, src.track, src.viz, src.viz_count, src.dataset.convert; print('all modules import')"

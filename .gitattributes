@@ -1,0 +1,19 @@
+# Normalise line endings so the repo is byte-identical on every platform.
+* text=auto eol=lf
+
+*.py    text diff=python
+*.md    text
+*.json  text
+*.yml   text
+*.yaml  text
+*.txt   text
+*.ipynb text
+
+# Binary - never line-ending translated, never diffed
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.pdf  binary
+*.pt   binary
+*.parquet binary
+*.zip  binary

@@ -1,0 +1,66 @@
+==============================================================================
+PHASE 7 - LINE SELECTION
+==============================================================================
+chosen: 0.55  rule: gt-mae
+   0.45  MAE=5.8   gt=29   pred=54   coverage= 43%
+    0.5  MAE=4.4   gt=68   pred=90   coverage=100%   <= eligible
+   0.55  MAE=1.8   gt=51   pred=54   coverage= 75%   <= eligible
+    0.6  MAE=2.0   gt=29   pred=39   coverage= 43%
+   0.65  MAE=1.0   gt=17   pred=20   coverage= 25%
+predicted totals per position: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+==============================================================================
+PHASE 7 - COUNTING ACCURACY vs GT
+==============================================================================
+{
+ "n_videos_compared": 5,
+ "n_videos_excluded_from_mape": 1,
+ "gt_total": 51,
+ "pred_total": 54,
+ "MAE": 1.8,
+ "RMSE": 2.49,
+ "MAPE_pct": 24.01,
+ "counting_accuracy": 0.8235,
+ "counting_accuracy_signed": 0.8235
+}
+  0000f77c-6257be58        daytime    pred= 11  gt=  10
+  0000f77c-62c2a288        dawn/dusk  pred=  0  gt=   0
+  0000f77c-cb820c98        dawn/dusk  pred= 33  gt=  28
+  0001542f-5ce3cf52        night      pred=  1  gt=   2
+  0001542f-7c670be8        night      pred=  9  gt=  11
+==============================================================================
+PHASE 6 - TRACKING STRATIFIED BY SCENE METADATA
+==============================================================================
+  by timeofday:
+    dawn/dusk      n=2  MOTA_pooled=0.4061  MOTA_mean=0.3574  MOTP=0.7965  IDF1=0.6896  TP/FP/FN/IDSW=2056/1084/256/33  [LOW SAMPLE]
+    daytime        n=1  MOTA_pooled=0.7682  MOTA_mean=0.7682  MOTP=0.8684  IDF1=0.7505  TP/FP/FN/IDSW=984/94/142/25  [LOW SAMPLE]
+    night          n=2  MOTA_pooled=0.4853  MOTA_mean=0.5146  MOTP=0.8133  IDF1=0.7366  TP/FP/FN/IDSW=1902/832/243/29  [LOW SAMPLE]
+    excluded_without_metrics=0
+  by scene:
+    city street    n=2  MOTA_pooled=0.5818  MOTA_mean=0.6055  MOTP=0.8493  IDF1=0.7308  TP/FP/FN/IDSW=2377/806/258/38  [LOW SAMPLE]
+    highway        n=2  MOTA_pooled=0.3081  MOTA_mean=0.3513  MOTP=0.773  IDF1=0.7061  TP/FP/FN/IDSW=1330/823/228/27  [LOW SAMPLE]
+    residential    n=1  MOTA_pooled=0.5986  MOTA_mean=0.5986  MOTP=0.8434  IDF1=0.7292  TP/FP/FN/IDSW=1235/381/155/22  [LOW SAMPLE]
+    excluded_without_metrics=0
+==============================================================================
+PHASE 7 - COUNTS STRATIFIED BY SCENE METADATA
+==============================================================================
+  by timeofday:
+    dawn/dusk      n=2  counted=33  24.48 veh/min  MAE=2.5  dirs={'nearbound': 33}  [LOW SAMPLE]
+    daytime        n=1  counted=11  16.27 veh/min  MAE=1.0  dirs={'farbound': 7, 'nearbound': 4}  [LOW SAMPLE]
+    night          n=2  counted=10  7.41 veh/min  MAE=1.5  dirs={'farbound': 3, 'nearbound': 7}  [LOW SAMPLE]
+  by scene:
+    city street    n=2  counted=12  8.89 veh/min  MAE=1.0  dirs={'farbound': 7, 'nearbound': 5}  [LOW SAMPLE]
+    highway        n=2  counted=9  6.68 veh/min  MAE=1.0  dirs={'farbound': 3, 'nearbound': 6}  [LOW SAMPLE]
+    residential    n=1  counted=33  48.89 veh/min  MAE=5.0  dirs={'nearbound': 33}  [LOW SAMPLE]
+  by weather:
+    clear          n=5  counted=54  16.01 veh/min  MAE=1.8  dirs={'farbound': 10, 'nearbound': 44}
+==============================================================================
+PHASE 5 - DETECTION, OVERALL vs DAY/NIGHT
+==============================================================================
+overall: {"mAP50": 0.6454747170428357, "mAP50_95": 0.4126211861620652, "precision": 0.7216586625644579, "recall": 0.5758211970585947}
+stratified groups: NONE - stratified_metrics missing
+==============================================================================
+INTEGRITY CHECKS THAT FAILED
+==============================================================================
+  [warning] phase6/gt_frame_coverage_sufficient: GT annotates 16.6% of predicted frames; MOT metrics computed on annotated frames only (restricted=True). Low coverage means MOTP/TP are the trustworthy numbers; IDF1 measures re-identification across unannotated gaps.
+  [warning] phase7/all_videos_counted: 1 video(s) counted ZERO: ['0000f77c-62c2a288'] - check the timeline plots and the line sweep
+  [warning] phase7/count_not_line_sensitive: plateau = 20% of swept positions within 20% of best; spread(max/min over non-zero) = 4.5; positions counting zero = 0 - too narrow to report as a traffic volume

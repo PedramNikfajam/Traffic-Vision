@@ -1,0 +1,23 @@
+# traffic_ai requirements
+# Target environment: Kaggle (PyTorch 2.x + CUDA, Python 3.10/3.11)
+
+# Core (preinstalled on Kaggle - pinned here for local reproducibility)
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+pyyaml>=6.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# Detection framework (Phase 4+)
+# Pinned to the version validated on Kaggle for the BDD100K vehicle runs.
+# NOTE: 8.4.136's built-in plot_results() crashes on odd loss/metric column
+# counts ("index 12 out of bounds") - src/viz.py renders our curves instead.
+ultralytics==8.4.136
+
+# Optional: TensorFlow only needed for Phase 1 GPU cross-check.
+# Kaggle preinstalls it; do not install locally just for this project.
+# tensorflow>=2.10.0
+
+# Optional: future tracking phase
+# supervision>=0.19.0
