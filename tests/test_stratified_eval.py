@@ -17,6 +17,25 @@ _PROJECT_DIR = _TEST_DIR.parent
 if str(_PROJECT_DIR) not in sys.path:
     sys.path.insert(0, str(_PROJECT_DIR))
 
+# The stratified path writes a per-group dataset.yaml, so it needs PyYAML. The
+# function under test degrades gracefully without it (logs a warning and returns
+# {}), which means these tests must SKIP rather than fail - otherwise a
+# contributor without PyYAML sees three failures that are not real defects.
+# This is exactly what CI did before pyyaml was added to its install list.
+#
+# A real import is used rather than importlib.util.find_spec: find_spec reports
+# a BROKEN yaml module as present, and the ImportError then surfaces inside the
+# test as a failure. CI additionally asserts PyYAML is importable, so a broken
+# install fails the build instead of quietly skipping the coverage.
+try:
+    import yaml  # noqa: F401
+    _HAS_YAML = True
+except Exception:            # pragma: no cover - environment dependent
+    _HAS_YAML = False
+
+pytestmark = pytest.mark.skipif(
+    not _HAS_YAML, reason="PyYAML is required by the stratified evaluation path")
+
 
 class _FakeBox:
     """Minimal stand-in for ultralytics DetMetrics.box."""

@@ -25,7 +25,14 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install pytest numpy pandas opencv-python-headless matplotlib pyarrow
+          pip install pytest numpy pandas opencv-python-headless matplotlib pyarrow pyyaml
+
+      - name: Assert optional deps are importable
+        # The suite skips the stratified-evaluation tests when PyYAML is absent,
+        # so a broken install would look like a green build with less coverage.
+        # Assert the dependency here to turn that into a loud failure.
+        run: |
+          python -c "import yaml, cv2, numpy, pandas, matplotlib, pyarrow; print('optional deps OK')"
 
       - name: Run the suite
         # No dataset, no GPU, no torch required: the 243 tests are pure logic
