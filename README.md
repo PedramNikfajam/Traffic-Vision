@@ -10,6 +10,11 @@ numbers.
 Everything runs on Kaggle (Tesla T4). **No model weights or BDD100K data are
 committed here** — you train it yourself in one stage.
 
+📓 **Published notebook with every result, figure and annotated frame rendered:
+[kaggle.com/code/pedramnikfarjam2004/traffic-vision](https://www.kaggle.com/code/pedramnikfarjam2004/traffic-vision)**
+— it clones this repository and renders `kaggle/kaggle_showcase.ipynb`, so it
+always reflects the current commit rather than a stale snapshot.
+
 **Read this before trusting a number.** Two of the three headline comparisons
 rest on **five 40-second clips**, and the daytime stratum is a *single*
 city-street clip while both highway clips are night/dawn-dusk. With n = 1/2/2,
