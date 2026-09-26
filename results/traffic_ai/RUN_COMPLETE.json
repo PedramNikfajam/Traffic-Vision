@@ -1,0 +1,30 @@
+{
+  "run_date": "2026-09-26",
+  "all_checks_passed": false,
+  "failed_checks": [
+    "phase5 stratified_metrics",
+    "phase5 not the stale archive"
+  ],
+  "line_position_chosen": "0.55",
+  "counting_accuracy": {
+    "n_videos_compared": 5,
+    "n_videos_excluded_from_mape": 1,
+    "gt_total": 51,
+    "pred_total": 54,
+    "MAE": 1.8,
+    "RMSE": 2.49,
+    "MAPE_pct": 24.01,
+    "counting_accuracy": 0.8235,
+    "counting_accuracy_signed": 0.8235
+  },
+  "stratified_mot": {
+    "dawn/dusk": 0.4061,
+    "daytime": 0.7682,
+    "night": 0.4853
+  },
+  "fp_audit_bands": {
+    "localisation": 711,
+    "gt_sampling": 19,
+    "unexplained": 1280
+  }
+}

@@ -1,0 +1,203 @@
+2026-09-02 03:51:36 | INFO    | phase2 | ============================================================
+2026-09-02 03:51:36 | INFO    | phase2 | BDD100K VEHICLE DETECTION DATASET PREPARATION
+2026-09-02 03:51:36 | INFO    | phase2 | ============================================================
+2026-09-02 03:51:36 | INFO    | phase2 | Started at: 2026-09-02T03:51:36.315277
+2026-09-02 03:51:36 | INFO    | phase2 | PASS  | All source paths verified
+2026-09-02 03:51:41 | INFO    | phase2 | Computing source data fingerprints...
+2026-09-02 03:51:41 | INFO    | phase2 | Fingerprints: {'train_annotations': '79814bbb9574b1fe', 'val_annotations': '8a4db5e81baf9866', 'class_config': '2fa7e54b3abe2a10'}
+2026-09-02 03:51:41 | INFO    | phase2 | ============================================================
+2026-09-02 03:51:41 | INFO    | phase2 | PROCESSING TRAIN SPLIT
+2026-09-02 03:51:41 | INFO    | phase2 | ============================================================
+2026-09-02 03:51:41 | INFO    | phase2 | Loading annotations from /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_train.json
+2026-09-02 03:52:00 | INFO    | phase2 | Loaded 69863 frames
+2026-09-02 03:52:00 | INFO    | phase2 | Building image index for /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/train...
+2026-09-02 03:54:23 | INFO    | phase2 | Found 70000 unique images
+2026-09-02 04:05:21 | INFO    | phase2 | Converted: 69863 frames (69299 with objects, 564 empty)
+2026-09-02 04:05:21 | INFO    | phase2 | Missing images: 0, Duplicate frames: 0, Unreadable: 0
+2026-09-02 04:05:21 | INFO    | phase2 |   car: 713211 objects in 69072 images
+2026-09-02 04:05:21 | INFO    | phase2 |   truck: 29971 objects in 18890 images
+2026-09-02 04:05:21 | INFO    | phase2 |   bus: 11672 objects in 8993 images
+2026-09-02 04:05:21 | INFO    | phase2 |   bike: 7210 objects in 4343 images
+2026-09-02 04:05:21 | INFO    | phase2 |   motor: 3002 objects in 2284 images
+2026-09-02 04:05:21 | INFO    | phase2 | PASS  | Accounting verified: 1941237 annotations, 765066 selected targets
+2026-09-02 04:05:22 | INFO    | phase2 | ============================================================
+2026-09-02 04:05:22 | INFO    | phase2 | PROCESSING VAL SPLIT
+2026-09-02 04:05:22 | INFO    | phase2 | ============================================================
+2026-09-02 04:05:22 | INFO    | phase2 | Loading annotations from /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_val.json
+2026-09-02 04:05:24 | INFO    | phase2 | Loaded 10000 frames
+2026-09-02 04:05:24 | INFO    | phase2 | Building image index for /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/val...
+2026-09-02 04:05:37 | INFO    | phase2 | Found 10000 unique images
+2026-09-02 04:06:42 | INFO    | phase2 | Converted: 10000 frames (9908 with objects, 92 empty)
+2026-09-02 04:06:42 | INFO    | phase2 | Missing images: 0, Duplicate frames: 0, Unreadable: 0
+2026-09-02 04:06:42 | INFO    | phase2 |   car: 102506 objects in 9879 images
+2026-09-02 04:06:42 | INFO    | phase2 |   truck: 4245 objects in 2689 images
+2026-09-02 04:06:42 | INFO    | phase2 |   bus: 1597 objects in 1242 images
+2026-09-02 04:06:42 | INFO    | phase2 |   bike: 1007 objects in 578 images
+2026-09-02 04:06:42 | INFO    | phase2 |   motor: 452 objects in 334 images
+2026-09-02 04:06:42 | INFO    | phase2 | PASS  | Accounting verified: 279237 annotations, 109807 selected targets
+2026-09-02 04:06:42 | INFO    | phase2 | PASS  | No split leakage: train=69863, val=10000, overlap=0
+2026-09-02 04:06:42 | INFO    | phase2 | ============================================================
+2026-09-02 04:06:42 | INFO    | phase2 | WRITING YOLO DATASET
+2026-09-02 04:06:42 | INFO    | phase2 | ============================================================
+2026-09-02 04:06:53 | INFO    | phase2 | Wrote 69863 label files and image links for train
+2026-09-02 04:06:55 | INFO    | phase2 | Wrote 10000 label files and image links for val
+2026-09-02 04:06:55 | INFO    | phase2 | Wrote dataset.yaml: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-02 04:06:57 | INFO    | phase2 | Wrote manifest: /kaggle/working/traffic_ai/reports/manifest_train.json (69863 entries)
+2026-09-02 04:06:57 | INFO    | phase2 | Wrote manifest: /kaggle/working/traffic_ai/reports/manifest_val.json (10000 entries)
+2026-09-02 04:06:58 | INFO    | phase2 | ============================================================
+2026-09-02 04:06:58 | INFO    | phase2 | INTEGRITY CHECK SUMMARY
+2026-09-02 04:06:58 | INFO    | phase2 | ============================================================
+2026-09-02 04:06:58 | INFO    | phase2 | PASS  | split_leakage: 0 overlapping filenames
+2026-09-02 04:06:58 | INFO    | phase2 | PASS  | train_accounting: Accounting verified: 1941237 annotations, 765066 selected targets
+2026-09-02 04:06:58 | INFO    | phase2 | PASS  | val_accounting: Accounting verified: 279237 annotations, 109807 selected targets
+2026-09-02 04:06:58 | INFO    | phase2 | PASS  | train_has_objects: 69299 train frames with objects
+2026-09-02 04:06:58 | INFO    | phase2 | PASS  | val_has_objects: 9908 val frames with objects
+2026-09-02 04:06:58 | INFO    | phase2 | PASS  | all_classes_present: Found 5/5 classes
+2026-09-02 04:06:58 | INFO    | phase2 | Overall: ALL CHECKS PASSED
+2026-09-02 04:06:58 | INFO    | phase2 | ============================================================
+2026-09-02 04:06:58 | INFO    | phase2 | PHASE 2 COMPLETE
+2026-09-02 04:06:58 | INFO    | phase2 | ============================================================
+2026-09-02 04:06:58 | INFO    | phase2 | Dataset:      /kaggle/working/traffic_ai/data/vehicle_detection
+2026-09-02 04:06:58 | INFO    | phase2 | dataset.yaml: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-02 04:06:58 | INFO    | phase2 | Report:       /kaggle/working/traffic_ai/reports/phase2_preparation.json
+2026-09-02 04:06:58 | INFO    | phase2 | Train frames: 69863 (69299 with objects)
+2026-09-02 04:06:58 | INFO    | phase2 | Val frames:   10000 (9908 with objects)
+2026-09-02 04:06:58 | INFO    | phase2 | Total objects: 874873
+2026-09-26 15:27:07 | INFO    | phase2 | ============================================================
+2026-09-26 15:27:07 | INFO    | phase2 | BDD100K VEHICLE DETECTION DATASET PREPARATION
+2026-09-26 15:27:07 | INFO    | phase2 | ============================================================
+2026-09-26 15:27:07 | INFO    | phase2 | Started at: 2026-09-26T15:27:07.129127
+2026-09-26 15:27:07 | INFO    | phase2 | PASS  | All source paths verified
+2026-09-26 15:27:07 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/train/images
+2026-09-26 15:27:08 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/train/labels
+2026-09-26 15:27:08 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/val/images
+2026-09-26 15:27:08 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/val/labels
+2026-09-26 15:27:10 | INFO    | phase2 | Computing source data fingerprints...
+2026-09-26 15:27:10 | INFO    | phase2 | Fingerprints: {'train_annotations': '79814bbb9574b1fe', 'val_annotations': '8a4db5e81baf9866', 'class_config': '2fa7e54b3abe2a10'}
+2026-09-26 15:27:10 | INFO    | phase2 | ============================================================
+2026-09-26 15:27:10 | INFO    | phase2 | PROCESSING TRAIN SPLIT
+2026-09-26 15:27:10 | INFO    | phase2 | ============================================================
+2026-09-26 15:27:10 | INFO    | phase2 | Loading annotations from /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_train.json
+2026-09-26 15:27:34 | INFO    | phase2 | Loaded 69863 frames
+2026-09-26 15:27:34 | INFO    | phase2 | Building image index for /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/train...
+2026-09-26 15:30:48 | INFO    | phase2 | Found 70000 unique images
+2026-09-26 15:43:44 | INFO    | phase2 | Converted: 69863 frames (69299 with objects, 564 empty)
+2026-09-26 15:43:44 | INFO    | phase2 | Missing images: 0, Duplicate frames: 0, Unreadable: 0
+2026-09-26 15:43:44 | INFO    | phase2 |   car: 713211 objects in 69072 images
+2026-09-26 15:43:44 | INFO    | phase2 |   truck: 29971 objects in 18890 images
+2026-09-26 15:43:44 | INFO    | phase2 |   bus: 11672 objects in 8993 images
+2026-09-26 15:43:44 | INFO    | phase2 |   bike: 7210 objects in 4343 images
+2026-09-26 15:43:44 | INFO    | phase2 |   motor: 3002 objects in 2284 images
+2026-09-26 15:43:44 | INFO    | phase2 | PASS  | Accounting verified: 1941237 annotations, 765066 selected targets
+2026-09-26 15:43:45 | INFO    | phase2 | ============================================================
+2026-09-26 15:43:45 | INFO    | phase2 | PROCESSING VAL SPLIT
+2026-09-26 15:43:45 | INFO    | phase2 | ============================================================
+2026-09-26 15:43:45 | INFO    | phase2 | Loading annotations from /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_val.json
+2026-09-26 15:43:48 | INFO    | phase2 | Loaded 10000 frames
+2026-09-26 15:43:48 | INFO    | phase2 | Building image index for /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/val...
+2026-09-26 15:44:13 | INFO    | phase2 | Found 10000 unique images
+2026-09-26 15:45:50 | INFO    | phase2 | Converted: 10000 frames (9908 with objects, 92 empty)
+2026-09-26 15:45:50 | INFO    | phase2 | Missing images: 0, Duplicate frames: 0, Unreadable: 0
+2026-09-26 15:45:50 | INFO    | phase2 |   car: 102506 objects in 9879 images
+2026-09-26 15:45:50 | INFO    | phase2 |   truck: 4245 objects in 2689 images
+2026-09-26 15:45:50 | INFO    | phase2 |   bus: 1597 objects in 1242 images
+2026-09-26 15:45:50 | INFO    | phase2 |   bike: 1007 objects in 578 images
+2026-09-26 15:45:50 | INFO    | phase2 |   motor: 452 objects in 334 images
+2026-09-26 15:45:50 | INFO    | phase2 | PASS  | Accounting verified: 279237 annotations, 109807 selected targets
+2026-09-26 15:45:50 | INFO    | phase2 | PASS  | No split leakage: train=69863, val=10000, overlap=0
+2026-09-26 15:45:50 | INFO    | phase2 | ============================================================
+2026-09-26 15:45:50 | INFO    | phase2 | WRITING YOLO DATASET
+2026-09-26 15:45:50 | INFO    | phase2 | ============================================================
+2026-09-26 15:46:01 | INFO    | phase2 | Wrote 69863 label files and image links for train
+2026-09-26 15:46:03 | INFO    | phase2 | Wrote 10000 label files and image links for val
+2026-09-26 15:46:03 | INFO    | phase2 | Wrote dataset.yaml: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-26 15:46:05 | INFO    | phase2 | Wrote manifest: /kaggle/working/traffic_ai/reports/manifest_train.json (69863 entries)
+2026-09-26 15:46:05 | INFO    | phase2 | Wrote manifest: /kaggle/working/traffic_ai/reports/manifest_val.json (10000 entries)
+2026-09-26 15:46:06 | INFO    | phase2 | ============================================================
+2026-09-26 15:46:06 | INFO    | phase2 | INTEGRITY CHECK SUMMARY
+2026-09-26 15:46:06 | INFO    | phase2 | ============================================================
+2026-09-26 15:46:06 | INFO    | phase2 | PASS  | split_leakage: 0 overlapping filenames
+2026-09-26 15:46:06 | INFO    | phase2 | PASS  | train_accounting: Accounting verified: 1941237 annotations, 765066 selected targets
+2026-09-26 15:46:06 | INFO    | phase2 | PASS  | val_accounting: Accounting verified: 279237 annotations, 109807 selected targets
+2026-09-26 15:46:06 | INFO    | phase2 | PASS  | train_has_objects: 69299 train frames with objects
+2026-09-26 15:46:06 | INFO    | phase2 | PASS  | val_has_objects: 9908 val frames with objects
+2026-09-26 15:46:06 | INFO    | phase2 | PASS  | all_classes_present: Found 5/5 classes
+2026-09-26 15:46:06 | INFO    | phase2 | Overall: ALL CHECKS PASSED
+2026-09-26 15:46:06 | INFO    | phase2 | ============================================================
+2026-09-26 15:46:06 | INFO    | phase2 | PHASE 2 COMPLETE
+2026-09-26 15:46:06 | INFO    | phase2 | ============================================================
+2026-09-26 15:46:06 | INFO    | phase2 | Dataset:      /kaggle/working/traffic_ai/data/vehicle_detection
+2026-09-26 15:46:06 | INFO    | phase2 | dataset.yaml: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-26 15:46:06 | INFO    | phase2 | Report:       /kaggle/working/traffic_ai/reports/phase2_preparation.json
+2026-09-26 15:46:06 | INFO    | phase2 | Train frames: 69863 (69299 with objects)
+2026-09-26 15:46:06 | INFO    | phase2 | Val frames:   10000 (9908 with objects)
+2026-09-26 15:46:06 | INFO    | phase2 | Total objects: 874873
+2026-09-26 16:14:58 | INFO    | phase2 | ============================================================
+2026-09-26 16:14:58 | INFO    | phase2 | BDD100K VEHICLE DETECTION DATASET PREPARATION
+2026-09-26 16:14:58 | INFO    | phase2 | ============================================================
+2026-09-26 16:14:58 | INFO    | phase2 | Started at: 2026-09-26T16:14:58.555436
+2026-09-26 16:14:58 | INFO    | phase2 | PASS  | All source paths verified
+2026-09-26 16:14:59 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/train/images
+2026-09-26 16:15:01 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/train/labels
+2026-09-26 16:15:01 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/val/images
+2026-09-26 16:15:01 | INFO    | phase2 | Cleaned: /kaggle/working/traffic_ai/data/vehicle_detection/val/labels
+2026-09-26 16:15:03 | INFO    | phase2 | Computing source data fingerprints...
+2026-09-26 16:15:03 | INFO    | phase2 | Fingerprints: {'train_annotations': '79814bbb9574b1fe', 'val_annotations': '8a4db5e81baf9866', 'class_config': '2fa7e54b3abe2a10'}
+2026-09-26 16:15:03 | INFO    | phase2 | ============================================================
+2026-09-26 16:15:03 | INFO    | phase2 | PROCESSING TRAIN SPLIT
+2026-09-26 16:15:03 | INFO    | phase2 | ============================================================
+2026-09-26 16:15:03 | INFO    | phase2 | Loading annotations from /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_train.json
+2026-09-26 16:15:15 | INFO    | phase2 | Loaded 69863 frames
+2026-09-26 16:15:15 | INFO    | phase2 | Building image index for /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/train...
+2026-09-26 16:16:34 | INFO    | phase2 | Found 70000 unique images
+2026-09-26 16:18:23 | INFO    | phase2 | Converted: 69863 frames (69299 with objects, 564 empty)
+2026-09-26 16:18:23 | INFO    | phase2 | Missing images: 0, Duplicate frames: 0, Unreadable: 0
+2026-09-26 16:18:23 | INFO    | phase2 |   car: 713211 objects in 69072 images
+2026-09-26 16:18:23 | INFO    | phase2 |   truck: 29971 objects in 18890 images
+2026-09-26 16:18:23 | INFO    | phase2 |   bus: 11672 objects in 8993 images
+2026-09-26 16:18:23 | INFO    | phase2 |   bike: 7210 objects in 4343 images
+2026-09-26 16:18:23 | INFO    | phase2 |   motor: 3002 objects in 2284 images
+2026-09-26 16:18:23 | INFO    | phase2 | PASS  | Accounting verified: 1941237 annotations, 765066 selected targets
+2026-09-26 16:18:24 | INFO    | phase2 | ============================================================
+2026-09-26 16:18:24 | INFO    | phase2 | PROCESSING VAL SPLIT
+2026-09-26 16:18:24 | INFO    | phase2 | ============================================================
+2026-09-26 16:18:24 | INFO    | phase2 | Loading annotations from /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k_labels_release/bdd100k/labels/bdd100k_labels_images_val.json
+2026-09-26 16:18:25 | INFO    | phase2 | Loaded 10000 frames
+2026-09-26 16:18:25 | INFO    | phase2 | Building image index for /kaggle/input/datasets/solesensei/solesensei_bdd100k/bdd100k/bdd100k/images/100k/val...
+2026-09-26 16:18:39 | INFO    | phase2 | Found 10000 unique images
+2026-09-26 16:18:50 | INFO    | phase2 | Converted: 10000 frames (9908 with objects, 92 empty)
+2026-09-26 16:18:50 | INFO    | phase2 | Missing images: 0, Duplicate frames: 0, Unreadable: 0
+2026-09-26 16:18:50 | INFO    | phase2 |   car: 102506 objects in 9879 images
+2026-09-26 16:18:50 | INFO    | phase2 |   truck: 4245 objects in 2689 images
+2026-09-26 16:18:50 | INFO    | phase2 |   bus: 1597 objects in 1242 images
+2026-09-26 16:18:50 | INFO    | phase2 |   bike: 1007 objects in 578 images
+2026-09-26 16:18:50 | INFO    | phase2 |   motor: 452 objects in 334 images
+2026-09-26 16:18:50 | INFO    | phase2 | PASS  | Accounting verified: 279237 annotations, 109807 selected targets
+2026-09-26 16:18:50 | INFO    | phase2 | PASS  | No split leakage: train=69863, val=10000, overlap=0
+2026-09-26 16:18:51 | INFO    | phase2 | ============================================================
+2026-09-26 16:18:51 | INFO    | phase2 | WRITING YOLO DATASET
+2026-09-26 16:18:51 | INFO    | phase2 | ============================================================
+2026-09-26 16:19:02 | INFO    | phase2 | Wrote 69863 label files and image links for train
+2026-09-26 16:19:03 | INFO    | phase2 | Wrote 10000 label files and image links for val
+2026-09-26 16:19:03 | INFO    | phase2 | Wrote dataset.yaml: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-26 16:19:05 | INFO    | phase2 | Wrote manifest: /kaggle/working/traffic_ai/reports/manifest_train.json (69863 entries)
+2026-09-26 16:19:05 | INFO    | phase2 | Wrote manifest: /kaggle/working/traffic_ai/reports/manifest_val.json (10000 entries)
+2026-09-26 16:19:06 | INFO    | phase2 | ============================================================
+2026-09-26 16:19:06 | INFO    | phase2 | INTEGRITY CHECK SUMMARY
+2026-09-26 16:19:06 | INFO    | phase2 | ============================================================
+2026-09-26 16:19:06 | INFO    | phase2 | PASS  | split_leakage: 0 overlapping filenames
+2026-09-26 16:19:06 | INFO    | phase2 | PASS  | train_accounting: Accounting verified: 1941237 annotations, 765066 selected targets
+2026-09-26 16:19:06 | INFO    | phase2 | PASS  | val_accounting: Accounting verified: 279237 annotations, 109807 selected targets
+2026-09-26 16:19:06 | INFO    | phase2 | PASS  | train_has_objects: 69299 train frames with objects
+2026-09-26 16:19:06 | INFO    | phase2 | PASS  | val_has_objects: 9908 val frames with objects
+2026-09-26 16:19:06 | INFO    | phase2 | PASS  | all_classes_present: Found 5/5 classes
+2026-09-26 16:19:06 | INFO    | phase2 | Overall: ALL CHECKS PASSED
+2026-09-26 16:19:06 | INFO    | phase2 | ============================================================
+2026-09-26 16:19:06 | INFO    | phase2 | PHASE 2 COMPLETE
+2026-09-26 16:19:06 | INFO    | phase2 | ============================================================
+2026-09-26 16:19:06 | INFO    | phase2 | Dataset:      /kaggle/working/traffic_ai/data/vehicle_detection
+2026-09-26 16:19:06 | INFO    | phase2 | dataset.yaml: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-26 16:19:06 | INFO    | phase2 | Report:       /kaggle/working/traffic_ai/reports/phase2_preparation.json
+2026-09-26 16:19:06 | INFO    | phase2 | Train frames: 69863 (69299 with objects)
+2026-09-26 16:19:06 | INFO    | phase2 | Val frames:   10000 (9908 with objects)
+2026-09-26 16:19:06 | INFO    | phase2 | Total objects: 874873

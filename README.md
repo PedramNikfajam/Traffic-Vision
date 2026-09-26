@@ -90,6 +90,16 @@ clip counted zero — an aggregate bar chart cannot.
 
 ![trajectories, daytime clip](assets/timelines_daytime.png)
 
+### Counts by time of day, and their direction split
+
+Strata are read from the BDD100K manifests and joined by video id — never
+inferred by eye. A hand-written scene list for these clips disagreed with the
+dataset on three of five.
+
+![crossings per time-of-day stratum](assets/count_by_timeofday.png)
+
+![crossings per direction](assets/count_by_direction.png)
+
 ---
 
 ## The interesting finding: what the night false positives actually are
@@ -266,9 +276,12 @@ These are real and are stated rather than buried:
    calibrated, so no geographic direction (northbound/inbound) and no lane
    identity is claimed. No speed is reported, because that would require
    calibration this project does not have.
-7. Day/night **detection** metrics are not yet in `results/` — the
+7. Day/night **detection** metrics are not in `results/` — the
    `05_evaluate.py` stratified run has not been re-executed since the feature
-   landed.
+   landed. `results/traffic_ai/RUN_COMPLETE.json` records this explicitly
+   (`"failed_checks": ["phase5 stratified_metrics", "phase5 not the stale
+   archive"]`), and the showcase notebook prints the same warning rather than
+   substituting a remembered number. Every other stage is complete.
 
 ## Tests
 

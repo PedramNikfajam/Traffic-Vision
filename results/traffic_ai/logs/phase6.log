@@ -1,0 +1,360 @@
+2026-09-06 21:26:14 | INFO    | phase6 | ============================================================
+2026-09-06 21:26:14 | INFO    | phase6 | PHASE 6: MULTI-OBJECT TRACKING
+2026-09-06 21:26:14 | INFO    | phase6 | ============================================================
+2026-09-06 21:26:17 | INFO    | phase6 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-06 21:26:17 | INFO    | phase6 | Videos: 5 (tracker=botsort.yaml, imgsz=960, conf=0.25)
+2026-09-06 21:26:17 | INFO    | phase6 | GT parquet shards: 1 (for MOTA/IDF1 evaluation)
+2026-09-06 21:26:19 | INFO    | phase6 | ============================================================
+2026-09-06 21:26:19 | INFO    | phase6 | Tracking: 0000f77c-6257be58.mov
+2026-09-06 21:26:19 | INFO    | phase6 | ============================================================
+2026-09-06 21:27:28 | INFO    | phase6 |   0000f77c-6257be58.mov: 1217 frames, 100 tracks, classes={'car': 98, 'truck': 2}
+2026-09-06 21:27:32 | WARNING | phase6 | WARN  |   GT evaluation failed for '0000f77c-6257be58': GT parquet missing box columns (have: ['name', 'videoName', 'frameIndex', 'id', 'category', 'attributes.crowd', 'attributes.occluded', 'attributes.truncated', 'box2d.x1', 'box2d.x2', 'box2d.y1', 'box2d.y2', 'haveVideo'])
+2026-09-06 21:27:32 | INFO    | phase6 | ============================================================
+2026-09-06 21:27:32 | INFO    | phase6 | Tracking: 0000f77c-62c2a288.mov
+2026-09-06 21:27:32 | INFO    | phase6 | ============================================================
+2026-09-06 21:28:30 | INFO    | phase6 |   0000f77c-62c2a288.mov: 1211 frames, 197 tracks, classes={'car': 196, 'truck': 1}
+2026-09-06 21:28:32 | WARNING | phase6 | WARN  |   GT evaluation failed for '0000f77c-62c2a288': GT parquet missing box columns (have: ['name', 'videoName', 'frameIndex', 'id', 'category', 'attributes.crowd', 'attributes.occluded', 'attributes.truncated', 'box2d.x1', 'box2d.x2', 'box2d.y1', 'box2d.y2', 'haveVideo'])
+2026-09-06 21:28:32 | INFO    | phase6 | ============================================================
+2026-09-06 21:28:32 | INFO    | phase6 | Tracking: 0000f77c-cb820c98.mov
+2026-09-06 21:28:32 | INFO    | phase6 | ============================================================
+2026-09-06 21:29:33 | INFO    | phase6 |   0000f77c-cb820c98.mov: 1215 frames, 116 tracks, classes={'car': 116}
+2026-09-06 21:29:34 | WARNING | phase6 | WARN  |   GT evaluation failed for '0000f77c-cb820c98': GT parquet missing box columns (have: ['name', 'videoName', 'frameIndex', 'id', 'category', 'attributes.crowd', 'attributes.occluded', 'attributes.truncated', 'box2d.x1', 'box2d.x2', 'box2d.y1', 'box2d.y2', 'haveVideo'])
+2026-09-06 21:29:34 | INFO    | phase6 | ============================================================
+2026-09-06 21:29:34 | INFO    | phase6 | Tracking: 0001542f-5ce3cf52.mov
+2026-09-06 21:29:34 | INFO    | phase6 | ============================================================
+2026-09-06 21:30:34 | INFO    | phase6 |   0001542f-5ce3cf52.mov: 1213 frames, 95 tracks, classes={'car': 93, 'truck': 1, 'bike': 1}
+2026-09-06 21:30:35 | WARNING | phase6 | WARN  |   GT evaluation failed for '0001542f-5ce3cf52': GT parquet missing box columns (have: ['name', 'videoName', 'frameIndex', 'id', 'category', 'attributes.crowd', 'attributes.occluded', 'attributes.truncated', 'box2d.x1', 'box2d.x2', 'box2d.y1', 'box2d.y2', 'haveVideo'])
+2026-09-06 21:30:35 | INFO    | phase6 | ============================================================
+2026-09-06 21:30:35 | INFO    | phase6 | Tracking: 0001542f-7c670be8.mov
+2026-09-06 21:30:35 | INFO    | phase6 | ============================================================
+2026-09-06 21:31:28 | INFO    | phase6 |   0001542f-7c670be8.mov: 1215 frames, 67 tracks, classes={'car': 61, 'bus': 3, 'bike': 2, 'truck': 1}
+2026-09-06 21:31:30 | WARNING | phase6 | WARN  |   GT evaluation failed for '0001542f-7c670be8': GT parquet missing box columns (have: ['name', 'videoName', 'frameIndex', 'id', 'category', 'attributes.crowd', 'attributes.occluded', 'attributes.truncated', 'box2d.x1', 'box2d.x2', 'box2d.y1', 'box2d.y2', 'haveVideo'])
+2026-09-06 21:31:30 | INFO    | phase6 | ============================================================
+2026-09-06 21:31:30 | INFO    | phase6 | SUMMARY
+2026-09-06 21:31:30 | INFO    | phase6 | ============================================================
+2026-09-06 21:31:30 | INFO    | phase6 | Videos OK: 5 / 5
+2026-09-06 21:31:30 | INFO    | phase6 | Total tracks: 575
+2026-09-06 21:31:30 | INFO    | phase6 | Tracks by class: {'car': 564, 'truck': 5, 'bike': 3, 'bus': 3}
+2026-09-06 21:31:30 | INFO    | phase6 | Report: /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-06 21:31:30 | INFO    | phase6 | PASS  | Phase 6 tracking complete
+2026-09-06 22:47:21 | INFO    | phase6 | ============================================================
+2026-09-06 22:47:21 | INFO    | phase6 | PHASE 6: MULTI-OBJECT TRACKING
+2026-09-06 22:47:21 | INFO    | phase6 | ============================================================
+2026-09-06 22:47:24 | INFO    | phase6 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-06 22:47:24 | INFO    | phase6 | Videos: 5 (tracker=botsort.yaml, imgsz=960, conf=0.25)
+2026-09-06 22:47:24 | INFO    | phase6 | GT parquet shards: 1 (for MOTA/IDF1 evaluation)
+2026-09-06 22:47:26 | INFO    | phase6 | ============================================================
+2026-09-06 22:47:26 | INFO    | phase6 | Tracking: 0000f77c-6257be58.mov
+2026-09-06 22:47:26 | INFO    | phase6 | ============================================================
+2026-09-06 22:48:39 | INFO    | phase6 |   0000f77c-6257be58.mov: 1217 frames, 100 tracks, classes={'car': 98, 'truck': 2}
+2026-09-06 22:48:43 | WARNING | phase6 | WARN  |   No vehicle GT rows for '0000f77c-6257be58'
+2026-09-06 22:48:43 | INFO    | phase6 | ============================================================
+2026-09-06 22:48:43 | INFO    | phase6 | Tracking: 0000f77c-62c2a288.mov
+2026-09-06 22:48:43 | INFO    | phase6 | ============================================================
+2026-09-06 22:49:44 | INFO    | phase6 |   0000f77c-62c2a288.mov: 1211 frames, 197 tracks, classes={'car': 196, 'truck': 1}
+2026-09-06 22:49:47 | WARNING | phase6 | WARN  |   No vehicle GT rows for '0000f77c-62c2a288'
+2026-09-06 22:49:47 | INFO    | phase6 | ============================================================
+2026-09-06 22:49:47 | INFO    | phase6 | Tracking: 0000f77c-cb820c98.mov
+2026-09-06 22:49:47 | INFO    | phase6 | ============================================================
+2026-09-06 22:50:49 | INFO    | phase6 |   0000f77c-cb820c98.mov: 1215 frames, 116 tracks, classes={'car': 116}
+2026-09-06 22:50:52 | WARNING | phase6 | WARN  |   No vehicle GT rows for '0000f77c-cb820c98'
+2026-09-06 22:50:52 | INFO    | phase6 | ============================================================
+2026-09-06 22:50:52 | INFO    | phase6 | Tracking: 0001542f-5ce3cf52.mov
+2026-09-06 22:50:52 | INFO    | phase6 | ============================================================
+2026-09-06 22:51:54 | INFO    | phase6 |   0001542f-5ce3cf52.mov: 1213 frames, 95 tracks, classes={'car': 93, 'truck': 1, 'bike': 1}
+2026-09-06 22:51:57 | WARNING | phase6 | WARN  |   No vehicle GT rows for '0001542f-5ce3cf52'
+2026-09-06 22:51:57 | INFO    | phase6 | ============================================================
+2026-09-06 22:51:57 | INFO    | phase6 | Tracking: 0001542f-7c670be8.mov
+2026-09-06 22:51:57 | INFO    | phase6 | ============================================================
+2026-09-06 22:52:51 | INFO    | phase6 |   0001542f-7c670be8.mov: 1215 frames, 67 tracks, classes={'car': 61, 'bus': 3, 'bike': 2, 'truck': 1}
+2026-09-06 22:52:54 | WARNING | phase6 | WARN  |   No vehicle GT rows for '0001542f-7c670be8'
+2026-09-06 22:52:54 | INFO    | phase6 | ============================================================
+2026-09-06 22:52:54 | INFO    | phase6 | SUMMARY
+2026-09-06 22:52:54 | INFO    | phase6 | ============================================================
+2026-09-06 22:52:54 | INFO    | phase6 | Videos OK: 5 / 5
+2026-09-06 22:52:54 | INFO    | phase6 | Total tracks: 575
+2026-09-06 22:52:54 | INFO    | phase6 | Tracks by class: {'car': 564, 'truck': 5, 'bike': 3, 'bus': 3}
+2026-09-06 22:52:55 | INFO    | phase6 | Report: /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-06 22:52:55 | INFO    | phase6 | PASS  | Phase 6 tracking complete
+2026-09-06 23:22:58 | INFO    | phase6 | ============================================================
+2026-09-06 23:23:00 | INFO    | phase6 | PHASE 6: MULTI-OBJECT TRACKING
+2026-09-06 23:23:00 | INFO    | phase6 | ============================================================
+2026-09-06 23:23:03 | INFO    | phase6 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-06 23:23:03 | INFO    | phase6 | Videos: 5 (tracker=botsort.yaml, imgsz=960, conf=0.25)
+2026-09-06 23:23:03 | INFO    | phase6 | GT parquet shards: 1 (for MOTA/IDF1 evaluation)
+2026-09-06 23:23:06 | INFO    | phase6 | ============================================================
+2026-09-06 23:23:06 | INFO    | phase6 | Tracking: 0000f77c-6257be58.mov
+2026-09-06 23:23:06 | INFO    | phase6 | ============================================================
+2026-09-06 23:24:28 | INFO    | phase6 |   0000f77c-6257be58.mov: 1217 frames, 100 tracks, classes={'car': 98, 'truck': 2}
+2026-09-06 23:24:34 | INFO    | phase6 |   MOT metrics: MOTA=-5.618 IDF1=0.074 MOTP=0.672 IDSW=3 (n_gt=1126 frames=1217)
+2026-09-06 23:24:34 | INFO    | phase6 | ============================================================
+2026-09-06 23:24:34 | INFO    | phase6 | Tracking: 0000f77c-62c2a288.mov
+2026-09-06 23:24:34 | INFO    | phase6 | ============================================================
+2026-09-06 23:25:39 | INFO    | phase6 |   0000f77c-62c2a288.mov: 1211 frames, 197 tracks, classes={'car': 196, 'truck': 1}
+2026-09-06 23:25:42 | WARNING | phase6 | WARN  |   GT evaluation failed for '0000f77c-62c2a288': float() argument must be a string or a real number, not 'NoneType'
+2026-09-06 23:25:42 | INFO    | phase6 | ============================================================
+2026-09-06 23:25:42 | INFO    | phase6 | Tracking: 0000f77c-cb820c98.mov
+2026-09-06 23:25:42 | INFO    | phase6 | ============================================================
+2026-09-06 23:26:50 | INFO    | phase6 |   0000f77c-cb820c98.mov: 1215 frames, 116 tracks, classes={'car': 116}
+2026-09-06 23:26:53 | INFO    | phase6 |   MOT metrics: MOTA=-6.722 IDF1=0.101 MOTP=0.680 IDSW=4 (n_gt=1390 frames=1215)
+2026-09-06 23:26:53 | INFO    | phase6 | ============================================================
+2026-09-06 23:26:53 | INFO    | phase6 | Tracking: 0001542f-5ce3cf52.mov
+2026-09-06 23:26:53 | INFO    | phase6 | ============================================================
+2026-09-06 23:27:59 | INFO    | phase6 |   0001542f-5ce3cf52.mov: 1213 frames, 95 tracks, classes={'car': 93, 'truck': 1, 'bike': 1}
+2026-09-06 23:28:02 | INFO    | phase6 |   MOT metrics: MOTA=-8.190 IDF1=0.055 MOTP=0.605 IDSW=7 (n_gt=1509 frames=1213)
+2026-09-06 23:28:02 | INFO    | phase6 | ============================================================
+2026-09-06 23:28:02 | INFO    | phase6 | Tracking: 0001542f-7c670be8.mov
+2026-09-06 23:28:02 | INFO    | phase6 | ============================================================
+2026-09-06 23:29:02 | INFO    | phase6 |   0001542f-7c670be8.mov: 1215 frames, 67 tracks, classes={'car': 61, 'bus': 3, 'bike': 2, 'truck': 1}
+2026-09-06 23:29:05 | WARNING | phase6 | WARN  |   GT evaluation failed for '0001542f-7c670be8': float() argument must be a string or a real number, not 'NoneType'
+2026-09-06 23:29:05 | INFO    | phase6 | ============================================================
+2026-09-06 23:29:05 | INFO    | phase6 | SUMMARY
+2026-09-06 23:29:05 | INFO    | phase6 | ============================================================
+2026-09-06 23:29:05 | INFO    | phase6 | Videos OK: 5 / 5
+2026-09-06 23:29:05 | INFO    | phase6 | Total tracks: 575
+2026-09-06 23:29:05 | INFO    | phase6 | Tracks by class: {'car': 564, 'truck': 5, 'bike': 3, 'bus': 3}
+2026-09-06 23:29:05 | INFO    | phase6 | MOT metrics (mean of 3): MOTA=-6.843 IDF1=0.077 MOTP=0.652 IDSW=4.7
+2026-09-06 23:29:05 | INFO    | phase6 | Report: /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-06 23:29:05 | INFO    | phase6 | PASS  | Phase 6 tracking complete
+2026-09-26 15:13:25 | INFO    | phase6 | ============================================================
+2026-09-26 15:13:25 | INFO    | phase6 | PHASE 6: MULTI-OBJECT TRACKING
+2026-09-26 15:13:25 | INFO    | phase6 | ============================================================
+2026-09-26 15:13:26 | INFO    | phase6 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-26 15:13:26 | INFO    | phase6 | Videos: 5 (tracker=botsort.yaml, imgsz=960, conf=0.25)
+2026-09-26 15:13:28 | INFO    | phase6 | Scene metadata: 79863 video(s) from manifest_val.json, manifest_train.json
+2026-09-26 15:13:28 | INFO    | phase6 | GT parquet shards: 1 (for MOTA/IDF1 evaluation)
+2026-09-26 15:15:05 | INFO    | phase6 | GT schema probe (/kaggle/input/datasets/robikscube/driving-video-with-object-tracking/mot_labels.parquet): 2890846 rows
+2026-09-26 15:15:05 | INFO    | phase6 |   resolved aliases: {'video': 'videoName', 'frame': 'frameIndex', 'id': 'id', 'x1': 'box2d.x1', 'y1': 'box2d.y1', 'x2': 'box2d.x2', 'y2': 'box2d.y2', 'w': None, 'h': None, 'label': 'category'}
+2026-09-26 15:15:05 | INFO    | phase6 |   MATCH via name                   {'rows': 1126, 'n_frames': 203, 'frame_min': 0, 'frame_max': 202, 'frame_stride': 1, 'boxes_per_frame': 5.55}
+2026-09-26 15:15:05 | INFO    | phase6 |   MATCH via videoName              {'rows': 1126, 'n_frames': 203, 'frame_min': 0, 'frame_max': 202, 'frame_stride': 1, 'boxes_per_frame': 5.55}
+2026-09-26 15:15:05 | INFO    | phase6 |   sample name                     ['0000f77c-6257be58-0000001.jpg', '0000f77c-6257be58-0000002.jpg', '0000f77c-6257be58-0000003.jpg']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample videoName                ['0000f77c-6257be58', '0000f77c-62c2a288', '0000f77c-cb820c98']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample frameIndex               ['0', '1', '10']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample id                       ['00000000', '00000001', '00000002']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample category                 ['bicycle', 'bus', 'car']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample attributes.crowd         ['False', 'True']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample attributes.occluded      ['False', 'True']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample attributes.truncated     ['False', 'True']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample box2d.x1                 ['0.0', '0.0036699796065380002', '0.0050756053716790005']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample box2d.x2                 ['10.004462323650193', '10.013221605172994', '10.013908373181858']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample box2d.y1                 ['0.0', '0.005850710851224', '0.011701421702449']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample box2d.y2                 ['100.00116805574567', '100.0797173603314', '100.09103927989474']
+2026-09-26 15:15:05 | INFO    | phase6 |   sample haveVideo                ['False', 'True']
+2026-09-26 15:15:05 | INFO    | phase6 |   values category                 {'car': 2207116, 'pedestrian': 381441, 'truck': 149823, 'bus': 57880, 'bicycle': 28477, 'rider': 20365, 'other vehicle': 19202, 'motorcycle': 12464, 'other person': 4453, 'trailer': 4103, 'None': 3930, 'train': 1592}
+2026-09-26 15:15:05 | INFO    | phase6 |   values attributes.crowd         {'False': 2762598, 'True': 124318, 'None': 3930}
+2026-09-26 15:15:05 | INFO    | phase6 |   values attributes.occluded      {'True': 1874346, 'False': 1012570, 'None': 3930}
+2026-09-26 15:15:05 | INFO    | phase6 |   values attributes.truncated     {'False': 2583260, 'True': 303656, 'None': 3930}
+2026-09-26 15:15:05 | INFO    | phase6 |   values haveVideo                {'True': 1922517, 'False': 968329}
+2026-09-26 15:15:07 | INFO    | phase6 | ============================================================
+2026-09-26 15:15:07 | INFO    | phase6 | Tracking: 0000f77c-6257be58.mov
+2026-09-26 15:15:07 | INFO    | phase6 | ============================================================
+2026-09-26 15:15:49 | INFO    | phase6 |   0000f77c-6257be58.mov: 1217 frames, 100 tracks, classes={'car': 98, 'truck': 2}
+2026-09-26 15:15:53 | INFO    | phase6 |   GT/video frame map: linear alpha=5.98 offset=1 | integer curve(top)=[(6, 983), (5, 108), (7, 105), (1, 88)] | linear hits=988 vs integer hits=983
+2026-09-26 15:15:53 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(5.98, 1, 988), (6.0, 0, 983), (6.0, 0, 983), (6.0, -1, 971), (5.98, 2, 956)]
+2026-09-26 15:15:53 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 1126, 'frames_with_match': 988, 'frame_match_rate': 0.8774, 'first_matched_idx': 1, 'last_matched_idx': 203}
+2026-09-26 15:15:53 | INFO    | phase6 |   GT: 1126/1126 rows kept (stride=1, annotated 203 frames, skipped null=0 no_video=0 bad=0), 1126 vehicle boxes after class filter
+2026-09-26 15:15:53 | INFO    | phase6 |   MOT metrics: MOTA=0.768 IDF1=0.750 MOTP=0.868 IDSW=25 TP=984 FP=94 FN=142 (n_gt=1126 over 203 annotated frames, 16.7% of predicted frames, 1078 preds scored of 6499, map=linear alpha=5.98 offset=1)
+2026-09-26 15:15:53 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=5.98 offset=1. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 15:15:53 | WARNING | phase6 | WARN  |   GT covers only 16.7% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 15:15:53 | INFO    | phase6 | ============================================================
+2026-09-26 15:15:53 | INFO    | phase6 | Tracking: 0000f77c-62c2a288.mov
+2026-09-26 15:15:53 | INFO    | phase6 | ============================================================
+2026-09-26 15:16:29 | INFO    | phase6 |   0000f77c-62c2a288.mov: 1211 frames, 197 tracks, classes={'car': 196, 'truck': 1}
+2026-09-26 15:16:36 | INFO    | phase6 |   GT/video frame map: linear alpha=5.98 offset=-2 | integer curve(top)=[(6, 296), (5, 15), (4, 13), (7, 11)] | linear hits=828 vs integer hits=296
+2026-09-26 15:16:36 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(5.98, -2, 828), (5.98, -1, 819), (5.96, 2, 781), (5.96, 1, 743), (5.98, 0, 699)]
+2026-09-26 15:16:36 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 922, 'frames_with_match': 828, 'frame_match_rate': 0.898, 'first_matched_idx': 2, 'last_matched_idx': 203}
+2026-09-26 15:16:36 | INFO    | phase6 |   GT: 1023/1023 rows kept (stride=1, annotated 187 frames, skipped null=16 no_video=0 bad=0), 922 vehicle boxes after class filter
+2026-09-26 15:16:36 | INFO    | phase6 |   MOT metrics: MOTA=0.116 IDF1=0.650 MOTP=0.750 IDSW=11 TP=821 FP=703 FN=101 (n_gt=922 over 157 annotated frames, 15.8% of predicted frames, 1524 preds scored of 9313, map=linear alpha=5.98 offset=-2)
+2026-09-26 15:16:36 | WARNING | phase6 | WARN  |   GT categories EXCLUDED (no matching detector class, excluded from n_gt so they cannot manufacture false negatives): ['pedestrian']
+2026-09-26 15:16:36 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=5.98 offset=-2. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 15:16:36 | WARNING | phase6 | WARN  |   GT covers only 15.8% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 15:16:36 | INFO    | phase6 | ============================================================
+2026-09-26 15:16:36 | INFO    | phase6 | Tracking: 0000f77c-cb820c98.mov
+2026-09-26 15:16:36 | INFO    | phase6 | ============================================================
+2026-09-26 15:17:11 | INFO    | phase6 |   0000f77c-cb820c98.mov: 1215 frames, 116 tracks, classes={'car': 116}
+2026-09-26 15:17:16 | INFO    | phase6 |   GT/video frame map: linear alpha=6.0 offset=-1 | integer curve(top)=[(6, 1218), (5, 606), (7, 559), (4, 398)] | linear hits=1251 vs integer hits=1218
+2026-09-26 15:17:16 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(6.0, -1, 1251), (5.98, 2, 1228), (6.0, 1, 1222), (6.0, 0, 1218), (6.0, 0, 1218)]
+2026-09-26 15:17:16 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 1390, 'frames_with_match': 1251, 'frame_match_rate': 0.9, 'first_matched_idx': 2, 'last_matched_idx': 203}
+2026-09-26 15:17:16 | INFO    | phase6 |   GT: 1390/1390 rows kept (stride=1, annotated 203 frames, skipped null=0 no_video=0 bad=0), 1390 vehicle boxes after class filter
+2026-09-26 15:17:16 | INFO    | phase6 |   MOT metrics: MOTA=0.599 IDF1=0.729 MOTP=0.843 IDSW=22 TP=1235 FP=381 FN=155 (n_gt=1390 over 203 annotated frames, 16.7% of predicted frames, 1616 preds scored of 9654, map=linear alpha=6.0 offset=-1)
+2026-09-26 15:17:16 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=6.0 offset=-1. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 15:17:16 | WARNING | phase6 | WARN  |   GT covers only 16.7% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 15:17:16 | INFO    | phase6 | ============================================================
+2026-09-26 15:17:16 | INFO    | phase6 | Tracking: 0001542f-5ce3cf52.mov
+2026-09-26 15:17:16 | INFO    | phase6 | ============================================================
+2026-09-26 15:17:50 | INFO    | phase6 |   0001542f-5ce3cf52.mov: 1213 frames, 95 tracks, classes={'car': 93, 'truck': 1, 'bike': 1}
+2026-09-26 15:17:57 | INFO    | phase6 |   GT/video frame map: linear alpha=6.02 offset=2 | integer curve(top)=[(6, 1380), (5, 721), (7, 672), (8, 391)] | linear hits=1393 vs integer hits=1380
+2026-09-26 15:17:57 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(6.02, 2, 1393), (6.0, 2, 1390), (5.98, 2, 1386), (6.02, 1, 1384), (6.0, 0, 1380)]
+2026-09-26 15:17:57 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 1509, 'frames_with_match': 1393, 'frame_match_rate': 0.9231, 'first_matched_idx': 1, 'last_matched_idx': 202}
+2026-09-26 15:17:57 | INFO    | phase6 |   GT: 1548/1548 rows kept (stride=1, annotated 202 frames, skipped null=0 no_video=0 bad=0), 1509 vehicle boxes after class filter
+2026-09-26 15:17:57 | INFO    | phase6 |   MOT metrics: MOTA=0.443 IDF1=0.711 MOTP=0.830 IDSW=13 TP=1393 FP=712 FN=116 (n_gt=1509 over 202 annotated frames, 16.7% of predicted frames, 2105 preds scored of 12550, map=linear alpha=6.02 offset=2)
+2026-09-26 15:17:57 | WARNING | phase6 | WARN  |   GT categories EXCLUDED (no matching detector class, excluded from n_gt so they cannot manufacture false negatives): ['pedestrian']
+2026-09-26 15:17:57 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=6.02 offset=2. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 15:17:57 | WARNING | phase6 | WARN  |   GT covers only 16.7% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 15:17:57 | INFO    | phase6 | ============================================================
+2026-09-26 15:17:57 | INFO    | phase6 | Tracking: 0001542f-7c670be8.mov
+2026-09-26 15:17:57 | INFO    | phase6 | ============================================================
+2026-09-26 15:18:30 | INFO    | phase6 |   0001542f-7c670be8.mov: 1215 frames, 67 tracks, classes={'car': 61, 'bus': 3, 'bike': 2, 'truck': 1}
+2026-09-26 15:18:33 | INFO    | phase6 |   GT/video frame map: linear alpha=6.0 offset=-1 | integer curve(top)=[(6, 475), (5, 89), (7, 72), (4, 58)] | linear hits=509 vs integer hits=475
+2026-09-26 15:18:33 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(6.0, -1, 509), (5.98, 0, 495), (6.0, -2, 494), (5.98, 1, 492), (6.0, 0, 475)]
+2026-09-26 15:18:33 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 636, 'frames_with_match': 509, 'frame_match_rate': 0.8003, 'first_matched_idx': 2, 'last_matched_idx': 203}
+2026-09-26 15:18:33 | INFO    | phase6 |   GT: 685/685 rows kept (stride=1, annotated 200 frames, skipped null=3 no_video=0 bad=0), 636 vehicle boxes after class filter
+2026-09-26 15:18:33 | INFO    | phase6 |   MOT metrics: MOTA=0.587 IDF1=0.762 MOTP=0.796 IDSW=16 TP=509 FP=120 FN=127 (n_gt=636 over 200 annotated frames, 17.1% of predicted frames, 629 preds scored of 3710, map=linear alpha=6.0 offset=-1)
+2026-09-26 15:18:33 | WARNING | phase6 | WARN  |   GT categories EXCLUDED (no matching detector class, excluded from n_gt so they cannot manufacture false negatives): ['pedestrian']
+2026-09-26 15:18:33 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=6.0 offset=-1. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 15:18:33 | WARNING | phase6 | WARN  |   GT covers only 17.1% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 15:18:33 | INFO    | phase6 | Scene metadata resolved for 5/5 video(s)
+2026-09-26 15:18:33 | INFO    | phase6 |   0000f77c-6257be58.mov    daytime    city street    clear
+2026-09-26 15:18:33 | INFO    | phase6 |   0000f77c-62c2a288.mov    dawn/dusk  highway        clear
+2026-09-26 15:18:33 | INFO    | phase6 |   0000f77c-cb820c98.mov    dawn/dusk  residential    clear
+2026-09-26 15:18:33 | INFO    | phase6 |   0001542f-5ce3cf52.mov    night      city street    clear
+2026-09-26 15:18:33 | INFO    | phase6 |   0001542f-7c670be8.mov    night      highway        clear
+2026-09-26 15:18:33 | INFO    | phase6 | ============================================================
+2026-09-26 15:18:33 | INFO    | phase6 | TRACKING STRATIFIED BY SCENE METADATA
+2026-09-26 15:18:33 | INFO    | phase6 | ============================================================
+2026-09-26 15:18:33 | INFO    | phase6 |   by timeofday:
+2026-09-26 15:18:33 | INFO    | phase6 |     dawn/dusk      n=2  MOTA_pooled=0.4061  MOTA_mean=0.3574  MOTP=0.7965  IDF1=0.6896  TP=2056 FP=1084 FN=256 IDSW=33  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:18:33 | INFO    | phase6 |     daytime        n=1  MOTA_pooled=0.7682  MOTA_mean=0.7682  MOTP=0.8684  IDF1=0.7505  TP=984 FP=94 FN=142 IDSW=25  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:18:33 | INFO    | phase6 |     night          n=2  MOTA_pooled=0.4853  MOTA_mean=0.5146  MOTP=0.8133  IDF1=0.7366  TP=1902 FP=832 FN=243 IDSW=29  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:18:33 | INFO    | phase6 |   by scene:
+2026-09-26 15:18:33 | INFO    | phase6 |     city street    n=2  MOTA_pooled=0.5818  MOTA_mean=0.6055  MOTP=0.8493  IDF1=0.7308  TP=2377 FP=806 FN=258 IDSW=38  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:18:33 | INFO    | phase6 |     highway        n=2  MOTA_pooled=0.3081  MOTA_mean=0.3513  MOTP=0.773  IDF1=0.7061  TP=1330 FP=823 FN=228 IDSW=27  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:18:33 | INFO    | phase6 |     residential    n=1  MOTA_pooled=0.5986  MOTA_mean=0.5986  MOTP=0.8434  IDF1=0.7292  TP=1235 FP=381 FN=155 IDSW=22  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:18:33 | INFO    | phase6 | ============================================================
+2026-09-26 15:18:33 | INFO    | phase6 | SUMMARY
+2026-09-26 15:18:33 | INFO    | phase6 | ============================================================
+2026-09-26 15:18:33 | INFO    | phase6 | Videos OK: 5 / 5
+2026-09-26 15:18:33 | INFO    | phase6 | Total tracks: 575
+2026-09-26 15:18:33 | INFO    | phase6 | Tracks by class: {'car': 564, 'truck': 5, 'bike': 3, 'bus': 3}
+2026-09-26 15:18:33 | INFO    | phase6 | MOT metrics (mean of 5 video(s), 0 skipped): MOTA=0.5024 IDF1=0.7206 MOTP=0.8176 IDSW=87
+2026-09-26 15:18:33 | INFO    | phase6 |   totals: TP=4942 FP=2010 FN=641 n_gt=5583 over 965 annotated frames (16.6% GT frame coverage, restrict=True)
+2026-09-26 15:18:33 | INFO    | phase6 | Report: /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 15:18:33 | INFO    | phase6 | PASS  | Phase 6 tracking complete
+2026-09-26 16:25:22 | INFO    | phase6 | ============================================================
+2026-09-26 16:25:22 | INFO    | phase6 | PHASE 6: MULTI-OBJECT TRACKING
+2026-09-26 16:25:22 | INFO    | phase6 | ============================================================
+2026-09-26 16:25:31 | INFO    | phase6 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-26 16:25:31 | INFO    | phase6 | Videos: 5 (tracker=botsort.yaml, imgsz=960, conf=0.25)
+2026-09-26 16:25:33 | INFO    | phase6 | Scene metadata: 79863 video(s) from manifest_val.json, manifest_train.json
+2026-09-26 16:25:33 | INFO    | phase6 | GT parquet shards: 1 (for MOTA/IDF1 evaluation)
+2026-09-26 16:27:10 | INFO    | phase6 | GT schema probe (/kaggle/input/datasets/robikscube/driving-video-with-object-tracking/mot_labels.parquet): 2890846 rows
+2026-09-26 16:27:10 | INFO    | phase6 |   resolved aliases: {'video': 'videoName', 'frame': 'frameIndex', 'id': 'id', 'x1': 'box2d.x1', 'y1': 'box2d.y1', 'x2': 'box2d.x2', 'y2': 'box2d.y2', 'w': None, 'h': None, 'label': 'category'}
+2026-09-26 16:27:10 | INFO    | phase6 |   MATCH via name                   {'rows': 1126, 'n_frames': 203, 'frame_min': 0, 'frame_max': 202, 'frame_stride': 1, 'boxes_per_frame': 5.55}
+2026-09-26 16:27:10 | INFO    | phase6 |   MATCH via videoName              {'rows': 1126, 'n_frames': 203, 'frame_min': 0, 'frame_max': 202, 'frame_stride': 1, 'boxes_per_frame': 5.55}
+2026-09-26 16:27:10 | INFO    | phase6 |   sample name                     ['0000f77c-6257be58-0000001.jpg', '0000f77c-6257be58-0000002.jpg', '0000f77c-6257be58-0000003.jpg']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample videoName                ['0000f77c-6257be58', '0000f77c-62c2a288', '0000f77c-cb820c98']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample frameIndex               ['0', '1', '10']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample id                       ['00000000', '00000001', '00000002']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample category                 ['bicycle', 'bus', 'car']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample attributes.crowd         ['False', 'True']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample attributes.occluded      ['False', 'True']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample attributes.truncated     ['False', 'True']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample box2d.x1                 ['0.0', '0.0036699796065380002', '0.0050756053716790005']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample box2d.x2                 ['10.004462323650193', '10.013221605172994', '10.013908373181858']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample box2d.y1                 ['0.0', '0.005850710851224', '0.011701421702449']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample box2d.y2                 ['100.00116805574567', '100.0797173603314', '100.09103927989474']
+2026-09-26 16:27:10 | INFO    | phase6 |   sample haveVideo                ['False', 'True']
+2026-09-26 16:27:10 | INFO    | phase6 |   values category                 {'car': 2207116, 'pedestrian': 381441, 'truck': 149823, 'bus': 57880, 'bicycle': 28477, 'rider': 20365, 'other vehicle': 19202, 'motorcycle': 12464, 'other person': 4453, 'trailer': 4103, 'None': 3930, 'train': 1592}
+2026-09-26 16:27:10 | INFO    | phase6 |   values attributes.crowd         {'False': 2762598, 'True': 124318, 'None': 3930}
+2026-09-26 16:27:10 | INFO    | phase6 |   values attributes.occluded      {'True': 1874346, 'False': 1012570, 'None': 3930}
+2026-09-26 16:27:10 | INFO    | phase6 |   values attributes.truncated     {'False': 2583260, 'True': 303656, 'None': 3930}
+2026-09-26 16:27:10 | INFO    | phase6 |   values haveVideo                {'True': 1922517, 'False': 968329}
+2026-09-26 16:27:13 | INFO    | phase6 | ============================================================
+2026-09-26 16:27:13 | INFO    | phase6 | Tracking: 0000f77c-6257be58.mov
+2026-09-26 16:27:13 | INFO    | phase6 | ============================================================
+2026-09-26 16:27:51 | INFO    | phase6 |   0000f77c-6257be58.mov: 1217 frames, 100 tracks, classes={'car': 98, 'truck': 2}
+2026-09-26 16:27:56 | INFO    | phase6 |   GT/video frame map: linear alpha=5.98 offset=1 | integer curve(top)=[(6, 983), (5, 108), (7, 105), (1, 88)] | linear hits=988 vs integer hits=983
+2026-09-26 16:27:56 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(5.98, 1, 988), (6.0, 0, 983), (6.0, 0, 983), (6.0, -1, 971), (5.98, 2, 956)]
+2026-09-26 16:27:56 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 1126, 'frames_with_match': 988, 'frame_match_rate': 0.8774, 'first_matched_idx': 1, 'last_matched_idx': 203}
+2026-09-26 16:27:56 | INFO    | phase6 |   GT: 1126/1126 rows kept (stride=1, annotated 203 frames, skipped null=0 no_video=0 bad=0), 1126 vehicle boxes after class filter
+2026-09-26 16:27:56 | INFO    | phase6 |   MOT metrics: MOTA=0.768 IDF1=0.750 MOTP=0.868 IDSW=25 TP=984 FP=94 FN=142 (n_gt=1126 over 203 annotated frames, 16.7% of predicted frames, 1078 preds scored of 6499, map=linear alpha=5.98 offset=1)
+2026-09-26 16:27:56 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=5.98 offset=1. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 16:27:56 | WARNING | phase6 | WARN  |   GT covers only 16.7% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 16:27:56 | INFO    | phase6 | ============================================================
+2026-09-26 16:27:56 | INFO    | phase6 | Tracking: 0000f77c-62c2a288.mov
+2026-09-26 16:27:56 | INFO    | phase6 | ============================================================
+2026-09-26 16:28:31 | INFO    | phase6 |   0000f77c-62c2a288.mov: 1211 frames, 197 tracks, classes={'car': 196, 'truck': 1}
+2026-09-26 16:28:38 | INFO    | phase6 |   GT/video frame map: linear alpha=5.98 offset=-2 | integer curve(top)=[(6, 296), (5, 15), (4, 13), (7, 11)] | linear hits=828 vs integer hits=296
+2026-09-26 16:28:38 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(5.98, -2, 828), (5.98, -1, 819), (5.96, 2, 781), (5.96, 1, 743), (5.98, 0, 699)]
+2026-09-26 16:28:38 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 922, 'frames_with_match': 828, 'frame_match_rate': 0.898, 'first_matched_idx': 2, 'last_matched_idx': 203}
+2026-09-26 16:28:38 | INFO    | phase6 |   GT: 1023/1023 rows kept (stride=1, annotated 187 frames, skipped null=16 no_video=0 bad=0), 922 vehicle boxes after class filter
+2026-09-26 16:28:38 | INFO    | phase6 |   MOT metrics: MOTA=0.116 IDF1=0.650 MOTP=0.750 IDSW=11 TP=821 FP=703 FN=101 (n_gt=922 over 157 annotated frames, 15.8% of predicted frames, 1524 preds scored of 9313, map=linear alpha=5.98 offset=-2)
+2026-09-26 16:28:38 | WARNING | phase6 | WARN  |   GT categories EXCLUDED (no matching detector class, excluded from n_gt so they cannot manufacture false negatives): ['pedestrian']
+2026-09-26 16:28:38 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=5.98 offset=-2. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 16:28:38 | WARNING | phase6 | WARN  |   GT covers only 15.8% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 16:28:38 | INFO    | phase6 | ============================================================
+2026-09-26 16:28:38 | INFO    | phase6 | Tracking: 0000f77c-cb820c98.mov
+2026-09-26 16:28:38 | INFO    | phase6 | ============================================================
+2026-09-26 16:29:12 | INFO    | phase6 |   0000f77c-cb820c98.mov: 1215 frames, 116 tracks, classes={'car': 116}
+2026-09-26 16:29:18 | INFO    | phase6 |   GT/video frame map: linear alpha=6.0 offset=-1 | integer curve(top)=[(6, 1218), (5, 606), (7, 559), (4, 398)] | linear hits=1251 vs integer hits=1218
+2026-09-26 16:29:18 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(6.0, -1, 1251), (5.98, 2, 1228), (6.0, 1, 1222), (6.0, 0, 1218), (6.0, 0, 1218)]
+2026-09-26 16:29:18 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 1390, 'frames_with_match': 1251, 'frame_match_rate': 0.9, 'first_matched_idx': 2, 'last_matched_idx': 203}
+2026-09-26 16:29:18 | INFO    | phase6 |   GT: 1390/1390 rows kept (stride=1, annotated 203 frames, skipped null=0 no_video=0 bad=0), 1390 vehicle boxes after class filter
+2026-09-26 16:29:18 | INFO    | phase6 |   MOT metrics: MOTA=0.599 IDF1=0.729 MOTP=0.843 IDSW=22 TP=1235 FP=381 FN=155 (n_gt=1390 over 203 annotated frames, 16.7% of predicted frames, 1616 preds scored of 9654, map=linear alpha=6.0 offset=-1)
+2026-09-26 16:29:18 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=6.0 offset=-1. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 16:29:18 | WARNING | phase6 | WARN  |   GT covers only 16.7% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 16:29:18 | INFO    | phase6 | ============================================================
+2026-09-26 16:29:18 | INFO    | phase6 | Tracking: 0001542f-5ce3cf52.mov
+2026-09-26 16:29:18 | INFO    | phase6 | ============================================================
+2026-09-26 16:29:53 | INFO    | phase6 |   0001542f-5ce3cf52.mov: 1213 frames, 95 tracks, classes={'car': 93, 'truck': 1, 'bike': 1}
+2026-09-26 16:29:59 | INFO    | phase6 |   GT/video frame map: linear alpha=6.02 offset=2 | integer curve(top)=[(6, 1380), (5, 721), (7, 672), (8, 391)] | linear hits=1393 vs integer hits=1380
+2026-09-26 16:29:59 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(6.02, 2, 1393), (6.0, 2, 1390), (5.98, 2, 1386), (6.02, 1, 1384), (6.0, 0, 1380)]
+2026-09-26 16:29:59 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 1509, 'frames_with_match': 1393, 'frame_match_rate': 0.9231, 'first_matched_idx': 1, 'last_matched_idx': 202}
+2026-09-26 16:29:59 | INFO    | phase6 |   GT: 1548/1548 rows kept (stride=1, annotated 202 frames, skipped null=0 no_video=0 bad=0), 1509 vehicle boxes after class filter
+2026-09-26 16:29:59 | INFO    | phase6 |   MOT metrics: MOTA=0.443 IDF1=0.711 MOTP=0.830 IDSW=13 TP=1393 FP=712 FN=116 (n_gt=1509 over 202 annotated frames, 16.7% of predicted frames, 2105 preds scored of 12550, map=linear alpha=6.02 offset=2)
+2026-09-26 16:29:59 | WARNING | phase6 | WARN  |   GT categories EXCLUDED (no matching detector class, excluded from n_gt so they cannot manufacture false negatives): ['pedestrian']
+2026-09-26 16:29:59 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=6.02 offset=2. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 16:29:59 | WARNING | phase6 | WARN  |   GT covers only 16.7% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 16:29:59 | INFO    | phase6 | ============================================================
+2026-09-26 16:29:59 | INFO    | phase6 | Tracking: 0001542f-7c670be8.mov
+2026-09-26 16:29:59 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:32 | INFO    | phase6 |   0001542f-7c670be8.mov: 1215 frames, 67 tracks, classes={'car': 61, 'bus': 3, 'bike': 2, 'truck': 1}
+2026-09-26 16:30:36 | INFO    | phase6 |   GT/video frame map: linear alpha=6.0 offset=-1 | integer curve(top)=[(6, 475), (5, 89), (7, 72), (4, 58)] | linear hits=509 vs integer hits=475
+2026-09-26 16:30:36 | INFO    | phase6 |   GT frame map candidates (alpha,offset,hits): [(6.0, -1, 509), (5.98, 0, 495), (6.0, -2, 494), (5.98, 1, 492), (6.0, 0, 475)]
+2026-09-26 16:30:36 | INFO    | phase6 |   GT frame match profile: {'gt_frames': 636, 'frames_with_match': 509, 'frame_match_rate': 0.8003, 'first_matched_idx': 2, 'last_matched_idx': 203}
+2026-09-26 16:30:36 | INFO    | phase6 |   GT: 685/685 rows kept (stride=1, annotated 200 frames, skipped null=3 no_video=0 bad=0), 636 vehicle boxes after class filter
+2026-09-26 16:30:36 | INFO    | phase6 |   MOT metrics: MOTA=0.587 IDF1=0.762 MOTP=0.796 IDSW=16 TP=509 FP=120 FN=127 (n_gt=636 over 200 annotated frames, 17.1% of predicted frames, 629 preds scored of 3710, map=linear alpha=6.0 offset=-1)
+2026-09-26 16:30:36 | WARNING | phase6 | WARN  |   GT categories EXCLUDED (no matching detector class, excluded from n_gt so they cannot manufacture false negatives): ['pedestrian']
+2026-09-26 16:30:36 | WARNING | phase6 | WARN  |   GT frame map is NOT an integer stride: linear alpha=6.0 offset=-1. The GT dump is a downsampled label set, not frame-aligned to the video.
+2026-09-26 16:30:36 | WARNING | phase6 | WARN  |   GT covers only 17.1% of predicted frames. MOT metrics are computed on annotated frames ONLY. IDF1 measures re-identification across unannotated gaps and will read low for any motion-only tracker.
+2026-09-26 16:30:36 | INFO    | phase6 | Scene metadata resolved for 5/5 video(s)
+2026-09-26 16:30:36 | INFO    | phase6 |   0000f77c-6257be58.mov    daytime    city street    clear
+2026-09-26 16:30:36 | INFO    | phase6 |   0000f77c-62c2a288.mov    dawn/dusk  highway        clear
+2026-09-26 16:30:36 | INFO    | phase6 |   0000f77c-cb820c98.mov    dawn/dusk  residential    clear
+2026-09-26 16:30:36 | INFO    | phase6 |   0001542f-5ce3cf52.mov    night      city street    clear
+2026-09-26 16:30:36 | INFO    | phase6 |   0001542f-7c670be8.mov    night      highway        clear
+2026-09-26 16:30:36 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:36 | INFO    | phase6 | TRACKING STRATIFIED BY SCENE METADATA
+2026-09-26 16:30:36 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:36 | INFO    | phase6 |   by timeofday:
+2026-09-26 16:30:36 | INFO    | phase6 |     dawn/dusk      n=2  MOTA_pooled=0.4061  MOTA_mean=0.3574  MOTP=0.7965  IDF1=0.6896  TP=2056 FP=1084 FN=256 IDSW=33  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:30:36 | INFO    | phase6 |     daytime        n=1  MOTA_pooled=0.7682  MOTA_mean=0.7682  MOTP=0.8684  IDF1=0.7505  TP=984 FP=94 FN=142 IDSW=25  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:30:36 | INFO    | phase6 |     night          n=2  MOTA_pooled=0.4853  MOTA_mean=0.5146  MOTP=0.8133  IDF1=0.7366  TP=1902 FP=832 FN=243 IDSW=29  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:30:36 | INFO    | phase6 |   by scene:
+2026-09-26 16:30:36 | INFO    | phase6 |     city street    n=2  MOTA_pooled=0.5818  MOTA_mean=0.6055  MOTP=0.8493  IDF1=0.7308  TP=2377 FP=806 FN=258 IDSW=38  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:30:36 | INFO    | phase6 |     highway        n=2  MOTA_pooled=0.3081  MOTA_mean=0.3513  MOTP=0.773  IDF1=0.7061  TP=1330 FP=823 FN=228 IDSW=27  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:30:36 | INFO    | phase6 |     residential    n=1  MOTA_pooled=0.5986  MOTA_mean=0.5986  MOTP=0.8434  IDF1=0.7292  TP=1235 FP=381 FN=155 IDSW=22  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:30:36 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:36 | INFO    | phase6 | FALSE-POSITIVE FORENSICS
+2026-09-26 16:30:36 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:36 | INFO    | phase6 |   2010 FP over 5 video(s) | bands: {'localisation': '711 (35%)', 'gt_sampling': '19 (1%)', 'unexplained': '1280 (64%)'}
+2026-09-26 16:30:36 | INFO    | phase6 |   by timeofday:
+2026-09-26 16:30:36 | INFO    | phase6 |     dawn/dusk      n=2  FP=1084   {'localisation': '30%', 'gt_sampling': '1%', 'unexplained': '69%'}
+2026-09-26 16:30:36 | INFO    | phase6 |     daytime        n=1  FP=94     {'localisation': '73%', 'gt_sampling': '1%', 'unexplained': '26%'}
+2026-09-26 16:30:36 | INFO    | phase6 |     night          n=2  FP=832    {'localisation': '38%', 'gt_sampling': '0%', 'unexplained': '61%'}
+2026-09-26 16:30:36 | INFO    | phase6 |   by scene:
+2026-09-26 16:30:36 | INFO    | phase6 |     city street    n=2  FP=806    {'localisation': '38%', 'gt_sampling': '0%', 'unexplained': '62%'}
+2026-09-26 16:30:36 | INFO    | phase6 |     highway        n=2  FP=823    {'localisation': '28%', 'gt_sampling': '1%', 'unexplained': '71%'}
+2026-09-26 16:30:36 | INFO    | phase6 |     residential    n=1  FP=381    {'localisation': '47%', 'gt_sampling': '2%', 'unexplained': '52%'}
+2026-09-26 16:30:36 | INFO    | phase6 |   Interpretation: a large 'gt_sampling' share means the model found objects the ~6x downsampled GT did not sample on that frame - a metric artifact, not a model defect. Only 'unexplained' needs pixel inspection.
+2026-09-26 16:30:36 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:36 | INFO    | phase6 | SUMMARY
+2026-09-26 16:30:36 | INFO    | phase6 | ============================================================
+2026-09-26 16:30:36 | INFO    | phase6 | Videos OK: 5 / 5
+2026-09-26 16:30:36 | INFO    | phase6 | Total tracks: 575
+2026-09-26 16:30:36 | INFO    | phase6 | Tracks by class: {'car': 564, 'truck': 5, 'bike': 3, 'bus': 3}
+2026-09-26 16:30:36 | INFO    | phase6 | MOT metrics (mean of 5 video(s), 0 skipped): MOTA=0.5024 IDF1=0.7206 MOTP=0.8176 IDSW=87
+2026-09-26 16:30:36 | INFO    | phase6 |   totals: TP=4942 FP=2010 FN=641 n_gt=5583 over 965 annotated frames (16.6% GT frame coverage, restrict=True)
+2026-09-26 16:30:36 | INFO    | phase6 | FP audit records: /kaggle/working/traffic_ai/reports/phase6_fp_audit.json
+2026-09-26 16:30:36 | INFO    | phase6 | Report: /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 16:30:36 | INFO    | phase6 | PASS  | Phase 6 tracking complete

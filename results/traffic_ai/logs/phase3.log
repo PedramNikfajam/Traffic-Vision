@@ -1,0 +1,159 @@
+2026-09-02 04:07:00 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:00 | INFO    | phase3 | YOLO DATASET VALIDATION
+2026-09-02 04:07:00 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:00 | INFO    | phase3 | PASS  | dataset.yaml valid: nc=5, path=/kaggle/working/traffic_ai/data/vehicle_detection
+2026-09-02 04:07:00 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:00 | INFO    | phase3 | VALIDATING TRAIN SPLIT
+2026-09-02 04:07:00 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:01 | INFO    | phase3 | Found 69863 images, 69863 labels in train
+2026-09-02 04:07:01 | INFO    | phase3 | PASS  | All images have corresponding labels
+2026-09-02 04:07:01 | INFO    | phase3 | PASS  | All labels have corresponding images
+2026-09-02 04:07:05 | INFO    | phase3 | PASS  | All label lines well-formed (5 fields)
+2026-09-02 04:07:05 | INFO    | phase3 | PASS  | All class IDs valid (0..4)
+2026-09-02 04:07:05 | INFO    | phase3 | PASS  | All coordinates normalized [0,1]
+2026-09-02 04:07:05 | WARNING | phase3 | WARN  | 1 exact-duplicate label lines (excluded from class counts; matches training dedup)
+2026-09-02 04:07:05 | INFO    | phase3 | Total labels: 765066, Empty label files: 564
+2026-09-02 04:07:05 | INFO    | phase3 |   Class 0 (car): 713210 objects (93.2%)
+2026-09-02 04:07:05 | INFO    | phase3 |   Class 1 (truck): 29971 objects (3.9%)
+2026-09-02 04:07:05 | INFO    | phase3 |   Class 2 (bus): 11672 objects (1.5%)
+2026-09-02 04:07:05 | INFO    | phase3 |   Class 3 (bike): 7210 objects (0.9%)
+2026-09-02 04:07:05 | INFO    | phase3 |   Class 4 (motor): 3002 objects (0.4%)
+2026-09-02 04:07:05 | INFO    | phase3 | PASS  | All 100 sampled images readable
+2026-09-02 04:07:05 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:05 | INFO    | phase3 | VALIDATING VAL SPLIT
+2026-09-02 04:07:05 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:05 | INFO    | phase3 | Found 10000 images, 10000 labels in val
+2026-09-02 04:07:05 | INFO    | phase3 | PASS  | All images have corresponding labels
+2026-09-02 04:07:05 | INFO    | phase3 | PASS  | All labels have corresponding images
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | All label lines well-formed (5 fields)
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | All class IDs valid (0..4)
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | All coordinates normalized [0,1]
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | No duplicate label lines
+2026-09-02 04:07:06 | INFO    | phase3 | Total labels: 109807, Empty label files: 92
+2026-09-02 04:07:06 | INFO    | phase3 |   Class 0 (car): 102506 objects (93.4%)
+2026-09-02 04:07:06 | INFO    | phase3 |   Class 1 (truck): 4245 objects (3.9%)
+2026-09-02 04:07:06 | INFO    | phase3 |   Class 2 (bus): 1597 objects (1.5%)
+2026-09-02 04:07:06 | INFO    | phase3 |   Class 3 (bike): 1007 objects (0.9%)
+2026-09-02 04:07:06 | INFO    | phase3 |   Class 4 (motor): 452 objects (0.4%)
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | All 100 sampled images readable
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | No split leakage: train=69863, val=10000
+2026-09-02 04:07:06 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:06 | INFO    | phase3 | INTEGRITY CHECK SUMMARY
+2026-09-02 04:07:06 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | dataset_yaml: dataset.yaml valid
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | train_split: 69863 images, 765066 labels
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | val_split: 10000 images, 109807 labels
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | split_leakage: 0 overlapping filenames
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | class_coverage: All 5 classes present
+2026-09-02 04:07:06 | INFO    | phase3 | Overall: ALL CHECKS PASSED
+2026-09-02 04:07:06 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:06 | INFO    | phase3 | VALIDATION COMPLETE
+2026-09-02 04:07:06 | INFO    | phase3 | ============================================================
+2026-09-02 04:07:06 | INFO    | phase3 | Report: /kaggle/working/traffic_ai/reports/phase3_validation.json
+2026-09-02 04:07:06 | INFO    | phase3 | PASS  | DATASET READY FOR TRAINING
+2026-09-26 15:46:07 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:07 | INFO    | phase3 | YOLO DATASET VALIDATION
+2026-09-26 15:46:07 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:07 | INFO    | phase3 | PASS  | dataset.yaml valid: nc=5, path=/kaggle/working/traffic_ai/data/vehicle_detection
+2026-09-26 15:46:07 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:07 | INFO    | phase3 | VALIDATING TRAIN SPLIT
+2026-09-26 15:46:07 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:07 | INFO    | phase3 | Found 69863 images, 69863 labels in train
+2026-09-26 15:46:07 | INFO    | phase3 | PASS  | All images have corresponding labels
+2026-09-26 15:46:08 | INFO    | phase3 | PASS  | All labels have corresponding images
+2026-09-26 15:46:11 | INFO    | phase3 | PASS  | All label lines well-formed (5 fields)
+2026-09-26 15:46:11 | INFO    | phase3 | PASS  | All class IDs valid (0..4)
+2026-09-26 15:46:11 | INFO    | phase3 | PASS  | All coordinates normalized [0,1]
+2026-09-26 15:46:11 | WARNING | phase3 | WARN  | 1 exact-duplicate label lines (excluded from class counts; matches training dedup)
+2026-09-26 15:46:11 | INFO    | phase3 | Total labels: 765066, Empty label files: 564
+2026-09-26 15:46:11 | INFO    | phase3 |   Class 0 (car): 713210 objects (93.2%)
+2026-09-26 15:46:11 | INFO    | phase3 |   Class 1 (truck): 29971 objects (3.9%)
+2026-09-26 15:46:11 | INFO    | phase3 |   Class 2 (bus): 11672 objects (1.5%)
+2026-09-26 15:46:11 | INFO    | phase3 |   Class 3 (bike): 7210 objects (0.9%)
+2026-09-26 15:46:11 | INFO    | phase3 |   Class 4 (motor): 3002 objects (0.4%)
+2026-09-26 15:46:12 | INFO    | phase3 | PASS  | All 100 sampled images readable
+2026-09-26 15:46:12 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:12 | INFO    | phase3 | VALIDATING VAL SPLIT
+2026-09-26 15:46:12 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:12 | INFO    | phase3 | Found 10000 images, 10000 labels in val
+2026-09-26 15:46:12 | INFO    | phase3 | PASS  | All images have corresponding labels
+2026-09-26 15:46:12 | INFO    | phase3 | PASS  | All labels have corresponding images
+2026-09-26 15:46:13 | INFO    | phase3 | PASS  | All label lines well-formed (5 fields)
+2026-09-26 15:46:13 | INFO    | phase3 | PASS  | All class IDs valid (0..4)
+2026-09-26 15:46:13 | INFO    | phase3 | PASS  | All coordinates normalized [0,1]
+2026-09-26 15:46:13 | INFO    | phase3 | PASS  | No duplicate label lines
+2026-09-26 15:46:13 | INFO    | phase3 | Total labels: 109807, Empty label files: 92
+2026-09-26 15:46:13 | INFO    | phase3 |   Class 0 (car): 102506 objects (93.4%)
+2026-09-26 15:46:13 | INFO    | phase3 |   Class 1 (truck): 4245 objects (3.9%)
+2026-09-26 15:46:13 | INFO    | phase3 |   Class 2 (bus): 1597 objects (1.5%)
+2026-09-26 15:46:13 | INFO    | phase3 |   Class 3 (bike): 1007 objects (0.9%)
+2026-09-26 15:46:13 | INFO    | phase3 |   Class 4 (motor): 452 objects (0.4%)
+2026-09-26 15:46:13 | INFO    | phase3 | PASS  | All 100 sampled images readable
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | No split leakage: train=69863, val=10000
+2026-09-26 15:46:14 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase3 | INTEGRITY CHECK SUMMARY
+2026-09-26 15:46:14 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | dataset_yaml: dataset.yaml valid
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | train_split: 69863 images, 765066 labels
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | val_split: 10000 images, 109807 labels
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | split_leakage: 0 overlapping filenames
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | class_coverage: All 5 classes present
+2026-09-26 15:46:14 | INFO    | phase3 | Overall: ALL CHECKS PASSED
+2026-09-26 15:46:14 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase3 | VALIDATION COMPLETE
+2026-09-26 15:46:14 | INFO    | phase3 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase3 | Report: /kaggle/working/traffic_ai/reports/phase3_validation.json
+2026-09-26 15:46:14 | INFO    | phase3 | PASS  | DATASET READY FOR TRAINING
+2026-09-26 16:19:07 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:07 | INFO    | phase3 | YOLO DATASET VALIDATION
+2026-09-26 16:19:07 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:07 | INFO    | phase3 | PASS  | dataset.yaml valid: nc=5, path=/kaggle/working/traffic_ai/data/vehicle_detection
+2026-09-26 16:19:07 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:07 | INFO    | phase3 | VALIDATING TRAIN SPLIT
+2026-09-26 16:19:07 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:07 | INFO    | phase3 | Found 69863 images, 69863 labels in train
+2026-09-26 16:19:07 | INFO    | phase3 | PASS  | All images have corresponding labels
+2026-09-26 16:19:07 | INFO    | phase3 | PASS  | All labels have corresponding images
+2026-09-26 16:19:11 | INFO    | phase3 | PASS  | All label lines well-formed (5 fields)
+2026-09-26 16:19:11 | INFO    | phase3 | PASS  | All class IDs valid (0..4)
+2026-09-26 16:19:11 | INFO    | phase3 | PASS  | All coordinates normalized [0,1]
+2026-09-26 16:19:11 | WARNING | phase3 | WARN  | 1 exact-duplicate label lines (excluded from class counts; matches training dedup)
+2026-09-26 16:19:11 | INFO    | phase3 | Total labels: 765066, Empty label files: 564
+2026-09-26 16:19:11 | INFO    | phase3 |   Class 0 (car): 713210 objects (93.2%)
+2026-09-26 16:19:11 | INFO    | phase3 |   Class 1 (truck): 29971 objects (3.9%)
+2026-09-26 16:19:11 | INFO    | phase3 |   Class 2 (bus): 11672 objects (1.5%)
+2026-09-26 16:19:11 | INFO    | phase3 |   Class 3 (bike): 7210 objects (0.9%)
+2026-09-26 16:19:11 | INFO    | phase3 |   Class 4 (motor): 3002 objects (0.4%)
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All 100 sampled images readable
+2026-09-26 16:19:12 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:12 | INFO    | phase3 | VALIDATING VAL SPLIT
+2026-09-26 16:19:12 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:12 | INFO    | phase3 | Found 10000 images, 10000 labels in val
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All images have corresponding labels
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All labels have corresponding images
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All label lines well-formed (5 fields)
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All class IDs valid (0..4)
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All coordinates normalized [0,1]
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | No duplicate label lines
+2026-09-26 16:19:12 | INFO    | phase3 | Total labels: 109807, Empty label files: 92
+2026-09-26 16:19:12 | INFO    | phase3 |   Class 0 (car): 102506 objects (93.4%)
+2026-09-26 16:19:12 | INFO    | phase3 |   Class 1 (truck): 4245 objects (3.9%)
+2026-09-26 16:19:12 | INFO    | phase3 |   Class 2 (bus): 1597 objects (1.5%)
+2026-09-26 16:19:12 | INFO    | phase3 |   Class 3 (bike): 1007 objects (0.9%)
+2026-09-26 16:19:12 | INFO    | phase3 |   Class 4 (motor): 452 objects (0.4%)
+2026-09-26 16:19:12 | INFO    | phase3 | PASS  | All 100 sampled images readable
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | No split leakage: train=69863, val=10000
+2026-09-26 16:19:13 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:13 | INFO    | phase3 | INTEGRITY CHECK SUMMARY
+2026-09-26 16:19:13 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | dataset_yaml: dataset.yaml valid
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | train_split: 69863 images, 765066 labels
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | val_split: 10000 images, 109807 labels
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | split_leakage: 0 overlapping filenames
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | class_coverage: All 5 classes present
+2026-09-26 16:19:13 | INFO    | phase3 | Overall: ALL CHECKS PASSED
+2026-09-26 16:19:13 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:13 | INFO    | phase3 | VALIDATION COMPLETE
+2026-09-26 16:19:13 | INFO    | phase3 | ============================================================
+2026-09-26 16:19:13 | INFO    | phase3 | Report: /kaggle/working/traffic_ai/reports/phase3_validation.json
+2026-09-26 16:19:13 | INFO    | phase3 | PASS  | DATASET READY FOR TRAINING

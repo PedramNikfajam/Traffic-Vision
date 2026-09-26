@@ -1,0 +1,62 @@
+﻿2026-09-26 15:19:51 | INFO    | phase5 | ============================================================
+2026-09-26 15:19:51 | INFO    | phase5 | MODEL EVALUATION AND ERROR ANALYSIS
+2026-09-26 15:19:51 | INFO    | phase5 | ============================================================
+2026-09-26 15:19:51 | INFO    | phase5 | Started at: 2026-09-26T15:19:51.195033
+2026-09-26 15:19:51 | INFO    | phase5 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-26 15:19:51 | INFO    | phase5 | Dataset: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-26 15:19:51 | INFO    | phase5 | Loaded metadata for 10000 validation images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'clear': 5346 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'dawn_dusk': 778 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'daytime': 5258 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'foggy': 13 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'night': 3929 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'overcast': 1239 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'partly_cloudy': 738 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'rainy': 738 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'snowy': 769 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'timeofday_undefined': 35 images
+2026-09-26 15:19:51 | INFO    | phase5 |   Metadata group 'weather_undefined': 1157 images
+2026-09-26 15:19:53 | INFO    | phase5 | ============================================================
+2026-09-26 15:19:53 | INFO    | phase5 | RUNNING VALIDATION
+2026-09-26 15:19:53 | INFO    | phase5 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase5 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase5 | MODEL EVALUATION AND ERROR ANALYSIS
+2026-09-26 15:46:14 | INFO    | phase5 | ============================================================
+2026-09-26 15:46:14 | INFO    | phase5 | Started at: 2026-09-26T15:46:14.284872
+2026-09-26 15:46:14 | INFO    | phase5 | Model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-26 15:46:14 | INFO    | phase5 | Dataset: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-26 15:46:14 | INFO    | phase5 | Loaded metadata for 10000 validation images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'clear': 5346 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'dawn_dusk': 778 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'daytime': 5258 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'foggy': 13 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'night': 3929 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'overcast': 1239 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'partly_cloudy': 738 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'rainy': 738 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'snowy': 769 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'timeofday_undefined': 35 images
+2026-09-26 15:46:14 | INFO    | phase5 |   Metadata group 'weather_undefined': 1157 images
+2026-09-26 15:46:16 | INFO    | phase5 | ============================================================
+2026-09-26 15:46:16 | INFO    | phase5 | RUNNING VALIDATION
+2026-09-26 15:46:16 | INFO    | phase5 | ============================================================
+2026-09-26 15:50:16 | INFO    | phase5 | ============================================================
+2026-09-26 15:50:16 | INFO    | phase5 | EVALUATION RESULTS
+2026-09-26 15:50:16 | INFO    | phase5 | ============================================================
+2026-09-26 15:50:16 | INFO    | phase5 | mAP@50:     0.6455
+2026-09-26 15:50:16 | INFO    | phase5 | mAP@50-95:  0.4126
+2026-09-26 15:50:16 | INFO    | phase5 | Precision:  0.7217
+2026-09-26 15:50:16 | INFO    | phase5 | Recall:     0.5758
+2026-09-26 15:50:16 | INFO    | phase5 |   car AP@50: 0.8378
+2026-09-26 15:50:16 | INFO    | phase5 |   truck AP@50: 0.6821
+2026-09-26 15:50:16 | INFO    | phase5 |   bus AP@50: 0.6727
+2026-09-26 15:50:16 | INFO    | phase5 |   bike AP@50: 0.5405
+2026-09-26 15:50:16 | INFO    | phase5 |   motor AP@50: 0.4942
+2026-09-26 15:50:17 | WARNING | phase5 | WARN  | Stratified eval failed for 'clear': No valid images found in /kaggle/working/traffic_ai/data/vehicle_detection/val.cache.
+  [34m[1mval: [0m/kaggle/working/traffic_ai/data/vehicle_detection/val/b1c81faa-3df17267.jpg: ignoring corrupt image/label: [Errno 2] No such file or directory: '/kaggle/working/traffic_ai/data/vehicle_detection/val/b1c81faa-3df17267.jpg'
+  [34m[1mval: [0m/kaggle/working/traffic_ai/data/vehicle_detection/val/b1c81faa-c80764c5.jpg: ignoring corrupt image/label: [Errno 2] No such file or directory: '/kaggle/working/traffic_ai/data/vehicle_detection/val/b1c81faa-c80764c5.jpg'
+  [34m[1mval: [0m/kaggle/working/traffic_ai/data/vehicle_detection/val/b1ca2e5d-84cf9134.jpg: ignoring corrupt image/label: [Errno 2] No such file or directory: '/kaggle/working/traffic_ai/data/vehicle_detection/val/b1ca2e5d-84cf9134.jpg'
+  [34m[1mval: [0m/kaggle/working/traffic_ai/data/vehicle_detection/val/b1ca8418-84a133a0.jpg: ignoring corrupt image/label: [Errno 2] No such file or directory: '/kaggle/working/traffic_ai/data/vehicle_detection/val/b1ca8418-84a133a0.jpg'
+  [34m[1mval: [0m/kaggle/working/traffic_ai/data/vehicle_detection/val/b1cd1e94-26dd524f.jpg: ignoring corrupt image/label: [Errno 2] No such file or directory: '/kaggle/working/traffic_ai/data/vehicle_detection/val/b1cd1e94-26dd524f.jpg'
+
+[truncated: 9.2 MB total. The full log is not committed; this head shows the run that did not reach the stratified evaluation.]

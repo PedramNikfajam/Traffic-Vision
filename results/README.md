@@ -7,6 +7,9 @@ project's own annotations drawn on them.
 Regenerate by re-running the pipeline; nothing in this folder is hand-edited.
 
 ```
+RUN_COMPLETE.json          written by the packaging cell: records which stages
+                           actually completed, so a partial run is never
+                           mistaken for a full one
 reports/
   phase2_preparation.json   annotation accounting, class counts, source totals
   phase3_validation.json    dataset integrity checks
@@ -22,7 +25,17 @@ plots/
   evaluation/               PR curves, confusion matrix, val-batch previews
   counting/                 annotated frames, crossing timelines, line sweep,
                             per-class / per-direction / per-timeofday bars
+logs/                       the run logs, except phase5 (see below)
 ```
+
+**Not committed, deliberately:** `predictions.json` (129 MB per-prediction dump
+from `model.val()`), `manifest_*.json` (31 MB of BDD100K metadata, regenerable
+by Phase 2) and the full `logs/phase5.log` (9.2 MB — the truncated head is
+committed instead, and it is the log of the run that did *not* reach the
+stratified evaluation).
+
+**Current state:** all stages complete except Phase 5's stratified detection
+metrics. `RUN_COMPLETE.json` says so, and so does the showcase notebook.
 
 ## Reading the FP audit
 

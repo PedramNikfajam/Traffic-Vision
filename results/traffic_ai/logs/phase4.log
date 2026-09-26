@@ -1,0 +1,131 @@
+2026-09-02 04:07:07 | INFO    | phase4 | ============================================================
+2026-09-02 04:07:07 | INFO    | phase4 | VEHICLE DETECTION MODEL TRAINING
+2026-09-02 04:07:07 | INFO    | phase4 | ============================================================
+2026-09-02 04:07:07 | INFO    | phase4 | Started at: 2026-09-02T04:07:07.223716
+2026-09-02 04:07:07 | INFO    | phase4 | Model:     yolov8s.pt
+2026-09-02 04:07:07 | INFO    | phase4 | Epochs:    50
+2026-09-02 04:07:07 | INFO    | phase4 | Batch:     16
+2026-09-02 04:07:07 | INFO    | phase4 | Image:     960
+2026-09-02 04:07:07 | INFO    | phase4 | Device:    0,1
+2026-09-02 04:07:07 | INFO    | phase4 | AMP:       True
+2026-09-02 04:07:07 | INFO    | phase4 | Cache:     False
+2026-09-02 04:07:07 | INFO    | phase4 | Seed:      42
+2026-09-02 04:07:07 | INFO    | phase4 | PASS  | Phase 3 validation passed
+2026-09-02 04:07:07 | INFO    | phase4 | Experiment: baseline_s960_20260902_040707
+2026-09-02 04:07:07 | INFO    | phase4 | Directory:  /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707
+2026-09-02 04:07:09 | INFO    | phase4 | ============================================================
+2026-09-02 04:07:09 | INFO    | phase4 | INITIALIZING MODEL
+2026-09-02 04:07:09 | INFO    | phase4 | ============================================================
+2026-09-02 04:07:09 | INFO    | phase4 | Loading pretrained: yolov8s.pt
+2026-09-02 04:07:11 | INFO    | phase4 | Training arguments:
+2026-09-02 04:07:11 | INFO    | phase4 |   amp: True
+2026-09-02 04:07:11 | INFO    | phase4 |   batch: 16
+2026-09-02 04:07:11 | INFO    | phase4 |   cache: False
+2026-09-02 04:07:11 | INFO    | phase4 |   copy_paste: 0.0
+2026-09-02 04:07:11 | INFO    | phase4 |   data: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-02 04:07:11 | INFO    | phase4 |   degrees: 0.0
+2026-09-02 04:07:11 | INFO    | phase4 |   deterministic: True
+2026-09-02 04:07:11 | INFO    | phase4 |   device: 0,1
+2026-09-02 04:07:11 | INFO    | phase4 |   epochs: 50
+2026-09-02 04:07:11 | INFO    | phase4 |   exist_ok: True
+2026-09-02 04:07:11 | INFO    | phase4 |   fliplr: 0.5
+2026-09-02 04:07:11 | INFO    | phase4 |   flipud: 0.0
+2026-09-02 04:07:11 | INFO    | phase4 |   hsv_h: 0.015
+2026-09-02 04:07:11 | INFO    | phase4 |   hsv_s: 0.7
+2026-09-02 04:07:11 | INFO    | phase4 |   hsv_v: 0.4
+2026-09-02 04:07:11 | INFO    | phase4 |   imgsz: 960
+2026-09-02 04:07:11 | INFO    | phase4 |   lr0: 0.01
+2026-09-02 04:07:11 | INFO    | phase4 |   lrf: 0.01
+2026-09-02 04:07:11 | INFO    | phase4 |   mixup: 0.0
+2026-09-02 04:07:11 | INFO    | phase4 |   momentum: 0.937
+2026-09-02 04:07:11 | INFO    | phase4 |   mosaic: 1.0
+2026-09-02 04:07:11 | INFO    | phase4 |   name: train
+2026-09-02 04:07:11 | INFO    | phase4 |   optimizer: SGD
+2026-09-02 04:07:11 | INFO    | phase4 |   patience: 15
+2026-09-02 04:07:11 | INFO    | phase4 |   perspective: 0.0
+2026-09-02 04:07:11 | INFO    | phase4 |   plots: True
+2026-09-02 04:07:11 | INFO    | phase4 |   project: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707
+2026-09-02 04:07:11 | INFO    | phase4 |   save_json: True
+2026-09-02 04:07:11 | INFO    | phase4 |   save_period: 5
+2026-09-02 04:07:11 | INFO    | phase4 |   scale: 0.5
+2026-09-02 04:07:11 | INFO    | phase4 |   seed: 42
+2026-09-02 04:07:11 | INFO    | phase4 |   shear: 0.0
+2026-09-02 04:07:11 | INFO    | phase4 |   translate: 0.1
+2026-09-02 04:07:11 | INFO    | phase4 |   val: True
+2026-09-02 04:07:11 | INFO    | phase4 |   warmup_bias_lr: 0.1
+2026-09-02 04:07:11 | INFO    | phase4 |   warmup_epochs: 3.0
+2026-09-02 04:07:11 | INFO    | phase4 |   warmup_momentum: 0.8
+2026-09-02 04:07:11 | INFO    | phase4 |   weight_decay: 0.0005
+2026-09-02 04:07:11 | INFO    | phase4 |   workers: 4
+2026-09-02 04:07:11 | INFO    | phase4 | ============================================================
+2026-09-02 04:07:11 | INFO    | phase4 | STARTING TRAINING
+2026-09-02 04:07:11 | INFO    | phase4 | ============================================================
+2026-09-03 12:53:21 | INFO    | phase4 | ============================================================
+2026-09-03 12:53:21 | INFO    | phase4 | VEHICLE DETECTION MODEL TRAINING
+2026-09-03 12:53:21 | INFO    | phase4 | ============================================================
+2026-09-03 12:53:21 | INFO    | phase4 | Started at: 2026-09-03T12:53:21.243116
+2026-09-03 12:53:21 | INFO    | phase4 | Model:     yolov8s.pt
+2026-09-03 12:53:21 | INFO    | phase4 | Epochs:    50
+2026-09-03 12:53:21 | INFO    | phase4 | Batch:     16
+2026-09-03 12:53:21 | INFO    | phase4 | Image:     960
+2026-09-03 12:53:21 | INFO    | phase4 | Device:    0,1
+2026-09-03 12:53:21 | INFO    | phase4 | AMP:       True
+2026-09-03 12:53:21 | INFO    | phase4 | Cache:     False
+2026-09-03 12:53:21 | INFO    | phase4 | Seed:      42
+2026-09-03 12:53:21 | INFO    | phase4 | PASS  | Phase 3 validation passed
+2026-09-03 12:53:21 | INFO    | phase4 | Resuming from: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/last.pt
+2026-09-03 12:53:21 | INFO    | phase4 | PASS  | Anchored to original experiment dir: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707
+2026-09-03 12:53:21 | INFO    | phase4 | Directory:  /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707
+2026-09-03 12:53:23 | INFO    | phase4 | ============================================================
+2026-09-03 12:53:23 | INFO    | phase4 | INITIALIZING MODEL
+2026-09-03 12:53:23 | INFO    | phase4 | ============================================================
+2026-09-03 12:53:23 | INFO    | phase4 | Loading checkpoint: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/last.pt
+2026-09-03 12:53:23 | INFO    | phase4 | Training arguments:
+2026-09-03 12:53:23 | INFO    | phase4 |   amp: True
+2026-09-03 12:53:23 | INFO    | phase4 |   batch: 16
+2026-09-03 12:53:23 | INFO    | phase4 |   cache: False
+2026-09-03 12:53:23 | INFO    | phase4 |   copy_paste: 0.0
+2026-09-03 12:53:23 | INFO    | phase4 |   data: /kaggle/working/traffic_ai/data/vehicle_detection/dataset.yaml
+2026-09-03 12:53:23 | INFO    | phase4 |   degrees: 0.0
+2026-09-03 12:53:23 | INFO    | phase4 |   deterministic: True
+2026-09-03 12:53:23 | INFO    | phase4 |   device: 0,1
+2026-09-03 12:53:23 | INFO    | phase4 |   epochs: 50
+2026-09-03 12:53:23 | INFO    | phase4 |   exist_ok: True
+2026-09-03 12:53:23 | INFO    | phase4 |   fliplr: 0.5
+2026-09-03 12:53:23 | INFO    | phase4 |   flipud: 0.0
+2026-09-03 12:53:23 | INFO    | phase4 |   hsv_h: 0.015
+2026-09-03 12:53:23 | INFO    | phase4 |   hsv_s: 0.7
+2026-09-03 12:53:23 | INFO    | phase4 |   hsv_v: 0.4
+2026-09-03 12:53:23 | INFO    | phase4 |   imgsz: 960
+2026-09-03 12:53:23 | INFO    | phase4 |   lr0: 0.01
+2026-09-03 12:53:23 | INFO    | phase4 |   lrf: 0.01
+2026-09-03 12:53:23 | INFO    | phase4 |   mixup: 0.0
+2026-09-03 12:53:23 | INFO    | phase4 |   momentum: 0.937
+2026-09-03 12:53:23 | INFO    | phase4 |   mosaic: 1.0
+2026-09-03 12:53:23 | INFO    | phase4 |   name: train
+2026-09-03 12:53:23 | INFO    | phase4 |   optimizer: SGD
+2026-09-03 12:53:23 | INFO    | phase4 |   patience: 15
+2026-09-03 12:53:23 | INFO    | phase4 |   perspective: 0.0
+2026-09-03 12:53:23 | INFO    | phase4 |   plots: True
+2026-09-03 12:53:23 | INFO    | phase4 |   project: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707
+2026-09-03 12:53:23 | INFO    | phase4 |   resume: True
+2026-09-03 12:53:23 | INFO    | phase4 |   save_json: True
+2026-09-03 12:53:23 | INFO    | phase4 |   save_period: 5
+2026-09-03 12:53:23 | INFO    | phase4 |   scale: 0.5
+2026-09-03 12:53:23 | INFO    | phase4 |   seed: 42
+2026-09-03 12:53:23 | INFO    | phase4 |   shear: 0.0
+2026-09-03 12:53:23 | INFO    | phase4 |   translate: 0.1
+2026-09-03 12:53:23 | INFO    | phase4 |   val: True
+2026-09-03 12:53:23 | INFO    | phase4 |   warmup_bias_lr: 0.1
+2026-09-03 12:53:23 | INFO    | phase4 |   warmup_epochs: 3.0
+2026-09-03 12:53:23 | INFO    | phase4 |   warmup_momentum: 0.8
+2026-09-03 12:53:23 | INFO    | phase4 |   weight_decay: 0.0005
+2026-09-03 12:53:23 | INFO    | phase4 |   workers: 4
+2026-09-03 12:53:23 | INFO    | phase4 | ============================================================
+2026-09-03 12:53:23 | INFO    | phase4 | STARTING TRAINING
+2026-09-03 12:53:23 | INFO    | phase4 | ============================================================
+2026-09-03 18:46:37 | INFO    | phase4 | ============================================================
+2026-09-03 18:46:37 | INFO    | phase4 | TRAINING COMPLETE
+2026-09-03 18:46:37 | INFO    | phase4 | ============================================================
+2026-09-03 18:46:37 | INFO    | phase4 | PASS  | Best model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/best.pt
+2026-09-03 18:46:37 | INFO    | phase4 | Last model: /kaggle/working/traffic_ai/experiments/baseline_s960_20260902_040707/train/weights/last.pt

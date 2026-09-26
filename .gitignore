@@ -22,9 +22,11 @@ htmlcov/
 
 # results/ IS tracked on purpose: it holds the committed evidence (metrics,
 # plots, annotated frames) that makes the repository reviewable without a GPU.
-# Only guard against a pathological file:
-results/**/phase6_fp_audit.json
-results/**/manifest_*.json
+# Only the genuinely pathological artefacts are excluded:
+results/**/manifest_*.json      # 31 MB of BDD100K metadata, regenerable by Phase 2
+results/**/predictions.json     # 129 MB per-prediction dump from model.val()
+# NOTE: logs/phase5.log IS committed, but only as a 60-line head. The full log
+# is 9.2 MB and belongs to the run that did not reach the stratified evaluation.
 
 # Environment
 .venv/

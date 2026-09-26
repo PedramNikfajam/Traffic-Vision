@@ -1,0 +1,932 @@
+2026-09-25 22:34:46 | INFO    | phase7 | ============================================================
+2026-09-25 22:34:46 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 22:34:46 | INFO    | phase7 | ============================================================
+2026-09-25 22:34:46 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 22:34:46 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 22:34:46 | INFO    | phase7 | Counting line: 60.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 22:34:48 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks, 15 counted (line y=393 of 654) | by_class={'car': 15} | by_direction={'farbound': 7, 'nearbound': 8} | 22.19 veh/min
+2026-09-25 22:34:48 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks, 0 counted (line y=264 of 440) | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-25 22:34:48 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks, 36 counted (line y=384 of 640) | by_class={'car': 36} | by_direction={'nearbound': 36} | 53.33 veh/min
+2026-09-25 22:34:48 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks, 0 counted (line y=280 of 466) | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-25 22:34:48 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks, 7 counted (line y=418 of 697) | by_class={'bike': 1, 'car': 6} | by_direction={'farbound': 1, 'nearbound': 6} | 10.37 veh/min
+2026-09-25 22:34:48 | INFO    | phase7 | ============================================================
+2026-09-25 22:34:48 | INFO    | phase7 | SUMMARY
+2026-09-25 22:34:48 | INFO    | phase7 | ============================================================
+2026-09-25 22:34:48 | INFO    | phase7 | Videos processed: 5
+2026-09-25 22:34:48 | INFO    | phase7 | Tracks seen: 575 | counted once: 58
+2026-09-25 22:34:48 | INFO    | phase7 | Total crossing events: 58
+2026-09-25 22:34:48 | INFO    | phase7 | By class: {'bike': 1, 'car': 57}
+2026-09-25 22:34:48 | INFO    | phase7 | By direction (screen-relative): {'farbound': 8, 'nearbound': 50}
+2026-09-25 22:34:48 | INFO    | phase7 | Rate: 17.20 veh/min over 3.37 min (86.0 / 5min, 257.9 / 15min)
+2026-09-25 22:34:49 | INFO    | phase7 | Plots: 3 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 22:34:49 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 22:34:49 | INFO    | phase7 | ============================================================
+2026-09-25 22:34:49 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 22:34:49 | INFO    | phase7 | ============================================================
+2026-09-25 22:34:49 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 22:34:49 | INFO    | phase7 | PASS  | counts_computed: 58 crossing events over 58 tracks
+2026-09-25 22:34:49 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 22:34:49 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 22:34:49 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 22:34:49 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 22:34:49 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 22:49:30 | INFO    | phase7 | ============================================================
+2026-09-25 22:49:30 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 22:49:30 | INFO    | phase7 | ============================================================
+2026-09-25 22:49:30 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 22:49:30 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 22:49:30 | INFO    | phase7 | Counting line: 60.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 22:49:32 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=654 (bbox-heuristic) | line y=327 (50.0%) | 17 counted | by_class={'car': 17} | by_direction={'farbound': 7, 'nearbound': 10} | 25.14 veh/min
+2026-09-25 22:49:32 | INFO    | phase7 |     line sweep: {'0.4': 1, '0.5': 17, '0.6': 15, '0.7': 3, '0.8': 0}
+2026-09-25 22:49:32 | WARNING | phase7 | WARN  |     no video file for 0000f77c-6257be58 - pass --videos to get annotated frame samples
+2026-09-25 22:49:33 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=440 (bbox-heuristic) | line y=308 (70.0%) | 43 counted | by_class={'car': 43} | by_direction={'farbound': 26, 'nearbound': 17} | 63.91 veh/min
+2026-09-25 22:49:33 | INFO    | phase7 |     line sweep: {'0.4': 0, '0.5': 0, '0.6': 0, '0.7': 43, '0.8': 8}
+2026-09-25 22:49:33 | WARNING | phase7 | WARN  |     no video file for 0000f77c-62c2a288 - pass --videos to get annotated frame samples
+2026-09-25 22:49:33 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=640 (bbox-heuristic) | line y=384 (60.0%) | 36 counted | by_class={'car': 36} | by_direction={'nearbound': 36} | 53.33 veh/min
+2026-09-25 22:49:33 | INFO    | phase7 |     line sweep: {'0.4': 0, '0.5': 29, '0.6': 36, '0.7': 26, '0.8': 2}
+2026-09-25 22:49:33 | WARNING | phase7 | WARN  |     no video file for 0000f77c-cb820c98 - pass --videos to get annotated frame samples
+2026-09-25 22:49:34 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=466 (bbox-heuristic) | line y=326 (70.0%) | 9 counted | by_class={'car': 9} | by_direction={'farbound': 7, 'nearbound': 2} | 13.36 veh/min
+2026-09-25 22:49:34 | INFO    | phase7 |     line sweep: {'0.4': 0, '0.5': 0, '0.6': 0, '0.7': 9, '0.8': 6}
+2026-09-25 22:49:34 | WARNING | phase7 | WARN  |     no video file for 0001542f-5ce3cf52 - pass --videos to get annotated frame samples
+2026-09-25 22:49:34 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=697 (bbox-heuristic) | line y=348 (50.0%) | 13 counted | by_class={'bus': 2, 'car': 11} | by_direction={'farbound': 5, 'nearbound': 8} | 19.26 veh/min
+2026-09-25 22:49:34 | INFO    | phase7 |     line sweep: {'0.4': 0, '0.5': 13, '0.6': 7, '0.7': 3, '0.8': 1}
+2026-09-25 22:49:34 | WARNING | phase7 | WARN  |     no video file for 0001542f-7c670be8 - pass --videos to get annotated frame samples
+2026-09-25 22:49:34 | INFO    | phase7 | ============================================================
+2026-09-25 22:49:34 | INFO    | phase7 | SUMMARY
+2026-09-25 22:49:34 | INFO    | phase7 | ============================================================
+2026-09-25 22:49:34 | INFO    | phase7 | Videos processed: 5
+2026-09-25 22:49:34 | INFO    | phase7 | Tracks seen: 575 | counted once: 118
+2026-09-25 22:49:34 | INFO    | phase7 | Total crossing events: 118
+2026-09-25 22:49:34 | INFO    | phase7 | By class: {'bus': 2, 'car': 116}
+2026-09-25 22:49:34 | INFO    | phase7 | By direction (screen-relative): {'farbound': 45, 'nearbound': 73}
+2026-09-25 22:49:34 | INFO    | phase7 | Rate: 34.98 veh/min over 3.37 min (174.9 / 5min, 524.8 / 15min)
+2026-09-25 22:49:35 | INFO    | phase7 | Line sweep: {'0.4': 1, '0.5': 59, '0.6': 58, '0.7': 84, '0.8': 17}
+2026-09-25 22:49:35 | INFO    | phase7 | Plots: 9 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 22:49:35 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 22:49:35 | INFO    | phase7 | ============================================================
+2026-09-25 22:49:35 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 22:49:35 | INFO    | phase7 | ============================================================
+2026-09-25 22:49:35 | WARNING | phase7 | WARN  | frame_height_resolved: frame heights from bbox-heuristic
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | counts_computed: 118 crossing events over 118 tracks
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 22:49:35 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 22:49:35 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:16:50 | INFO    | phase7 | ============================================================
+2026-09-25 23:16:50 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:16:50 | INFO    | phase7 | ============================================================
+2026-09-25 23:16:50 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:16:50 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:16:50 | INFO    | phase7 | Counting line: 60.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:16:52 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | {'0.4': 8, '0.5': 31, '0.6': 7, '0.7': 2, '0.8': 0}
+2026-09-25 23:16:52 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | {'0.4': 25, '0.5': 6, '0.6': 0, '0.7': 0, '0.8': 0}
+2026-09-25 23:16:52 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | {'0.4': 6, '0.5': 49, '0.6': 28, '0.7': 3, '0.8': 0}
+2026-09-25 23:16:52 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | {'0.4': 0, '0.5': 12, '0.6': 0, '0.7': 0, '0.8': 0}
+2026-09-25 23:16:52 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | {'0.4': 1, '0.5': 14, '0.6': 7, '0.7': 3, '0.8': 1}
+2026-09-25 23:16:52 | INFO    | phase7 |   Line position totals across all videos: {'0.4': 40, '0.5': 112, '0.6': 42, '0.7': 8, '0.8': 1} -> using 0.5
+2026-09-25 23:16:52 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 31 counted | by_class={'car': 31} | by_direction={'farbound': 15, 'nearbound': 16} | 45.85 veh/min
+2026-09-25 23:16:52 | INFO    | phase7 |     per-video sweep: {'0.4': 8, '0.5': 31, '0.6': 7, '0.7': 2, '0.8': 0}
+2026-09-25 23:16:52 | INFO    | phase7 |     geometry view (no video decoded): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:16:53 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 6 counted | by_class={'car': 6} | by_direction={'farbound': 1, 'nearbound': 5} | 8.92 veh/min
+2026-09-25 23:16:53 | INFO    | phase7 |     per-video sweep: {'0.4': 25, '0.5': 6, '0.6': 0, '0.7': 0, '0.8': 0}
+2026-09-25 23:16:53 | INFO    | phase7 |     geometry view (no video decoded): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:16:53 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 49 counted | by_class={'car': 49} | by_direction={'farbound': 4, 'nearbound': 45} | 72.59 veh/min
+2026-09-25 23:16:53 | INFO    | phase7 |     per-video sweep: {'0.4': 6, '0.5': 49, '0.6': 28, '0.7': 3, '0.8': 0}
+2026-09-25 23:16:53 | INFO    | phase7 |     geometry view (no video decoded): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:16:54 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 12 counted | by_class={'car': 12} | by_direction={'farbound': 4, 'nearbound': 8} | 17.81 veh/min
+2026-09-25 23:16:54 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.5': 12, '0.6': 0, '0.7': 0, '0.8': 0}
+2026-09-25 23:16:54 | INFO    | phase7 |     geometry view (no video decoded): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:16:54 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 14 counted | by_class={'bus': 2, 'car': 12} | by_direction={'farbound': 7, 'nearbound': 7} | 20.74 veh/min
+2026-09-25 23:16:54 | INFO    | phase7 |     per-video sweep: {'0.4': 1, '0.5': 14, '0.6': 7, '0.7': 3, '0.8': 1}
+2026-09-25 23:16:54 | INFO    | phase7 |     geometry view (no video decoded): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:16:54 | INFO    | phase7 | ============================================================
+2026-09-25 23:16:54 | INFO    | phase7 | SUMMARY
+2026-09-25 23:16:54 | INFO    | phase7 | ============================================================
+2026-09-25 23:16:54 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:16:54 | INFO    | phase7 | Tracks seen: 575 | counted once: 112
+2026-09-25 23:16:54 | INFO    | phase7 | Total crossing events: 112
+2026-09-25 23:16:54 | INFO    | phase7 | By class: {'bus': 2, 'car': 110}
+2026-09-25 23:16:54 | INFO    | phase7 | By direction (screen-relative): {'farbound': 31, 'nearbound': 81}
+2026-09-25 23:16:54 | INFO    | phase7 | Rate: 33.20 veh/min over 3.37 min (166.0 / 5min, 498.1 / 15min)
+2026-09-25 23:16:55 | INFO    | phase7 | Line sweep: {'0.4': 5, '0.5': 70, '0.6': 35, '0.7': 15, '0.8': 5}
+2026-09-25 23:16:55 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:16:55 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:16:55 | INFO    | phase7 | ============================================================
+2026-09-25 23:16:55 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:16:55 | INFO    | phase7 | ============================================================
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | counts_computed: 112 crossing events over 112 tracks
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:16:55 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:16:55 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:37:18 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:18 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:37:18 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:18 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:37:18 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:37:18 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:37:20 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | min_net_disp=0px | {'0.35': 2, '0.4': 8, '0.45': 15, '0.5': 31, '0.55': 13, '0.6': 7, '0.65': 2, '0.7': 2}
+2026-09-25 23:37:20 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | min_net_disp=0px | {'0.35': 0, '0.4': 25, '0.45': 50, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:20 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | min_net_disp=0px | {'0.35': 1, '0.4': 6, '0.45': 40, '0.5': 49, '0.55': 34, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:37:20 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | min_net_disp=0px | {'0.35': 0, '0.4': 0, '0.45': 7, '0.5': 12, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:20 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | min_net_disp=0px | {'0.35': 0, '0.4': 1, '0.45': 5, '0.5': 14, '0.55': 13, '0.6': 7, '0.65': 5, '0.7': 3}
+2026-09-25 23:37:20 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 3, '0.4': 40, '0.45': 117, '0.5': 112, '0.55': 61, '0.6': 42, '0.65': 20, '0.7': 8} -> using 0.45
+2026-09-25 23:37:20 | WARNING | phase7 | WARN  |   COUNT IS LINE-SENSITIVE: totals range 3-117 across the swept positions (39.0x). Many tracks hover near the line rather than traversing it, so 'maximise the count' favours a line inside the hover band. Do NOT report 0.45 as a traffic volume. Re-run with --min-net-disp-frac 0.05 and 0.10 and compare.
+2026-09-25 23:37:20 | WARNING | phase7 | WARN  |   --min-net-disp-frac is 0 (off): loitering tracks that merely wobble across the line are counted
+2026-09-25 23:37:20 | INFO    | phase7 |   0000f77c-6257be58: line y=324 of 720 (45%) -> 15 counted | by_class={'car': 15} | by_direction={'farbound': 5, 'nearbound': 10} | 22.19 veh/min
+2026-09-25 23:37:20 | INFO    | phase7 |     per-video sweep: {'0.35': 2, '0.4': 8, '0.45': 15, '0.5': 31, '0.55': 13, '0.6': 7, '0.65': 2, '0.7': 2}
+2026-09-25 23:37:20 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:37:21 | INFO    | phase7 |   0000f77c-62c2a288: line y=324 of 720 (45%) -> 50 counted | by_class={'car': 50} | by_direction={'farbound': 23, 'nearbound': 27} | 74.32 veh/min
+2026-09-25 23:37:21 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 25, '0.45': 50, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:21 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:37:21 | INFO    | phase7 |   0000f77c-cb820c98: line y=324 of 720 (45%) -> 40 counted | by_class={'car': 40} | by_direction={'farbound': 19, 'nearbound': 21} | 59.26 veh/min
+2026-09-25 23:37:21 | INFO    | phase7 |     per-video sweep: {'0.35': 1, '0.4': 6, '0.45': 40, '0.5': 49, '0.55': 34, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:37:22 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:37:22 | INFO    | phase7 |   0001542f-5ce3cf52: line y=324 of 720 (45%) -> 7 counted | by_class={'car': 7} | by_direction={'farbound': 7} | 10.39 veh/min
+2026-09-25 23:37:22 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 7, '0.5': 12, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:22 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:37:22 | INFO    | phase7 |   0001542f-7c670be8: line y=324 of 720 (45%) -> 5 counted | by_class={'bus': 2, 'car': 3} | by_direction={'farbound': 3, 'nearbound': 2} | 7.41 veh/min
+2026-09-25 23:37:22 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 1, '0.45': 5, '0.5': 14, '0.55': 13, '0.6': 7, '0.65': 5, '0.7': 3}
+2026-09-25 23:37:23 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:37:23 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:23 | INFO    | phase7 | SUMMARY
+2026-09-25 23:37:23 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:23 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:37:23 | INFO    | phase7 | Tracks seen: 575 | counted once: 117
+2026-09-25 23:37:23 | INFO    | phase7 | Total crossing events: 117
+2026-09-25 23:37:23 | INFO    | phase7 | By class: {'bus': 2, 'car': 115}
+2026-09-25 23:37:23 | INFO    | phase7 | By direction (screen-relative): {'farbound': 57, 'nearbound': 60}
+2026-09-25 23:37:23 | INFO    | phase7 | Rate: 34.69 veh/min over 3.37 min (173.4 / 5min, 520.3 / 15min)
+2026-09-25 23:37:23 | INFO    | phase7 | Line sweep: {'0.35': 3, '0.4': 40, '0.45': 117, '0.5': 112, '0.55': 61, '0.6': 42, '0.65': 20, '0.7': 8}
+2026-09-25 23:37:23 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:37:23 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:37:23 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:23 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:37:23 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-25 23:37:23 | WARNING | phase7 | WARN  | count_not_line_sensitive: count varies 39.0x across swept line positions - too sensitive to report as a traffic volume; enable --min-net-disp-frac
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | counts_computed: 117 crossing events over 117 tracks
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:37:23 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:37:23 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:37:24 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:24 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:37:24 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:24 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:37:24 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:37:24 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:37:26 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | min_net_disp=36px | {'0.35': 1, '0.4': 2, '0.45': 6, '0.5': 10, '0.55': 8, '0.6': 6, '0.65': 2, '0.7': 2}
+2026-09-25 23:37:26 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | min_net_disp=36px | {'0.35': 0, '0.4': 5, '0.45': 8, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:26 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | min_net_disp=36px | {'0.35': 0, '0.4': 5, '0.45': 21, '0.5': 37, '0.55': 31, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:37:26 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | min_net_disp=36px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 1, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:26 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | min_net_disp=36px | {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 3, '0.55': 5, '0.6': 6, '0.65': 5, '0.7': 3}
+2026-09-25 23:37:26 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 1, '0.4': 12, '0.45': 36, '0.5': 55, '0.55': 45, '0.6': 40, '0.65': 20, '0.7': 8} -> using 0.5
+2026-09-25 23:37:26 | WARNING | phase7 | WARN  |   COUNT IS LINE-SENSITIVE: totals range 1-55 across the swept positions (55.0x). Many tracks hover near the line rather than traversing it, so 'maximise the count' favours a line inside the hover band. Do NOT report 0.5 as a traffic volume. Re-run with --min-net-disp-frac 0.05 and 0.10 and compare.
+2026-09-25 23:37:26 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 10 counted | by_class={'car': 10} | by_direction={'farbound': 4, 'nearbound': 6} | 14.79 veh/min
+2026-09-25 23:37:26 | INFO    | phase7 |     per-video sweep: {'0.35': 1, '0.4': 2, '0.45': 6, '0.5': 10, '0.55': 8, '0.6': 6, '0.65': 2, '0.7': 2}
+2026-09-25 23:37:26 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:37:27 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 4 counted | by_class={'car': 4} | by_direction={'nearbound': 4} | 5.95 veh/min
+2026-09-25 23:37:27 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 5, '0.45': 8, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:27 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:37:27 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 37 counted | by_class={'car': 37} | by_direction={'nearbound': 37} | 54.81 veh/min
+2026-09-25 23:37:27 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 5, '0.45': 21, '0.5': 37, '0.55': 31, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:37:28 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:37:28 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 1 counted | by_class={'car': 1} | by_direction={'nearbound': 1} | 1.48 veh/min
+2026-09-25 23:37:28 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 1, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:28 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:37:29 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 3 counted | by_class={'car': 3} | by_direction={'nearbound': 3} | 4.44 veh/min
+2026-09-25 23:37:29 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 3, '0.55': 5, '0.6': 6, '0.65': 5, '0.7': 3}
+2026-09-25 23:37:29 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:37:29 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:29 | INFO    | phase7 | SUMMARY
+2026-09-25 23:37:29 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:29 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:37:29 | INFO    | phase7 | Tracks seen: 575 | counted once: 55
+2026-09-25 23:37:29 | INFO    | phase7 | Total crossing events: 55
+2026-09-25 23:37:29 | INFO    | phase7 | By class: {'car': 55}
+2026-09-25 23:37:29 | INFO    | phase7 | By direction (screen-relative): {'farbound': 4, 'nearbound': 51}
+2026-09-25 23:37:29 | INFO    | phase7 | Rate: 16.31 veh/min over 3.37 min (81.5 / 5min, 244.6 / 15min)
+2026-09-25 23:37:29 | INFO    | phase7 | Line sweep: {'0.35': 1, '0.4': 12, '0.45': 36, '0.5': 55, '0.55': 45, '0.6': 40, '0.65': 20, '0.7': 8}
+2026-09-25 23:37:29 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:37:29 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:37:29 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:29 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:37:29 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-25 23:37:29 | WARNING | phase7 | WARN  | count_not_line_sensitive: count varies 55.0x across swept line positions - too sensitive to report as a traffic volume; enable --min-net-disp-frac
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | counts_computed: 55 crossing events over 55 tracks
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:37:29 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:37:29 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:37:30 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:30 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:37:30 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:30 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:37:30 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:37:30 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:37:32 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 5, '0.55': 5, '0.6': 4, '0.65': 2, '0.7': 2}
+2026-09-25 23:37:32 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:32 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | min_net_disp=72px | {'0.35': 0, '0.4': 2, '0.45': 16, '0.5': 32, '0.55': 30, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:37:32 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:32 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 2, '0.55': 5, '0.6': 5, '0.65': 5, '0.7': 3}
+2026-09-25 23:37:32 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 0, '0.4': 2, '0.45': 17, '0.5': 39, '0.55': 40, '0.6': 37, '0.65': 20, '0.7': 8} -> using 0.55
+2026-09-25 23:37:32 | INFO    | phase7 |   0000f77c-6257be58: line y=396 of 720 (55%) -> 5 counted | by_class={'car': 5} | by_direction={'farbound': 2, 'nearbound': 3} | 7.40 veh/min
+2026-09-25 23:37:32 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 5, '0.55': 5, '0.6': 4, '0.65': 2, '0.7': 2}
+2026-09-25 23:37:33 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:37:33 | INFO    | phase7 |   0000f77c-62c2a288: line y=396 of 720 (55%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-25 23:37:33 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:33 | WARNING | phase7 | WARN  |     ZERO crossings for 0000f77c-62c2a288 - see /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_timelines.png to see whether tracks ever approach the line
+2026-09-25 23:37:33 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:37:34 | INFO    | phase7 |   0000f77c-cb820c98: line y=396 of 720 (55%) -> 30 counted | by_class={'car': 30} | by_direction={'nearbound': 30} | 44.44 veh/min
+2026-09-25 23:37:34 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 2, '0.45': 16, '0.5': 32, '0.55': 30, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:37:34 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:37:34 | INFO    | phase7 |   0001542f-5ce3cf52: line y=396 of 720 (55%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-25 23:37:34 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:37:34 | WARNING | phase7 | WARN  |     ZERO crossings for 0001542f-5ce3cf52 - see /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_timelines.png to see whether tracks ever approach the line
+2026-09-25 23:37:34 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:37:35 | INFO    | phase7 |   0001542f-7c670be8: line y=396 of 720 (55%) -> 5 counted | by_class={'car': 5} | by_direction={'nearbound': 5} | 7.41 veh/min
+2026-09-25 23:37:35 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 2, '0.55': 5, '0.6': 5, '0.65': 5, '0.7': 3}
+2026-09-25 23:37:35 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:37:35 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:35 | INFO    | phase7 | SUMMARY
+2026-09-25 23:37:35 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:35 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:37:35 | INFO    | phase7 | Tracks seen: 575 | counted once: 40
+2026-09-25 23:37:35 | INFO    | phase7 | Total crossing events: 40
+2026-09-25 23:37:35 | INFO    | phase7 | By class: {'car': 40}
+2026-09-25 23:37:35 | INFO    | phase7 | By direction (screen-relative): {'farbound': 2, 'nearbound': 38}
+2026-09-25 23:37:35 | INFO    | phase7 | Rate: 11.86 veh/min over 3.37 min (59.3 / 5min, 177.9 / 15min)
+2026-09-25 23:37:36 | INFO    | phase7 | Line sweep: {'0.35': 0, '0.4': 2, '0.45': 17, '0.5': 39, '0.55': 40, '0.6': 37, '0.65': 20, '0.7': 8}
+2026-09-25 23:37:36 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:37:36 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:37:36 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:36 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:37:36 | INFO    | phase7 | ============================================================
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:37:36 | WARNING | phase7 | WARN  | all_videos_counted: 2 video(s) counted ZERO: ['0000f77c-62c2a288', '0001542f-5ce3cf52'] - check the timeline plots and the line sweep
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | count_not_line_sensitive: count varies 1.0x across swept line positions
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | counts_computed: 40 crossing events over 40 tracks
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:37:36 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:37:36 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:45:09 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:09 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:45:09 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:09 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:45:09 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:45:09 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:45:12 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.35': 2, '0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2, '0.7': 2}
+2026-09-25 23:45:12 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.35': 0, '0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:12 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.35': 1, '0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:45:12 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:12 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5, '0.7': 3}
+2026-09-25 23:45:12 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 3, '0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20, '0.7': 8} -> using 0.5
+2026-09-25 23:45:12 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 3, '0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20, '0.7': 8} -> using 0.5
+2026-09-25 23:45:12 | INFO    | phase7 |   Robustness: plateau(>=80% of best)=12% of positions, spread(max/min over non-zero)=30.0, positions with zero=0
+2026-09-25 23:45:12 | WARNING | phase7 | WARN  |   Only 12% of swept positions come within 20% of the best count (90). A robust counting line should have a PLATEAU with falloff on either side; a single narrow spike means the line sits inside a band that tracks merely hover in, and the total is not a traffic volume.
+2026-09-25 23:45:12 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 27 counted | by_class={'car': 27} | by_direction={'farbound': 13, 'nearbound': 14} | 39.93 veh/min
+2026-09-25 23:45:12 | INFO    | phase7 |     per-video sweep: {'0.35': 2, '0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2, '0.7': 2}
+2026-09-25 23:45:12 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:45:13 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 6 counted | by_class={'car': 6} | by_direction={'farbound': 1, 'nearbound': 5} | 8.92 veh/min
+2026-09-25 23:45:13 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:13 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:45:13 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 42 counted | by_class={'car': 42} | by_direction={'nearbound': 42} | 62.22 veh/min
+2026-09-25 23:45:13 | INFO    | phase7 |     per-video sweep: {'0.35': 1, '0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:45:13 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:45:14 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 9 counted | by_class={'car': 9} | by_direction={'farbound': 4, 'nearbound': 5} | 13.36 veh/min
+2026-09-25 23:45:14 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:14 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:45:14 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 6 counted | by_class={'bus': 1, 'car': 5} | by_direction={'farbound': 3, 'nearbound': 3} | 8.89 veh/min
+2026-09-25 23:45:14 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5, '0.7': 3}
+2026-09-25 23:45:14 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:45:15 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:15 | INFO    | phase7 | SUMMARY
+2026-09-25 23:45:15 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:15 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:45:15 | INFO    | phase7 | Tracks seen: 575 | counted once: 90
+2026-09-25 23:45:15 | INFO    | phase7 | Total crossing events: 90
+2026-09-25 23:45:15 | INFO    | phase7 | By class: {'bus': 1, 'car': 89}
+2026-09-25 23:45:15 | INFO    | phase7 | By direction (screen-relative): {'farbound': 21, 'nearbound': 69}
+2026-09-25 23:45:15 | INFO    | phase7 | Rate: 26.68 veh/min over 3.37 min (133.4 / 5min, 400.2 / 15min)
+2026-09-25 23:45:15 | INFO    | phase7 | Line sweep: {'0.35': 3, '0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20, '0.7': 8}
+2026-09-25 23:45:15 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:45:15 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:45:15 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:15 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:45:15 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-25 23:45:15 | WARNING | phase7 | WARN  | count_not_line_sensitive: plateau = 12% of swept positions within 20% of best; spread(max/min over non-zero) = 30.0; positions counting zero = 0 - too narrow to report as a traffic volume
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | counts_computed: 90 crossing events over 90 tracks
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:45:15 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:45:15 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:45:16 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:16 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:45:16 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:16 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:45:16 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:45:16 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:45:18 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=36px | {'0.35': 1, '0.4': 2, '0.45': 5, '0.5': 10, '0.55': 8, '0.6': 5, '0.65': 2, '0.7': 2}
+2026-09-25 23:45:18 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=36px | {'0.35': 0, '0.4': 5, '0.45': 5, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:18 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=36px | {'0.35': 0, '0.4': 3, '0.45': 10, '0.5': 37, '0.55': 31, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:45:18 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=36px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 1, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:18 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=36px | {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 2, '0.55': 5, '0.6': 6, '0.65': 5, '0.7': 3}
+2026-09-25 23:45:18 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 1, '0.4': 10, '0.45': 21, '0.5': 54, '0.55': 45, '0.6': 39, '0.65': 20, '0.7': 8} -> using 0.5
+2026-09-25 23:45:18 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 1, '0.4': 10, '0.45': 21, '0.5': 54, '0.55': 45, '0.6': 39, '0.65': 20, '0.7': 8} -> using 0.5
+2026-09-25 23:45:18 | INFO    | phase7 |   Robustness: plateau(>=80% of best)=25% of positions, spread(max/min over non-zero)=54.0, positions with zero=0
+2026-09-25 23:45:18 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 10 counted | by_class={'car': 10} | by_direction={'farbound': 4, 'nearbound': 6} | 14.79 veh/min
+2026-09-25 23:45:18 | INFO    | phase7 |     per-video sweep: {'0.35': 1, '0.4': 2, '0.45': 5, '0.5': 10, '0.55': 8, '0.6': 5, '0.65': 2, '0.7': 2}
+2026-09-25 23:45:18 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:45:19 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 4 counted | by_class={'car': 4} | by_direction={'nearbound': 4} | 5.95 veh/min
+2026-09-25 23:45:19 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 5, '0.45': 5, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:19 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:45:19 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 37 counted | by_class={'car': 37} | by_direction={'nearbound': 37} | 54.81 veh/min
+2026-09-25 23:45:19 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 3, '0.45': 10, '0.5': 37, '0.55': 31, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:45:20 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:45:20 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 1 counted | by_class={'car': 1} | by_direction={'nearbound': 1} | 1.48 veh/min
+2026-09-25 23:45:20 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 1, '0.55': 1, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:20 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:45:21 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 2 counted | by_class={'car': 2} | by_direction={'nearbound': 2} | 2.96 veh/min
+2026-09-25 23:45:21 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 1, '0.5': 2, '0.55': 5, '0.6': 6, '0.65': 5, '0.7': 3}
+2026-09-25 23:45:21 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:45:21 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:21 | INFO    | phase7 | SUMMARY
+2026-09-25 23:45:21 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:21 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:45:21 | INFO    | phase7 | Tracks seen: 575 | counted once: 54
+2026-09-25 23:45:21 | INFO    | phase7 | Total crossing events: 54
+2026-09-25 23:45:21 | INFO    | phase7 | By class: {'car': 54}
+2026-09-25 23:45:21 | INFO    | phase7 | By direction (screen-relative): {'farbound': 4, 'nearbound': 50}
+2026-09-25 23:45:21 | INFO    | phase7 | Rate: 16.01 veh/min over 3.37 min (80.0 / 5min, 240.1 / 15min)
+2026-09-25 23:45:22 | INFO    | phase7 | Line sweep: {'0.35': 1, '0.4': 10, '0.45': 21, '0.5': 54, '0.55': 45, '0.6': 39, '0.65': 20, '0.7': 8}
+2026-09-25 23:45:22 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:45:22 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:45:22 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:22 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:45:22 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | count_not_line_sensitive: plateau = 25% of swept positions within 20% of best; spread(max/min over non-zero) = 54.0; positions counting zero = 0
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | counts_computed: 54 crossing events over 54 tracks
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:45:22 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:45:22 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-25 23:45:22 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:22 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-25 23:45:22 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:22 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:45:22 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-25 23:45:22 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-25 23:45:24 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 5, '0.55': 5, '0.6': 3, '0.65': 2, '0.7': 2}
+2026-09-25 23:45:24 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:24 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=72px | {'0.35': 0, '0.4': 2, '0.45': 5, '0.5': 32, '0.55': 30, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:45:24 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:24 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=72px | {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 2, '0.55': 5, '0.6': 5, '0.65': 5, '0.7': 3}
+2026-09-25 23:45:24 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 0, '0.4': 2, '0.45': 5, '0.5': 39, '0.55': 40, '0.6': 36, '0.65': 20, '0.7': 8} -> using 0.55
+2026-09-25 23:45:24 | INFO    | phase7 |   Line position totals across all videos: {'0.35': 0, '0.4': 2, '0.45': 5, '0.5': 39, '0.55': 40, '0.6': 36, '0.65': 20, '0.7': 8} -> using 0.55
+2026-09-25 23:45:24 | INFO    | phase7 |   Robustness: plateau(>=80% of best)=38% of positions, spread(max/min over non-zero)=20.0, positions with zero=1
+2026-09-25 23:45:24 | WARNING | phase7 | WARN  |   1 swept line position(s) count ZERO while the best counts 40 - the count is strongly position-dependent
+2026-09-25 23:45:24 | INFO    | phase7 |   0000f77c-6257be58: line y=396 of 720 (55%) -> 5 counted | by_class={'car': 5} | by_direction={'farbound': 2, 'nearbound': 3} | 7.40 veh/min
+2026-09-25 23:45:24 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 5, '0.55': 5, '0.6': 3, '0.65': 2, '0.7': 2}
+2026-09-25 23:45:25 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-25 23:45:25 | INFO    | phase7 |   0000f77c-62c2a288: line y=396 of 720 (55%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-25 23:45:25 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:25 | WARNING | phase7 | WARN  |     ZERO crossings for 0000f77c-62c2a288 - see /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_timelines.png to see whether tracks ever approach the line
+2026-09-25 23:45:26 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-25 23:45:26 | INFO    | phase7 |   0000f77c-cb820c98: line y=396 of 720 (55%) -> 30 counted | by_class={'car': 30} | by_direction={'nearbound': 30} | 44.44 veh/min
+2026-09-25 23:45:26 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 2, '0.45': 5, '0.5': 32, '0.55': 30, '0.6': 28, '0.65': 13, '0.7': 3}
+2026-09-25 23:45:26 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-25 23:45:26 | INFO    | phase7 |   0001542f-5ce3cf52: line y=396 of 720 (55%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-25 23:45:26 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 0, '0.55': 0, '0.6': 0, '0.65': 0, '0.7': 0}
+2026-09-25 23:45:26 | WARNING | phase7 | WARN  |     ZERO crossings for 0001542f-5ce3cf52 - see /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_timelines.png to see whether tracks ever approach the line
+2026-09-25 23:45:27 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-25 23:45:27 | INFO    | phase7 |   0001542f-7c670be8: line y=396 of 720 (55%) -> 5 counted | by_class={'car': 5} | by_direction={'nearbound': 5} | 7.41 veh/min
+2026-09-25 23:45:27 | INFO    | phase7 |     per-video sweep: {'0.35': 0, '0.4': 0, '0.45': 0, '0.5': 2, '0.55': 5, '0.6': 5, '0.65': 5, '0.7': 3}
+2026-09-25 23:45:27 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-25 23:45:27 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:27 | INFO    | phase7 | SUMMARY
+2026-09-25 23:45:27 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:27 | INFO    | phase7 | Videos processed: 5
+2026-09-25 23:45:27 | INFO    | phase7 | Tracks seen: 575 | counted once: 40
+2026-09-25 23:45:27 | INFO    | phase7 | Total crossing events: 40
+2026-09-25 23:45:27 | INFO    | phase7 | By class: {'car': 40}
+2026-09-25 23:45:27 | INFO    | phase7 | By direction (screen-relative): {'farbound': 2, 'nearbound': 38}
+2026-09-25 23:45:27 | INFO    | phase7 | Rate: 11.86 veh/min over 3.37 min (59.3 / 5min, 177.9 / 15min)
+2026-09-25 23:45:28 | INFO    | phase7 | Line sweep: {'0.35': 0, '0.4': 2, '0.45': 5, '0.5': 39, '0.55': 40, '0.6': 36, '0.65': 20, '0.7': 8}
+2026-09-25 23:45:28 | INFO    | phase7 | Plots: 14 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-25 23:45:28 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-25 23:45:28 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:28 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-25 23:45:28 | INFO    | phase7 | ============================================================
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-25 23:45:28 | WARNING | phase7 | WARN  | all_videos_counted: 2 video(s) counted ZERO: ['0000f77c-62c2a288', '0001542f-5ce3cf52'] - check the timeline plots and the line sweep
+2026-09-25 23:45:28 | WARNING | phase7 | WARN  | count_not_line_sensitive: plateau = 38% of swept positions within 20% of best; spread(max/min over non-zero) = 20.0; positions counting zero = 1
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | counts_computed: 40 crossing events over 40 tracks
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-25 23:45:28 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-25 23:45:28 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-26 00:15:17 | INFO    | phase7 | ============================================================
+2026-09-26 00:15:17 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-26 00:15:17 | INFO    | phase7 | ============================================================
+2026-09-26 00:15:17 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 00:15:17 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 00:15:17 | INFO    | phase7 | Counting accuracy: GT frame maps for 5 video(s) from Phase 6
+2026-09-26 00:15:17 | INFO    | phase7 | Counting line: 55.0% of frame height | min_frames=3 | fps=30.0
+2026-09-26 00:15:19 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:15:19 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:15:19 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:15:19 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:15:19 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:15:19 | INFO    | phase7 |   Line position totals across all videos: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20} -> using 0.5
+2026-09-26 00:15:19 | INFO    | phase7 |   Line position totals across all videos: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20} -> using 0.5
+2026-09-26 00:15:19 | INFO    | phase7 |   Robustness: plateau(>=80% of best)=20% of positions, spread(max/min over non-zero)=4.5, positions with zero=0
+2026-09-26 00:15:19 | WARNING | phase7 | WARN  |   Only 20% of swept positions come within 20% of the best count (90). A robust counting line should have a PLATEAU with falloff on either side; a single narrow spike means the line sits inside a band that tracks merely hover in, and the total is not a traffic volume.
+2026-09-26 00:15:19 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 27 counted | by_class={'car': 27} | by_direction={'farbound': 13, 'nearbound': 14} | 39.93 veh/min
+2026-09-26 00:15:19 | INFO    | phase7 |     per-video sweep: {'0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:15:20 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-26 00:15:24 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 6 counted | by_class={'car': 6} | by_direction={'farbound': 1, 'nearbound': 5} | 8.92 veh/min
+2026-09-26 00:15:24 | INFO    | phase7 |     per-video sweep: {'0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:15:24 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-26 00:15:27 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 42 counted | by_class={'car': 42} | by_direction={'nearbound': 42} | 62.22 veh/min
+2026-09-26 00:15:27 | INFO    | phase7 |     per-video sweep: {'0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:15:28 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-26 00:15:31 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 9 counted | by_class={'car': 9} | by_direction={'farbound': 4, 'nearbound': 5} | 13.36 veh/min
+2026-09-26 00:15:31 | INFO    | phase7 |     per-video sweep: {'0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:15:31 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-26 00:15:34 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 6 counted | by_class={'bus': 1, 'car': 5} | by_direction={'farbound': 3, 'nearbound': 3} | 8.89 veh/min
+2026-09-26 00:15:34 | INFO    | phase7 |     per-video sweep: {'0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:15:35 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-26 00:15:38 | INFO    | phase7 | ============================================================
+2026-09-26 00:15:38 | INFO    | phase7 | SUMMARY
+2026-09-26 00:15:38 | INFO    | phase7 | ============================================================
+2026-09-26 00:15:38 | INFO    | phase7 | Videos processed: 5
+2026-09-26 00:15:38 | INFO    | phase7 | Tracks seen: 575 | counted once: 90
+2026-09-26 00:15:38 | INFO    | phase7 | Total crossing events: 90
+2026-09-26 00:15:38 | INFO    | phase7 | By class: {'bus': 1, 'car': 89}
+2026-09-26 00:15:38 | INFO    | phase7 | By direction (screen-relative): {'farbound': 21, 'nearbound': 69}
+2026-09-26 00:15:38 | INFO    | phase7 | Rate: 26.68 veh/min over 3.37 min (133.4 / 5min, 400.2 / 15min)
+2026-09-26 00:15:38 | INFO    | phase7 | Per-video rate (quote THESE, not the pooled figure - the pooled window includes clips with no flow at all):
+2026-09-26 00:15:38 | INFO    | phase7 |     0000f77c-6257be58         27 counted   39.93 veh/min  GT=10
+2026-09-26 00:15:38 | INFO    | phase7 |     0000f77c-62c2a288          6 counted    8.92 veh/min  GT=4
+2026-09-26 00:15:38 | INFO    | phase7 |     0000f77c-cb820c98         42 counted   62.22 veh/min  GT=42
+2026-09-26 00:15:38 | INFO    | phase7 |     0001542f-5ce3cf52          9 counted   13.36 veh/min  GT=6
+2026-09-26 00:15:38 | INFO    | phase7 |     0001542f-7c670be8          6 counted    8.89 veh/min  GT=6
+2026-09-26 00:15:38 | INFO    | phase7 | ============================================================
+2026-09-26 00:15:38 | INFO    | phase7 | COUNTING ACCURACY vs GROUND TRUTH
+2026-09-26 00:15:38 | INFO    | phase7 | ============================================================
+2026-09-26 00:15:38 | INFO    | phase7 | Videos compared: 5 (0 excluded from MAPE: zero GT count)
+2026-09-26 00:15:38 | INFO    | phase7 | GT total crossings: 68 | predicted: 90
+2026-09-26 00:15:38 | INFO    | phase7 | MAE=4.40  RMSE=7.77  MAPE=54.0%  counting_accuracy=0.676
+2026-09-26 00:15:38 | INFO    | phase7 | Per-video (predicted vs GT):
+2026-09-26 00:15:38 | INFO    | phase7 |     0000f77c-6257be58        pred= 27 gt= 10  err= +17  (+170.0%)
+2026-09-26 00:15:38 | INFO    | phase7 |     0000f77c-62c2a288        pred=  6 gt=  4  err=  +2  (+50.0%)
+2026-09-26 00:15:38 | INFO    | phase7 |     0000f77c-cb820c98        pred= 42 gt= 42  err=  +0  (+0.0%)
+2026-09-26 00:15:38 | INFO    | phase7 |     0001542f-5ce3cf52        pred=  9 gt=  6  err=  +3  (+50.0%)
+2026-09-26 00:15:38 | INFO    | phase7 |     0001542f-7c670be8        pred=  6 gt=  6  err=  +0  (+0.0%)
+2026-09-26 00:38:33 | INFO    | phase7 | ============================================================
+2026-09-26 00:38:33 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-26 00:38:33 | INFO    | phase7 | ============================================================
+2026-09-26 00:38:33 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 00:38:33 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 00:38:33 | INFO    | phase7 | Counting accuracy: GT frame maps for 5 video(s) from Phase 6
+2026-09-26 00:38:33 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-26 00:38:35 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:38:35 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:38:35 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:38:35 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:38:35 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:38:35 | INFO    | phase7 |   Line position totals across all videos: {'0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20} -> using 0.5
+2026-09-26 00:38:35 | INFO    | phase7 |   Line position totals across all videos: {'0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20} -> using 0.5
+2026-09-26 00:38:35 | INFO    | phase7 |   Robustness: plateau(>=80% of best)=17% of positions, spread(max/min over non-zero)=4.5, positions with zero=0
+2026-09-26 00:38:35 | WARNING | phase7 | WARN  |   Only 17% of swept positions come within 20% of the best count (90). A robust counting line should have a PLATEAU with falloff on either side; a single narrow spike means the line sits inside a band that tracks merely hover in, and the total is not a traffic volume.
+2026-09-26 00:38:35 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 27 counted | by_class={'car': 27} | by_direction={'farbound': 13, 'nearbound': 14} | 39.93 veh/min
+2026-09-26 00:38:35 | INFO    | phase7 |     per-video sweep: {'0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:38:35 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-26 00:38:39 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 6 counted | by_class={'car': 6} | by_direction={'farbound': 1, 'nearbound': 5} | 8.92 veh/min
+2026-09-26 00:38:39 | INFO    | phase7 |     per-video sweep: {'0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:38:40 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-26 00:38:43 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 42 counted | by_class={'car': 42} | by_direction={'nearbound': 42} | 62.22 veh/min
+2026-09-26 00:38:43 | INFO    | phase7 |     per-video sweep: {'0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:38:43 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-26 00:38:46 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 9 counted | by_class={'car': 9} | by_direction={'farbound': 4, 'nearbound': 5} | 13.36 veh/min
+2026-09-26 00:38:46 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:38:47 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-26 00:38:50 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 6 counted | by_class={'bus': 1, 'car': 5} | by_direction={'farbound': 3, 'nearbound': 3} | 8.89 veh/min
+2026-09-26 00:38:50 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:38:50 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-26 00:38:53 | INFO    | phase7 | ============================================================
+2026-09-26 00:38:53 | INFO    | phase7 | SUMMARY
+2026-09-26 00:38:53 | INFO    | phase7 | ============================================================
+2026-09-26 00:38:53 | INFO    | phase7 | Videos processed: 5
+2026-09-26 00:38:53 | INFO    | phase7 | Tracks seen: 575 | counted once: 90
+2026-09-26 00:38:53 | INFO    | phase7 | Total crossing events: 90
+2026-09-26 00:38:53 | INFO    | phase7 | By class: {'bus': 1, 'car': 89}
+2026-09-26 00:38:53 | INFO    | phase7 | By direction (screen-relative): {'farbound': 21, 'nearbound': 69}
+2026-09-26 00:38:53 | INFO    | phase7 | Rate: 26.68 veh/min over 3.37 min (133.4 / 5min, 400.2 / 15min)
+2026-09-26 00:38:53 | INFO    | phase7 | Per-video rate (quote THESE, not the pooled figure - the pooled window includes clips with no flow at all):
+2026-09-26 00:38:53 | INFO    | phase7 |     0000f77c-6257be58         27 counted   39.93 veh/min  GT=10
+2026-09-26 00:38:53 | INFO    | phase7 |     0000f77c-62c2a288          6 counted    8.92 veh/min  GT=4
+2026-09-26 00:38:53 | INFO    | phase7 |     0000f77c-cb820c98         42 counted   62.22 veh/min  GT=42
+2026-09-26 00:38:53 | INFO    | phase7 |     0001542f-5ce3cf52          9 counted   13.36 veh/min  GT=6
+2026-09-26 00:38:53 | INFO    | phase7 |     0001542f-7c670be8          6 counted    8.89 veh/min  GT=6
+2026-09-26 00:38:53 | INFO    | phase7 | ============================================================
+2026-09-26 00:38:53 | INFO    | phase7 | COUNTING ACCURACY vs GROUND TRUTH
+2026-09-26 00:38:53 | INFO    | phase7 | ============================================================
+2026-09-26 00:38:53 | INFO    | phase7 | Videos compared: 5 (0 excluded from MAPE: zero GT count)
+2026-09-26 00:38:53 | INFO    | phase7 | GT total crossings: 68 | predicted: 90
+2026-09-26 00:38:53 | INFO    | phase7 | MAE=4.40  RMSE=7.77  MAPE=54.0%  counting_accuracy=0.676
+2026-09-26 00:38:53 | INFO    | phase7 | Per-video (predicted vs GT):
+2026-09-26 00:38:53 | INFO    | phase7 |     0000f77c-6257be58        pred= 27 gt= 10  err= +17  (+170.0%)
+2026-09-26 00:38:53 | INFO    | phase7 |     0000f77c-62c2a288        pred=  6 gt=  4  err=  +2  (+50.0%)
+2026-09-26 00:38:53 | INFO    | phase7 |     0000f77c-cb820c98        pred= 42 gt= 42  err=  +0  (+0.0%)
+2026-09-26 00:38:53 | INFO    | phase7 |     0001542f-5ce3cf52        pred=  9 gt=  6  err=  +3  (+50.0%)
+2026-09-26 00:38:53 | INFO    | phase7 |     0001542f-7c670be8        pred=  6 gt=  6  err=  +0  (+0.0%)
+2026-09-26 00:48:48 | INFO    | phase7 | ============================================================
+2026-09-26 00:48:48 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-26 00:48:48 | INFO    | phase7 | ============================================================
+2026-09-26 00:48:48 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 00:48:48 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 00:48:48 | INFO    | phase7 | Counting accuracy: GT frame maps for 5 video(s) from Phase 6
+2026-09-26 00:48:48 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-26 00:48:50 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:48:53 | INFO    | phase7 |     GT crossings per position: {'0.4': 1, '0.45': 3, '0.5': 10, '0.55': 10, '0.6': 5, '0.65': 3}
+2026-09-26 00:48:53 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:48:56 | INFO    | phase7 |     GT crossings per position: {'0.4': 11, '0.45': 7, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:48:56 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:48:58 | INFO    | phase7 |     GT crossings per position: {'0.4': 3, '0.45': 16, '0.5': 42, '0.55': 28, '0.6': 18, '0.65': 10}
+2026-09-26 00:48:58 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:01 | INFO    | phase7 |     GT crossings per position: {'0.4': 0, '0.45': 0, '0.5': 6, '0.55': 2, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:01 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:49:03 | INFO    | phase7 |     GT crossings per position: {'0.4': 0, '0.45': 3, '0.5': 6, '0.55': 11, '0.6': 6, '0.65': 4}
+2026-09-26 00:49:03 | INFO    | phase7 |   Predicted totals per position: {'0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 00:49:03 | INFO    | phase7 |   Counting error vs GT per position (MAE): {'0.4': 3.0, '0.45': 5.8, '0.5': 4.4, '0.55': 1.8, '0.6': 2.0, '0.65': 1.0}
+2026-09-26 00:49:03 | INFO    | phase7 |   Using line 0.5 | plateau(>=80% of best)=17% of positions, spread(max/min over non-zero)=4.5, positions with zero=0
+2026-09-26 00:49:03 | WARNING | phase7 | WARN  |   Only 17% of swept positions come within 20% of the best count (90). A robust counting line should have a PLATEAU; a narrow spike means the line sits inside a band that tracks merely hover in. Re-run with --select-line gt-mae and --gt to place the line by agreement with ground truth instead.
+2026-09-26 00:49:03 | INFO    | phase7 |   0000f77c-6257be58: line y=360 of 720 (50%) -> 27 counted | by_class={'car': 27} | by_direction={'farbound': 13, 'nearbound': 14} | 39.93 veh/min
+2026-09-26 00:49:03 | INFO    | phase7 |     per-video sweep: {'0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:49:04 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-26 00:49:04 | INFO    | phase7 |   0000f77c-62c2a288: line y=360 of 720 (50%) -> 6 counted | by_class={'car': 6} | by_direction={'farbound': 1, 'nearbound': 5} | 8.92 veh/min
+2026-09-26 00:49:04 | INFO    | phase7 |     per-video sweep: {'0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:05 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-26 00:49:05 | INFO    | phase7 |   0000f77c-cb820c98: line y=360 of 720 (50%) -> 42 counted | by_class={'car': 42} | by_direction={'nearbound': 42} | 62.22 veh/min
+2026-09-26 00:49:05 | INFO    | phase7 |     per-video sweep: {'0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:49:05 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-26 00:49:05 | INFO    | phase7 |   0001542f-5ce3cf52: line y=360 of 720 (50%) -> 9 counted | by_class={'car': 9} | by_direction={'farbound': 4, 'nearbound': 5} | 13.36 veh/min
+2026-09-26 00:49:05 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:06 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-26 00:49:06 | INFO    | phase7 |   0001542f-7c670be8: line y=360 of 720 (50%) -> 6 counted | by_class={'bus': 1, 'car': 5} | by_direction={'farbound': 3, 'nearbound': 3} | 8.89 veh/min
+2026-09-26 00:49:06 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:49:06 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-26 00:49:06 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:06 | INFO    | phase7 | SUMMARY
+2026-09-26 00:49:06 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:06 | INFO    | phase7 | Videos processed: 5
+2026-09-26 00:49:06 | INFO    | phase7 | Tracks seen: 575 | counted once: 90
+2026-09-26 00:49:06 | INFO    | phase7 | Total crossing events: 90
+2026-09-26 00:49:06 | INFO    | phase7 | By class: {'bus': 1, 'car': 89}
+2026-09-26 00:49:06 | INFO    | phase7 | By direction (screen-relative): {'farbound': 21, 'nearbound': 69}
+2026-09-26 00:49:06 | INFO    | phase7 | Rate: 26.68 veh/min over 3.37 min (133.4 / 5min, 400.2 / 15min)
+2026-09-26 00:49:06 | INFO    | phase7 | Per-video rate (quote THESE, not the pooled figure - the pooled window includes clips with no flow at all):
+2026-09-26 00:49:06 | INFO    | phase7 |     0000f77c-6257be58         27 counted   39.93 veh/min  GT=10
+2026-09-26 00:49:06 | INFO    | phase7 |     0000f77c-62c2a288          6 counted    8.92 veh/min  GT=4
+2026-09-26 00:49:06 | INFO    | phase7 |     0000f77c-cb820c98         42 counted   62.22 veh/min  GT=42
+2026-09-26 00:49:06 | INFO    | phase7 |     0001542f-5ce3cf52          9 counted   13.36 veh/min  GT=6
+2026-09-26 00:49:06 | INFO    | phase7 |     0001542f-7c670be8          6 counted    8.89 veh/min  GT=6
+2026-09-26 00:49:06 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:06 | INFO    | phase7 | COUNTING ACCURACY vs GROUND TRUTH
+2026-09-26 00:49:06 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:06 | INFO    | phase7 | Videos compared: 5 (0 excluded from MAPE: zero GT count)
+2026-09-26 00:49:06 | INFO    | phase7 | GT total crossings: 68 | predicted: 90
+2026-09-26 00:49:06 | INFO    | phase7 | MAE=4.40  RMSE=7.77  MAPE=54.0%  counting_accuracy=0.676
+2026-09-26 00:49:06 | INFO    | phase7 | Per-video (predicted vs GT):
+2026-09-26 00:49:06 | INFO    | phase7 |     0000f77c-6257be58        pred= 27 gt= 10  err= +17  (+170.0%)
+2026-09-26 00:49:06 | INFO    | phase7 |     0000f77c-62c2a288        pred=  6 gt=  4  err=  +2  (+50.0%)
+2026-09-26 00:49:06 | INFO    | phase7 |     0000f77c-cb820c98        pred= 42 gt= 42  err=  +0  (+0.0%)
+2026-09-26 00:49:06 | INFO    | phase7 |     0001542f-5ce3cf52        pred=  9 gt=  6  err=  +3  (+50.0%)
+2026-09-26 00:49:06 | INFO    | phase7 |     0001542f-7c670be8        pred=  6 gt=  6  err=  +0  (+0.0%)
+2026-09-26 00:49:07 | INFO    | phase7 | Line sweep: {'0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 00:49:07 | INFO    | phase7 | Plots: 15 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-26 00:49:07 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-26 00:49:07 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:07 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-26 00:49:07 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | all_videos_counted: every video produced crossings
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | counting_accuracy_computed: MAE=4.4 RMSE=7.772 MAPE=54.0% accuracy=0.6765 over 5 video(s)
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | counting_accuracy_acceptable: counting accuracy 0.6765
+2026-09-26 00:49:07 | WARNING | phase7 | WARN  | count_not_line_sensitive: plateau = 17% of swept positions within 20% of best; spread(max/min over non-zero) = 4.5; positions counting zero = 0 - too narrow to report as a traffic volume
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | counts_computed: 90 crossing events over 90 tracks
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-26 00:49:07 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-26 00:49:07 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-26 00:49:08 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:08 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-26 00:49:08 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:08 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 00:49:08 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 00:49:08 | INFO    | phase7 | Counting accuracy: GT frame maps for 5 video(s) from Phase 6
+2026-09-26 00:49:08 | INFO    | phase7 | Counting line: 50.0% of frame height | min_frames=3 | fps=30.0
+2026-09-26 00:49:10 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:49:13 | INFO    | phase7 |     GT crossings per position: {'0.4': 1, '0.45': 3, '0.5': 10, '0.55': 10, '0.6': 5, '0.65': 3}
+2026-09-26 00:49:13 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:16 | INFO    | phase7 |     GT crossings per position: {'0.4': 11, '0.45': 7, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:16 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:49:19 | INFO    | phase7 |     GT crossings per position: {'0.4': 3, '0.45': 16, '0.5': 42, '0.55': 28, '0.6': 18, '0.65': 10}
+2026-09-26 00:49:19 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:21 | INFO    | phase7 |     GT crossings per position: {'0.4': 0, '0.45': 0, '0.5': 6, '0.55': 2, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:21 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:49:24 | INFO    | phase7 |     GT crossings per position: {'0.4': 0, '0.45': 3, '0.5': 6, '0.55': 11, '0.6': 6, '0.65': 4}
+2026-09-26 00:49:24 | INFO    | phase7 |   Predicted totals per position: {'0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 00:49:24 | INFO    | phase7 |   Counting error vs GT per position (MAE): {'0.4': 3.0, '0.45': 5.8, '0.5': 4.4, '0.55': 1.8, '0.6': 2.0, '0.65': 1.0}
+2026-09-26 00:49:24 | INFO    | phase7 |   Selected 0.65 by GT agreement (min MAE)
+2026-09-26 00:49:24 | WARNING | phase7 | WARN  |   line position SELECTED ON GROUND TRUTH, so the reported accuracy is optimistic - state this in the writeup
+2026-09-26 00:49:24 | INFO    | phase7 |   Using line 0.65 | plateau(>=80% of best)=17% of positions, spread(max/min over non-zero)=4.5, positions with zero=0
+2026-09-26 00:49:24 | INFO    | phase7 |   0000f77c-6257be58: line y=468 of 720 (65%) -> 2 counted | by_class={'car': 2} | by_direction={'nearbound': 2} | 2.96 veh/min
+2026-09-26 00:49:24 | INFO    | phase7 |     per-video sweep: {'0.4': 7, '0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 00:49:24 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-26 00:49:25 | INFO    | phase7 |   0000f77c-62c2a288: line y=468 of 720 (65%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-26 00:49:25 | INFO    | phase7 |     per-video sweep: {'0.4': 19, '0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:25 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-26 00:49:25 | INFO    | phase7 |   0000f77c-cb820c98: line y=468 of 720 (65%) -> 13 counted | by_class={'car': 13} | by_direction={'nearbound': 13} | 19.26 veh/min
+2026-09-26 00:49:25 | INFO    | phase7 |     per-video sweep: {'0.4': 4, '0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 00:49:25 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-26 00:49:26 | INFO    | phase7 |   0001542f-5ce3cf52: line y=468 of 720 (65%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-26 00:49:26 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 00:49:26 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-26 00:49:26 | INFO    | phase7 |   0001542f-7c670be8: line y=468 of 720 (65%) -> 5 counted | by_class={'car': 5} | by_direction={'nearbound': 5} | 7.41 veh/min
+2026-09-26 00:49:26 | INFO    | phase7 |     per-video sweep: {'0.4': 0, '0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 00:49:26 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-26 00:49:26 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:26 | INFO    | phase7 | SUMMARY
+2026-09-26 00:49:26 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:26 | INFO    | phase7 | Videos processed: 5
+2026-09-26 00:49:26 | INFO    | phase7 | Tracks seen: 575 | counted once: 20
+2026-09-26 00:49:26 | INFO    | phase7 | Total crossing events: 20
+2026-09-26 00:49:26 | INFO    | phase7 | By class: {'car': 20}
+2026-09-26 00:49:26 | INFO    | phase7 | By direction (screen-relative): {'nearbound': 20}
+2026-09-26 00:49:26 | INFO    | phase7 | Rate: 5.93 veh/min over 3.37 min (29.6 / 5min, 88.9 / 15min)
+2026-09-26 00:49:26 | INFO    | phase7 | Per-video rate (quote THESE, not the pooled figure - the pooled window includes clips with no flow at all):
+2026-09-26 00:49:26 | INFO    | phase7 |     0000f77c-6257be58          2 counted    2.96 veh/min  GT=3
+2026-09-26 00:49:26 | INFO    | phase7 |     0000f77c-62c2a288          0 counted    0.00 veh/min  GT=0
+2026-09-26 00:49:26 | INFO    | phase7 |     0000f77c-cb820c98         13 counted   19.26 veh/min  GT=10
+2026-09-26 00:49:26 | INFO    | phase7 |     0001542f-5ce3cf52          0 counted    0.00 veh/min  GT=0
+2026-09-26 00:49:26 | INFO    | phase7 |     0001542f-7c670be8          5 counted    7.41 veh/min  GT=4
+2026-09-26 00:49:26 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:26 | INFO    | phase7 | COUNTING ACCURACY vs GROUND TRUTH
+2026-09-26 00:49:26 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:26 | INFO    | phase7 | Videos compared: 5 (2 excluded from MAPE: zero GT count)
+2026-09-26 00:49:26 | INFO    | phase7 | GT total crossings: 17 | predicted: 20
+2026-09-26 00:49:26 | INFO    | phase7 | MAE=1.00  RMSE=1.48  MAPE=29.4%  counting_accuracy=0.706
+2026-09-26 00:49:26 | INFO    | phase7 | Per-video (predicted vs GT):
+2026-09-26 00:49:26 | INFO    | phase7 |     0000f77c-6257be58        pred=  2 gt=  3  err=  -1  (-33.3%)
+2026-09-26 00:49:26 | INFO    | phase7 |     0000f77c-62c2a288        pred=  0 gt=  0  err=  +0  (GT=0)
+2026-09-26 00:49:26 | INFO    | phase7 |     0000f77c-cb820c98        pred= 13 gt= 10  err=  +3  (+30.0%)
+2026-09-26 00:49:26 | INFO    | phase7 |     0001542f-5ce3cf52        pred=  0 gt=  0  err=  +0  (GT=0)
+2026-09-26 00:49:26 | INFO    | phase7 |     0001542f-7c670be8        pred=  5 gt=  4  err=  +1  (+25.0%)
+2026-09-26 00:49:27 | INFO    | phase7 | Line sweep: {'0.4': 30, '0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 00:49:27 | INFO    | phase7 | Plots: 15 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-26 00:49:27 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-26 00:49:27 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:27 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-26 00:49:27 | INFO    | phase7 | ============================================================
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-26 00:49:27 | WARNING | phase7 | WARN  | all_videos_counted: 2 video(s) counted ZERO: ['0000f77c-62c2a288', '0001542f-5ce3cf52'] - check the timeline plots and the line sweep
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | counting_accuracy_computed: MAE=1.0 RMSE=1.483 MAPE=29.44% accuracy=0.7059 over 5 video(s)
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | counting_accuracy_acceptable: counting accuracy 0.7059
+2026-09-26 00:49:27 | WARNING | phase7 | WARN  | count_not_line_sensitive: plateau = 17% of swept positions within 20% of best; spread(max/min over non-zero) = 4.5; positions counting zero = 0 - too narrow to report as a traffic volume
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | counts_computed: 20 crossing events over 20 tracks
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-26 00:49:27 | WARNING | phase7 | WARN  | both_directions_present: directions observed: ['nearbound'] - only one direction means the line is badly placed
+2026-09-26 00:49:27 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-26 00:49:27 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-26 15:19:00 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:00 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-26 15:19:00 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:00 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 15:19:00 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 15:19:00 | INFO    | phase7 | Counting accuracy: GT frame maps for 5 video(s) from Phase 6
+2026-09-26 15:19:00 | INFO    | phase7 | Counting line: 55.0% of frame height | min_frames=3 | fps=30.0
+2026-09-26 15:19:02 | INFO    | phase7 | Scene metadata: 79863 video(s) from manifest_val.json, manifest_train.json
+2026-09-26 15:19:04 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 15:19:07 | INFO    | phase7 |     GT crossings per position: {'0.45': 3, '0.5': 10, '0.55': 10, '0.6': 5, '0.65': 3}
+2026-09-26 15:19:07 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 15:19:10 | INFO    | phase7 |     GT crossings per position: {'0.45': 7, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 15:19:10 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 15:19:13 | INFO    | phase7 |     GT crossings per position: {'0.45': 16, '0.5': 42, '0.55': 28, '0.6': 18, '0.65': 10}
+2026-09-26 15:19:13 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 15:19:16 | INFO    | phase7 |     GT crossings per position: {'0.45': 0, '0.5': 6, '0.55': 2, '0.6': 0, '0.65': 0}
+2026-09-26 15:19:16 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 15:19:19 | INFO    | phase7 |     GT crossings per position: {'0.45': 3, '0.5': 6, '0.55': 11, '0.6': 6, '0.65': 4}
+2026-09-26 15:19:19 | INFO    | phase7 |   Predicted totals per position: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 15:19:19 | INFO    | phase7 |   Counting error vs GT per position (MAE): {'0.45': 5.8, '0.5': 4.4, '0.55': 1.8, '0.6': 2.0, '0.65': 1.0}
+2026-09-26 15:19:19 | INFO    | phase7 |   GT volume per position (pred/GT/MAE/coverage): {'0.45': (54, 29, 5.8, '43%'), '0.5': (90, 68, 4.4, '100%'), '0.55': (54, 51, 1.8, '75%'), '0.6': (39, 29, 2.0, '43%'), '0.65': (20, 17, 1.0, '25%')}
+2026-09-26 15:19:19 | INFO    | phase7 |   Eligible at >=50% GT coverage: ['0.5', '0.55'] -> chose 0.55
+2026-09-26 15:19:19 | WARNING | phase7 | WARN  |   line position SELECTED ON GROUND TRUTH, so the reported accuracy is optimistic - state this in the writeup
+2026-09-26 15:19:19 | INFO    | phase7 |   Using line 0.55 | plateau(>=80% of best)=20% of positions, spread(max/min over non-zero)=4.5, positions with zero=0
+2026-09-26 15:19:19 | INFO    | phase7 |   0000f77c-6257be58: line y=396 of 720 (55%) -> 11 counted | by_class={'car': 11} | by_direction={'farbound': 7, 'nearbound': 4} | 16.27 veh/min
+2026-09-26 15:19:19 | INFO    | phase7 |     per-video sweep: {'0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 15:19:19 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-26 15:19:20 | INFO    | phase7 |   0000f77c-62c2a288: line y=396 of 720 (55%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-26 15:19:20 | INFO    | phase7 |     per-video sweep: {'0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 15:19:21 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-26 15:19:21 | INFO    | phase7 |   0000f77c-cb820c98: line y=396 of 720 (55%) -> 33 counted | by_class={'car': 33} | by_direction={'nearbound': 33} | 48.89 veh/min
+2026-09-26 15:19:21 | INFO    | phase7 |     per-video sweep: {'0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 15:19:21 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-26 15:19:21 | INFO    | phase7 |   0001542f-5ce3cf52: line y=396 of 720 (55%) -> 1 counted | by_class={'car': 1} | by_direction={'nearbound': 1} | 1.48 veh/min
+2026-09-26 15:19:21 | INFO    | phase7 |     per-video sweep: {'0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 15:19:22 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-26 15:19:22 | INFO    | phase7 |   0001542f-7c670be8: line y=396 of 720 (55%) -> 9 counted | by_class={'bike': 1, 'car': 8} | by_direction={'farbound': 3, 'nearbound': 6} | 13.33 veh/min
+2026-09-26 15:19:22 | INFO    | phase7 |     per-video sweep: {'0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 15:19:22 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-26 15:19:22 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:22 | INFO    | phase7 | SUMMARY
+2026-09-26 15:19:22 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:22 | INFO    | phase7 | Videos processed: 5
+2026-09-26 15:19:22 | INFO    | phase7 | Tracks seen: 575 | counted once: 54
+2026-09-26 15:19:22 | INFO    | phase7 | Total crossing events: 54
+2026-09-26 15:19:22 | INFO    | phase7 | By class: {'bike': 1, 'car': 53}
+2026-09-26 15:19:22 | INFO    | phase7 | By direction (screen-relative): {'farbound': 10, 'nearbound': 44}
+2026-09-26 15:19:22 | INFO    | phase7 | Rate: 16.01 veh/min over 3.37 min (80.0 / 5min, 240.1 / 15min)
+2026-09-26 15:19:22 | INFO    | phase7 | Per-video rate (quote THESE, not the pooled figure - the pooled window includes clips with no flow at all):
+2026-09-26 15:19:22 | INFO    | phase7 |     0000f77c-6257be58         11 counted   16.27 veh/min  GT=10
+2026-09-26 15:19:22 | INFO    | phase7 |     0000f77c-62c2a288          0 counted    0.00 veh/min  GT=0
+2026-09-26 15:19:22 | INFO    | phase7 |     0000f77c-cb820c98         33 counted   48.89 veh/min  GT=28
+2026-09-26 15:19:22 | INFO    | phase7 |     0001542f-5ce3cf52          1 counted    1.48 veh/min  GT=2
+2026-09-26 15:19:22 | INFO    | phase7 |     0001542f-7c670be8          9 counted   13.33 veh/min  GT=11
+2026-09-26 15:19:22 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:22 | INFO    | phase7 | COUNTING ACCURACY vs GROUND TRUTH
+2026-09-26 15:19:22 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:22 | INFO    | phase7 | Videos compared: 5 (1 excluded from MAPE: zero GT count)
+2026-09-26 15:19:22 | INFO    | phase7 | GT total crossings: 51 | predicted: 54
+2026-09-26 15:19:22 | INFO    | phase7 | MAE=1.80  RMSE=2.49  MAPE=24.0%  counting_accuracy=0.824
+2026-09-26 15:19:22 | INFO    | phase7 | Per-video (predicted vs GT):
+2026-09-26 15:19:22 | INFO    | phase7 |     0000f77c-6257be58        pred= 11 gt= 10  err=  +1  (+10.0%)
+2026-09-26 15:19:22 | INFO    | phase7 |     0000f77c-62c2a288        pred=  0 gt=  0  err=  +0  (GT=0)
+2026-09-26 15:19:22 | INFO    | phase7 |     0000f77c-cb820c98        pred= 33 gt= 28  err=  +5  (+17.9%)
+2026-09-26 15:19:22 | INFO    | phase7 |     0001542f-5ce3cf52        pred=  1 gt=  2  err=  -1  (-50.0%)
+2026-09-26 15:19:22 | INFO    | phase7 |     0001542f-7c670be8        pred=  9 gt= 11  err=  -2  (-18.2%)
+2026-09-26 15:19:22 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:22 | INFO    | phase7 | COUNTS STRATIFIED BY SCENE METADATA
+2026-09-26 15:19:22 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:22 | INFO    | phase7 |   by timeofday:
+2026-09-26 15:19:22 | INFO    | phase7 |     dawn/dusk        n=2  counted= 33   24.48 veh/min  GT=28  MAE=2.5  MAPE=17.9%  dirs={'nearbound': 33}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:19:22 | INFO    | phase7 |     daytime          n=1  counted= 11   16.27 veh/min  GT=10  MAE=1.0  MAPE=10.0%  dirs={'farbound': 7, 'nearbound': 4}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:19:22 | INFO    | phase7 |     night            n=2  counted= 10    7.41 veh/min  GT=13  MAE=1.5  MAPE=34.1%  dirs={'farbound': 3, 'nearbound': 7}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:19:22 | INFO    | phase7 |   by scene:
+2026-09-26 15:19:22 | INFO    | phase7 |     city street      n=2  counted= 12    8.89 veh/min  GT=12  MAE=1.0  MAPE=30.0%  dirs={'farbound': 7, 'nearbound': 5}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:19:23 | INFO    | phase7 |     highway          n=2  counted=  9    6.68 veh/min  GT=11  MAE=1.0  MAPE=18.2%  dirs={'farbound': 3, 'nearbound': 6}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:19:23 | INFO    | phase7 |     residential      n=1  counted= 33   48.89 veh/min  GT=28  MAE=5.0  MAPE=17.9%  dirs={'nearbound': 33}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 15:19:23 | INFO    | phase7 |   by weather:
+2026-09-26 15:19:23 | INFO    | phase7 |     clear            n=5  counted= 54   16.01 veh/min  GT=51  MAE=1.8  MAPE=24.0%  dirs={'farbound': 10, 'nearbound': 44}
+2026-09-26 15:19:23 | INFO    | phase7 | Line sweep: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 15:19:23 | INFO    | phase7 | Plots: 16 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-26 15:19:23 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-26 15:19:23 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:23 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-26 15:19:23 | INFO    | phase7 | ============================================================
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-26 15:19:23 | WARNING | phase7 | WARN  | all_videos_counted: 1 video(s) counted ZERO: ['0000f77c-62c2a288'] - check the timeline plots and the line sweep
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | counting_accuracy_computed: MAE=1.8 RMSE=2.49 MAPE=24.01% accuracy=0.8235 over 5 video(s)
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | counting_accuracy_acceptable: counting accuracy 0.8235
+2026-09-26 15:19:23 | WARNING | phase7 | WARN  | count_not_line_sensitive: plateau = 20% of swept positions within 20% of best; spread(max/min over non-zero) = 4.5; positions counting zero = 0 - too narrow to report as a traffic volume
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | counts_computed: 54 crossing events over 54 tracks
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | videos_labelled_by_metadata: 5/5 video(s) labelled with BDD100K timeofday/scene from manifest_val.json, manifest_train.json
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | stratified_results_present: counts stratified by timeofday, scene, weather
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-26 15:19:23 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-26 15:19:23 | INFO    | phase7 | PASS  | Phase 7 counting complete
+2026-09-26 16:31:47 | INFO    | phase7 | ============================================================
+2026-09-26 16:31:47 | INFO    | phase7 | PHASE 7: VIRTUAL-LINE VEHICLE COUNTING
+2026-09-26 16:31:47 | INFO    | phase7 | ============================================================
+2026-09-26 16:31:47 | INFO    | phase7 | MOT files: 5 in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 16:31:47 | INFO    | phase7 | Track classes: loaded from /kaggle/working/traffic_ai/reports/phase6_tracking.json
+2026-09-26 16:31:47 | INFO    | phase7 | Counting accuracy: GT frame maps for 5 video(s) from Phase 6
+2026-09-26 16:31:47 | INFO    | phase7 | Counting line: 55.0% of frame height | min_frames=3 | fps=30.0
+2026-09-26 16:31:49 | INFO    | phase7 | Scene metadata: 79863 video(s) from manifest_val.json, manifest_train.json
+2026-09-26 16:31:51 | INFO    | phase7 |   0000f77c-6257be58: 100 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 16:31:54 | INFO    | phase7 |     GT crossings per position: {'0.45': 3, '0.5': 10, '0.55': 10, '0.6': 5, '0.65': 3}
+2026-09-26 16:31:55 | INFO    | phase7 |   0000f77c-62c2a288: 197 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 16:31:57 | INFO    | phase7 |     GT crossings per position: {'0.45': 7, '0.5': 4, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 16:31:57 | INFO    | phase7 |   0000f77c-cb820c98: 116 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 16:32:01 | INFO    | phase7 |     GT crossings per position: {'0.45': 16, '0.5': 42, '0.55': 28, '0.6': 18, '0.65': 10}
+2026-09-26 16:32:01 | INFO    | phase7 |   0001542f-5ce3cf52: 95 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 16:32:04 | INFO    | phase7 |     GT crossings per position: {'0.45': 0, '0.5': 6, '0.55': 2, '0.6': 0, '0.65': 0}
+2026-09-26 16:32:04 | INFO    | phase7 |   0001542f-7c670be8: 67 tracks | height=720 (bdd100k-constant) | opposite_ends=True min_net_disp=0px | {'0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 16:32:07 | INFO    | phase7 |     GT crossings per position: {'0.45': 3, '0.5': 6, '0.55': 11, '0.6': 6, '0.65': 4}
+2026-09-26 16:32:07 | INFO    | phase7 |   Predicted totals per position: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 16:32:07 | INFO    | phase7 |   Counting error vs GT per position (MAE): {'0.45': 5.8, '0.5': 4.4, '0.55': 1.8, '0.6': 2.0, '0.65': 1.0}
+2026-09-26 16:32:07 | INFO    | phase7 |   GT volume per position (pred/GT/MAE/coverage): {'0.45': (54, 29, 5.8, '43%'), '0.5': (90, 68, 4.4, '100%'), '0.55': (54, 51, 1.8, '75%'), '0.6': (39, 29, 2.0, '43%'), '0.65': (20, 17, 1.0, '25%')}
+2026-09-26 16:32:07 | INFO    | phase7 |   Eligible at >=50% GT coverage: ['0.5', '0.55'] -> chose 0.55
+2026-09-26 16:32:07 | WARNING | phase7 | WARN  |   line position SELECTED ON GROUND TRUTH, so the reported accuracy is optimistic - state this in the writeup
+2026-09-26 16:32:07 | INFO    | phase7 |   Using line 0.55 | plateau(>=80% of best)=20% of positions, spread(max/min over non-zero)=4.5, positions with zero=0
+2026-09-26 16:32:07 | INFO    | phase7 |   0000f77c-6257be58: line y=396 of 720 (55%) -> 11 counted | by_class={'car': 11} | by_direction={'farbound': 7, 'nearbound': 4} | 16.27 veh/min
+2026-09-26 16:32:07 | INFO    | phase7 |     per-video sweep: {'0.45': 12, '0.5': 27, '0.55': 11, '0.6': 5, '0.65': 2}
+2026-09-26 16:32:07 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-6257be58_counting_line.jpg
+2026-09-26 16:32:07 | INFO    | phase7 |   0000f77c-62c2a288: line y=396 of 720 (55%) -> 0 counted | by_class={} | by_direction={} | 0.00 veh/min
+2026-09-26 16:32:07 | INFO    | phase7 |     per-video sweep: {'0.45': 21, '0.5': 6, '0.55': 0, '0.6': 0, '0.65': 0}
+2026-09-26 16:32:08 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-62c2a288_counting_line.jpg
+2026-09-26 16:32:08 | INFO    | phase7 |   0000f77c-cb820c98: line y=396 of 720 (55%) -> 33 counted | by_class={'car': 33} | by_direction={'nearbound': 33} | 48.89 veh/min
+2026-09-26 16:32:08 | INFO    | phase7 |     per-video sweep: {'0.45': 20, '0.5': 42, '0.55': 33, '0.6': 28, '0.65': 13}
+2026-09-26 16:32:08 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0000f77c-cb820c98_counting_line.jpg
+2026-09-26 16:32:09 | INFO    | phase7 |   0001542f-5ce3cf52: line y=396 of 720 (55%) -> 1 counted | by_class={'car': 1} | by_direction={'nearbound': 1} | 1.48 veh/min
+2026-09-26 16:32:09 | INFO    | phase7 |     per-video sweep: {'0.45': 0, '0.5': 9, '0.55': 1, '0.6': 0, '0.65': 0}
+2026-09-26 16:32:09 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-5ce3cf52_counting_line.jpg
+2026-09-26 16:32:09 | INFO    | phase7 |   0001542f-7c670be8: line y=396 of 720 (55%) -> 9 counted | by_class={'bike': 1, 'car': 8} | by_direction={'farbound': 3, 'nearbound': 6} | 13.33 veh/min
+2026-09-26 16:32:09 | INFO    | phase7 |     per-video sweep: {'0.45': 1, '0.5': 6, '0.55': 9, '0.6': 6, '0.65': 5}
+2026-09-26 16:32:09 | INFO    | phase7 |     frame sample (real video): /kaggle/working/traffic_ai/plots/counting/0001542f-7c670be8_counting_line.jpg
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | SUMMARY
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | Videos processed: 5
+2026-09-26 16:32:10 | INFO    | phase7 | Tracks seen: 575 | counted once: 54
+2026-09-26 16:32:10 | INFO    | phase7 | Total crossing events: 54
+2026-09-26 16:32:10 | INFO    | phase7 | By class: {'bike': 1, 'car': 53}
+2026-09-26 16:32:10 | INFO    | phase7 | By direction (screen-relative): {'farbound': 10, 'nearbound': 44}
+2026-09-26 16:32:10 | INFO    | phase7 | Rate: 16.01 veh/min over 3.37 min (80.0 / 5min, 240.1 / 15min)
+2026-09-26 16:32:10 | INFO    | phase7 | Per-video rate (quote THESE, not the pooled figure - the pooled window includes clips with no flow at all):
+2026-09-26 16:32:10 | INFO    | phase7 |     0000f77c-6257be58         11 counted   16.27 veh/min  GT=10
+2026-09-26 16:32:10 | INFO    | phase7 |     0000f77c-62c2a288          0 counted    0.00 veh/min  GT=0
+2026-09-26 16:32:10 | INFO    | phase7 |     0000f77c-cb820c98         33 counted   48.89 veh/min  GT=28
+2026-09-26 16:32:10 | INFO    | phase7 |     0001542f-5ce3cf52          1 counted    1.48 veh/min  GT=2
+2026-09-26 16:32:10 | INFO    | phase7 |     0001542f-7c670be8          9 counted   13.33 veh/min  GT=11
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | COUNTING ACCURACY vs GROUND TRUTH
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | Videos compared: 5 (1 excluded from MAPE: zero GT count)
+2026-09-26 16:32:10 | INFO    | phase7 | GT total crossings: 51 | predicted: 54
+2026-09-26 16:32:10 | INFO    | phase7 | MAE=1.80  RMSE=2.49  MAPE=24.0%  counting_accuracy=0.824
+2026-09-26 16:32:10 | INFO    | phase7 | Per-video (predicted vs GT):
+2026-09-26 16:32:10 | INFO    | phase7 |     0000f77c-6257be58        pred= 11 gt= 10  err=  +1  (+10.0%)
+2026-09-26 16:32:10 | INFO    | phase7 |     0000f77c-62c2a288        pred=  0 gt=  0  err=  +0  (GT=0)
+2026-09-26 16:32:10 | INFO    | phase7 |     0000f77c-cb820c98        pred= 33 gt= 28  err=  +5  (+17.9%)
+2026-09-26 16:32:10 | INFO    | phase7 |     0001542f-5ce3cf52        pred=  1 gt=  2  err=  -1  (-50.0%)
+2026-09-26 16:32:10 | INFO    | phase7 |     0001542f-7c670be8        pred=  9 gt= 11  err=  -2  (-18.2%)
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | COUNTS STRATIFIED BY SCENE METADATA
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 |   by timeofday:
+2026-09-26 16:32:10 | INFO    | phase7 |     dawn/dusk        n=2  counted= 33   24.48 veh/min  GT=28  MAE=2.5  MAPE=17.9%  dirs={'nearbound': 33}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:32:10 | INFO    | phase7 |     daytime          n=1  counted= 11   16.27 veh/min  GT=10  MAE=1.0  MAPE=10.0%  dirs={'farbound': 7, 'nearbound': 4}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:32:10 | INFO    | phase7 |     night            n=2  counted= 10    7.41 veh/min  GT=13  MAE=1.5  MAPE=34.1%  dirs={'farbound': 3, 'nearbound': 7}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:32:10 | INFO    | phase7 |   by scene:
+2026-09-26 16:32:10 | INFO    | phase7 |     city street      n=2  counted= 12    8.89 veh/min  GT=12  MAE=1.0  MAPE=30.0%  dirs={'farbound': 7, 'nearbound': 5}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:32:10 | INFO    | phase7 |     highway          n=2  counted=  9    6.68 veh/min  GT=11  MAE=1.0  MAPE=18.2%  dirs={'farbound': 3, 'nearbound': 6}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:32:10 | INFO    | phase7 |     residential      n=1  counted= 33   48.89 veh/min  GT=28  MAE=5.0  MAPE=17.9%  dirs={'nearbound': 33}  [LOW SAMPLE - anecdote, not an effect]
+2026-09-26 16:32:10 | INFO    | phase7 |   by weather:
+2026-09-26 16:32:10 | INFO    | phase7 |     clear            n=5  counted= 54   16.01 veh/min  GT=51  MAE=1.8  MAPE=24.0%  dirs={'farbound': 10, 'nearbound': 44}
+2026-09-26 16:32:10 | INFO    | phase7 | Line sweep: {'0.45': 54, '0.5': 90, '0.55': 54, '0.6': 39, '0.65': 20}
+2026-09-26 16:32:10 | INFO    | phase7 | Plots: 16 written to /kaggle/working/traffic_ai/plots/counting
+2026-09-26 16:32:10 | INFO    | phase7 | Report: /kaggle/working/traffic_ai/reports/phase7_counting.json
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | INTEGRITY CHECK SUMMARY
+2026-09-26 16:32:10 | INFO    | phase7 | ============================================================
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | frame_height_resolved: frame heights from bdd100k-constant
+2026-09-26 16:32:10 | WARNING | phase7 | WARN  | all_videos_counted: 1 video(s) counted ZERO: ['0000f77c-62c2a288'] - check the timeline plots and the line sweep
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | counting_accuracy_computed: MAE=1.8 RMSE=2.49 MAPE=24.01% accuracy=0.8235 over 5 video(s)
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | counting_accuracy_acceptable: counting accuracy 0.8235
+2026-09-26 16:32:10 | WARNING | phase7 | WARN  | count_not_line_sensitive: plateau = 20% of swept positions within 20% of best; spread(max/min over non-zero) = 4.5; positions counting zero = 0 - too narrow to report as a traffic volume
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | mot_inputs_found: 5 MOT file(s) in /kaggle/working/traffic_ai/predictions/tracking
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | counts_computed: 54 crossing events over 54 tracks
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | no_duplicate_counts: each track contributes at most one crossing event
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | class_names_resolved: per-track classes loaded from the Phase 6 report
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | videos_labelled_by_metadata: 5/5 video(s) labelled with BDD100K timeofday/scene from manifest_val.json, manifest_train.json
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | stratified_results_present: counts stratified by timeofday, scene, weather
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | both_directions_present: directions observed: ['farbound', 'nearbound']
+2026-09-26 16:32:10 | INFO    | phase7 | Overall: ALL CHECKS PASSED
+2026-09-26 16:32:10 | INFO    | phase7 | PASS  | Phase 7 counting complete
